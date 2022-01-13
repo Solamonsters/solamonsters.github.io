@@ -221,6 +221,7 @@ body {
   margin: auto;
   padding: 1% 1% 0 1%;
   width: 30%;
+  min-width: 175px;
   background-color: black;
   border-radius: 20px;
 }
@@ -358,7 +359,7 @@ body {
 
 .bodyText {
   font-weight: 100;
-  font-size: calc(10px + 1vw);
+  font-size: calc(10px + 0.75vw);
   color: #f1f1f1;
   pointer-events: none;
 }
@@ -375,6 +376,11 @@ body {
   margin: auto;
   border-radius: 15px;
   text-align: center;
+  background: linear-gradient(
+    0deg,
+    rgba(0, 0, 0, 0.8) 0%,
+    rgba(20, 20, 20, 0.8) 100%
+  );
 }
 
 /* _________________________________________________________hompage what are solamonsters */
@@ -388,14 +394,19 @@ body {
   padding: 3%;
   margin: auto;
   border-radius: 15px;
-  text-align: left;
-}
-.body2 .bodyText {
-  width: 50%;
-  margin: auto;
+  text-align: center;
+  background: linear-gradient(
+    0deg,
+    rgba(0, 0, 0, 0.8) 0%,
+    rgba(20, 20, 20, 0.8) 100%
+  );
 }
 .inlineWordPic {
   display: flex;
+}
+
+.inlineWordPic .bodyText {
+  width: 50%;
 }
 
 /* __________________________________________________________________________homepage project objectives */
@@ -410,6 +421,11 @@ body {
   margin: auto;
   border-radius: 15px;
   text-align: center;
+  background: linear-gradient(
+    0deg,
+    rgba(0, 0, 0, 0.8) 0%,
+    rgba(20, 20, 20, 0.8) 100%
+  );
 }
 
 .body4 .bodySubtitle {
@@ -437,10 +453,15 @@ body {
   right: 0;
   left: 0;
   width: 80%;
-  padding: 0% 10%;
-  display: flex;
+  padding: 3%;
+  margin: auto;
   border-radius: 15px;
   text-align: center;
+  background: linear-gradient(
+    0deg,
+    rgba(0, 0, 0, 0.8) 0%,
+    rgba(20, 20, 20, 0.8) 100%
+  );
 }
 
 .roadmap {
@@ -554,6 +575,15 @@ body {
   margin: auto;
   border-radius: 15px;
   text-align: center;
+  background: linear-gradient(
+    0deg,
+    rgba(0, 0, 0, 0.8) 0%,
+    rgba(20, 20, 20, 0.8) 100%
+  );
+}
+
+.teamDetails .bodyText {
+  width: 100%;
 }
 
 /* _________________________________________________________homepage faq */
@@ -568,6 +598,11 @@ body {
   margin: auto;
   border-radius: 15px;
   text-align: center;
+  background: linear-gradient(
+    0deg,
+    rgba(0, 0, 0, 0.8) 0%,
+    rgba(20, 20, 20, 0.8) 100%
+  );
 }
 
 /* ################################################################################################################################# */
@@ -1366,9 +1401,13 @@ table tr td {
   .itemRareContainer {
     width: 80%;
   }
+  .body2 .inlineWordPic,
   .body4 .inlineWordPic,
   .body5 .inlineWordPic {
     display: block;
+  }
+  .inlineWordPic .bodyText {
+    width: 100%;
   }
   .unfix {
     top: 0px;
