@@ -1270,8 +1270,8 @@ table tr td {
   margin: auto;
   background: linear-gradient(
     0deg,
-    rgba(65, 64, 66, 0.75) 0%,
-    rgba(37, 36, 36, 0.75) 100%
+    rgba(0, 0, 0, 0.97) 0%,
+    rgba(20, 20, 20, 0.97) 100%
   );
   left: 30%;
   right: 30%;
