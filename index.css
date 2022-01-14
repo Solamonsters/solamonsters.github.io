@@ -320,15 +320,15 @@ body {
 /* ################################################################################################################################# */
 /* ################################################################################################################################# */
 .homepageBackground {
-  background-image: url("assets/bg-1.PNG");
+  background-image: url("assets/bg-1.png");
   background-size: 100%;
 }
 .whitepaperBackground {
-  background-image: url("assets/bg-2.PNG");
+  background-image: url("assets/bg-2.png");
   background-size: 100%;
 }
 .rarityBackground {
-  background-image: url("assets/bg-3.PNG");
+  background-image: url("assets/bg-3.png");
   background-size: 100%;
 }
 .bodyContainer {
