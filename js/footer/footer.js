@@ -31,7 +31,7 @@ var variable = '' +
   '  <div class="footerDivider"></div>' +
   '' +
   '  <div class="footerSection">' +
-  '    <a href="index" class="footerText">Home</a>' +
+  '    <a href="/" class="footerText">Home</a>' +
   '    <a href="rarity" class="footerText">Rarity</a>' +
   '    <a href="#/roadmap" class="footerText">Roadmap</a>' +
   '    <a href="#/faq" class="footerText">FAQ</a>' +
@@ -93,7 +93,7 @@ document.write(variable);
 //   <div class="footerDivider"></div>
 
 //   <div class="footerSection">
-//     <a href="index" class="footerText">Home</a>
+//     <a href="/" class="footerText">Home</a>
 //     <a href="rarity" class="footerText">Rarity</a>
 //     <a href="#/roadmap" class="footerText">Roadmap</a>
 //     <a href="#/faq" class="footerText">FAQ</a>
