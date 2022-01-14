@@ -1,0 +1,1433 @@
+body {
+  padding: 0;
+  margin: 0;
+  background-color: #000;
+  min-width: 200px;
+  overflow: visible;
+  font-family: "Courier New";
+  text-align: center;
+}
+
+/* ################################################################################################################################# */
+/* ################################################################################################################################# */
+/* ##############################################     HEADER      ################################################################## */
+/* ################################################################################################################################# */
+/* ################################################################################################################################# */
+.header {
+  text-align: center;
+  z-index: 5;
+  margin: 0;
+  overflow: visible;
+  display: flex;
+  position: fixed;
+  padding: 0% 2% 1% 2%;
+  background-color: rgb(0, 0, 0);
+}
+
+.unfix {
+  top: -500px;
+}
+
+.headerTitle {
+  text-decoration: none;
+  color: white;
+  font-size: calc(20px + 1.2vw);
+  font-weight: 900;
+  width: 40vw;
+  margin: auto;
+}
+
+.headerWords {
+  text-decoration: none;
+  color: white;
+  padding: 2% 3%;
+  display: inline-block;
+  cursor: pointer;
+  border-radius: 5px;
+  font-size: calc(15px + 0.3vw);
+  width: auto;
+  margin: auto;
+}
+
+.headerWords:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.logo {
+  width: calc(50px);
+  text-decoration: none;
+  text-align: center;
+}
+
+.headerMintButton {
+  color: white;
+  background-color: black;
+  border: 1px solid #00239f;
+  border-radius: 5px;
+  float: none;
+  text-decoration: none;
+  padding: 1% 3%;
+  font-size: calc(15px + 0.3vw);
+  width: auto;
+  margin: auto;
+}
+
+.headerMintButton:hover {
+  background-color: #00239f;
+  color: white;
+}
+
+.header-right {
+  padding: 0 0 0 0;
+  width: 40vw;
+  margin: auto;
+  text-align: center;
+}
+
+.header-social {
+  padding: 0;
+  width: 8%;
+  margin: auto;
+  text-align: center;
+}
+
+/* -------------------------------------dropdown triple line icon------------------------------------------- */
+.bar1,
+.bar2,
+.bar3 {
+  width: 30px;
+  height: 3px;
+  background-color: white;
+  margin: 5px 0;
+  transition: 0.1s;
+}
+
+.dropdown:hover .bar1 {
+  opacity: 0;
+}
+
+.dropdown:hover .bar2 {
+  width: 20px;
+  background-color: black;
+  transform: rotate(90deg) translate(0px, -5px);
+}
+
+.dropdown:hover .bar3 {
+  opacity: 0;
+}
+
+/* ####################################################### dropdown ################################################################ */
+.dropdown {
+  display: none;
+  float: left;
+  width: fit-content;
+  overflow: hidden;
+  border-radius: 10px;
+  padding: 1%;
+  text-align: center;
+}
+
+.dropdown:hover {
+  background-color: #ddd;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: rgb(34, 33, 33);
+  width: 20%;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+  border-radius: 10px;
+  margin: auto;
+}
+
+.dropdown-content a {
+  float: none;
+  color: white;
+  padding: 5% 10%;
+  text-decoration: none;
+  display: block;
+  text-align: center;
+  border-radius: 10px;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+  background-color: none;
+}
+
+/* ################################################################################################################################# */
+/* ################################################################################################################################# */
+/* ##############################################     FOOTER      ################################################################## */
+/* ################################################################################################################################# */
+/* ################################################################################################################################# */
+.footer {
+  text-align: center;
+  z-index: 5;
+  margin: 0;
+  overflow: visible;
+  display: flex;
+  padding: 2% 2% 1% 2%;
+  background-color: black;
+  height: min-content;
+}
+.footerSection {
+  width: 33.333%;
+  margin: auto;
+}
+.footerTitle {
+  font-weight: 800;
+  font-size: 150%;
+  padding: 0 1%;
+  color: #f1f1f1;
+  text-align: center;
+}
+.footerText {
+  text-decoration: none;
+  color: white;
+  padding: 1%;
+  display: inline-block;
+  cursor: pointer;
+  border-radius: 5px;
+  font-size: calc(10px + 0.5vw);
+  font-weight: 100;
+  margin: auto;
+  width: 40%;
+}
+.footerText:hover {
+  font-weight: 900;
+}
+.footerSocial {
+  text-decoration: none;
+  color: white;
+  padding: 1%;
+  display: inline-block;
+  cursor: pointer;
+  margin: auto;
+  width: 20%;
+}
+.footerDivider {
+  background-color: white;
+  color: white;
+  width: 3px;
+  border-radius: 10px;
+}
+
+/* ###################################################  SLIDESHOW  ############################################################ */
+.slideshow {
+  text-align: center;
+  margin: auto;
+  padding: 1% 1% 0 1%;
+  width: 30%;
+  min-width: 175px;
+  background-color: black;
+  border-radius: 20px;
+}
+
+.mySlides {
+  display: none;
+  width: 100%;
+  margin: auto;
+}
+
+.slideshowButtons {
+  text-align: center;
+  width: 100%;
+  margin: auto;
+  background-color: black;
+  display: inline-block;
+  opacity: 10%;
+  transition: 0.3s ease;
+  pointer-events: all;
+  padding: 1% 0;
+  cursor: default;
+}
+
+.slideshowButtons:hover {
+  opacity: 100%;
+}
+
+.prev,
+.next {
+  height: 13px;
+  pointer-events: all;
+  cursor: pointer;
+  padding: 0 2%;
+  color: white;
+  font-weight: bold;
+  font-size: 100%;
+  z-index: 2;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+  background-color: rgb(65, 63, 63);
+  border-radius: 10px;
+  transition: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  display: inline-block;
+  cursor: pointer;
+  height: 10px;
+  width: 10px;
+  margin: 0 2px;
+  background-color: rgb(65, 63, 63);
+  border-radius: 50%;
+  transition: background-color 0.2s ease;
+}
+.active {
+  background-color: rgb(255, 255, 255);
+}
+.dot:hover {
+  transition: 0;
+  background-color: rgb(255, 255, 255);
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 2s;
+  animation-name: fade;
+  animation-duration: 2s;
+}
+
+@-webkit-keyframes fade {
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fade {
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/* ################################################################################################################################# */
+/* ################################################################################################################################# */
+/* ############################################## PAGE BACKGROUND  ################################################################# */
+/* ################################################################################################################################# */
+/* ################################################################################################################################# */
+.bodyBackgroundMoving {
+  background-image: url("assets/bg.PNG");
+  background-size: 100% 100%;
+}
+.bodyContainer {
+  width: 80%;
+  margin: auto;
+}
+
+.headerBuffer {
+  content: "";
+  padding: 7.5% 3%;
+  width: 60%;
+  margin: auto;
+}
+
+/* ################################################################################################################################# */
+/* ################################################################################################################################# */
+/* ##############################################     HOMEPAGE    ################################################################## */
+/* ################################################################################################################################# */
+/* ################################################################################################################################# */
+.bodyTitle {
+  font-weight: 800;
+  font-size: calc(20px + 2vw);
+  color: #f1f1f1;
+  pointer-events: none;
+  width: 90%;
+  margin: auto;
+  padding: 0 0 2% 0;
+}
+
+.bodySubtitle {
+  font-weight: 800;
+  font-size: calc(15px + 1.5vw);
+  color: #f1f1f1;
+  pointer-events: none;
+}
+
+.bodyText {
+  font-weight: 100;
+  font-size: calc(10px + 0.75vw);
+  color: #f1f1f1;
+  pointer-events: none;
+}
+
+/* _________________________________________________________hompage intro */
+.body1 {
+  pointer-events: none;
+  overflow: hidden;
+  top: 0;
+  right: 0;
+  left: 0;
+  width: 80%;
+  padding: 3%;
+  margin: auto;
+  border-radius: 15px;
+  text-align: center;
+  background: linear-gradient(
+    0deg,
+    rgba(0, 0, 0, 0.85) 0%,
+    rgba(20, 20, 20, 0.85) 100%
+  );
+}
+
+/* _________________________________________________________hompage what are solamonsters */
+.body2 {
+  pointer-events: none;
+  overflow: hidden;
+  top: 0;
+  right: 0;
+  left: 0;
+  width: 80%;
+  padding: 3%;
+  margin: auto;
+  border-radius: 15px;
+  text-align: center;
+  background: linear-gradient(
+    0deg,
+    rgba(0, 0, 0, 0.8) 0%,
+    rgba(20, 20, 20, 0.8) 100%
+  );
+}
+.inlineWordPic {
+  display: flex;
+}
+
+.inlineWordPic .bodyText {
+  width: 50%;
+}
+
+/* __________________________________________________________________________homepage project objectives */
+.body4 {
+  pointer-events: none;
+  overflow: hidden;
+  top: 0;
+  right: 0;
+  left: 0;
+  width: 80%;
+  padding: 3%;
+  margin: auto;
+  border-radius: 15px;
+  text-align: center;
+  background: linear-gradient(
+    0deg,
+    rgba(0, 0, 0, 0.8) 0%,
+    rgba(20, 20, 20, 0.8) 100%
+  );
+}
+
+.body4 .bodySubtitle {
+  text-decoration: underline;
+}
+
+.body4 .whitepaperHeader {
+  text-align: center;
+}
+
+.body4 .phases {
+  width: 30%;
+  padding: 0;
+  margin: 0 auto;
+  text-align: center;
+  vertical-align: top;
+}
+
+/* _________________________________________________________homepage roadmap */
+
+.bodyRoadmap {
+  pointer-events: none;
+  overflow: hidden;
+  top: 0;
+  right: 0;
+  left: 0;
+  width: 80%;
+  padding: 3%;
+  margin: auto;
+  border-radius: 15px;
+  text-align: center;
+  background: linear-gradient(
+    0deg,
+    rgba(0, 0, 0, 0.8) 0%,
+    rgba(20, 20, 20, 0.8) 100%
+  );
+}
+
+.roadmap {
+  vertical-align: top;
+  text-align: center;
+  border: 2px solid white;
+  padding: 0% 0.5%;
+  border-radius: 10px;
+  margin: 0 auto;
+  width: 30%;
+}
+.bodyRoadmap .bodySubtitle {
+  text-decoration: underline;
+}
+
+.timeline * {
+  box-sizing: border-box;
+}
+
+.timeline {
+  position: relative;
+  margin: 0 auto;
+  width: 80%;
+}
+
+/* The actual timeline (the vertical ruler) */
+.timeline::after {
+  content: "";
+  position: absolute;
+  padding: 0 1px;
+  background-color: white;
+  top: 0;
+  bottom: 3.85%;
+  left: 50%;
+}
+
+/* Container around content */
+.container {
+  padding: 0% 1%;
+  position: relative;
+  width: 50%;
+}
+
+/* Place the container to the left */
+.left {
+  left: 0;
+  text-align: right;
+}
+
+/* Place the container to the right */
+.right {
+  left: 50%;
+  text-align: left;
+}
+/* Add arrows to the left container (pointing right) */
+.left::before {
+  content: " ";
+  height: 0;
+  position: absolute;
+  width: 0;
+  right: 0%;
+  border: medium solid white;
+  border-width: 2px 10px 0px 20px;
+  border-color: transparent white transparent transparent;
+  border-color: white;
+}
+
+/* Add arrows to the right container (pointing left) */
+.right::before {
+  content: " ";
+  height: 0;
+  position: absolute;
+  width: 0;
+  z-index: 1;
+  left: 0%;
+  border: medium solid white;
+  border-width: 2px 10px 0px 20px;
+  border-color: transparent white transparent transparent;
+  border-color: white;
+}
+
+/* The actual content */
+.content {
+  padding: 0px;
+  background-color: rgb(255, 255, 255);
+  position: relative;
+}
+.contentLeft {
+  border-radius: 40px 0px;
+}
+.contentRight {
+  border-radius: 0px 40px;
+}
+
+.content .bodyText {
+  font-weight: 800;
+  color: black;
+  text-align: center;
+  padding: 2%;
+}
+
+/* _________________________________________________________homepage team */
+.body5 {
+  pointer-events: none;
+  overflow: hidden;
+  top: 0;
+  right: 0;
+  left: 0;
+  width: 80%;
+  padding: 3%;
+  margin: auto;
+  border-radius: 15px;
+  text-align: center;
+  background: linear-gradient(
+    0deg,
+    rgba(0, 0, 0, 0.8) 0%,
+    rgba(20, 20, 20, 0.8) 100%
+  );
+}
+
+.teamDetails .bodyText {
+  width: 100%;
+}
+
+/* _________________________________________________________homepage faq */
+.body7 {
+  pointer-events: none;
+  overflow: hidden;
+  top: 0;
+  right: 0;
+  left: 0;
+  width: 80%;
+  padding: 3%;
+  margin: auto;
+  border-radius: 15px;
+  text-align: center;
+  background: linear-gradient(
+    0deg,
+    rgba(0, 0, 0, 0.8) 0%,
+    rgba(20, 20, 20, 0.8) 100%
+  );
+}
+
+/* ################################################################################################################################# */
+/* ################################################################################################################################# */
+/* ##############################################     WHITEPAPER     ############################################################### */
+/* ################################################################################################################################# */
+/* ################################################################################################################################# */
+.whitepaperBody {
+  pointer-events: none;
+  overflow: hidden;
+  top: 0;
+  right: 0;
+  left: 0;
+  width: 80%;
+  padding: 3% 0%;
+  margin: auto;
+  background: linear-gradient(
+    0deg,
+    rgba(0, 0, 0, 0.85) 0%,
+    rgba(20, 20, 20, 0.85) 100%
+  );
+  border-radius: 15px;
+  text-align: center;
+}
+
+.whitepaperWords {
+  width: 80%;
+  margin: auto;
+}
+.whitepaperWords .bodySubtitle {
+  font-weight: 800;
+  text-align: left;
+  text-decoration: underline;
+  font-size: calc(15px + 2vw);
+}
+.whitepaperHeader {
+  font-weight: 800;
+  font-size: calc(15px + 1vw);
+  color: #f1f1f1;
+  pointer-events: none;
+  text-align: left;
+}
+
+.whitepaperWords .bodyText {
+  text-align: left;
+  line-height: 125%;
+  padding: 0%;
+  font-size: calc(10px + 0.5vw);
+}
+.objectivesContainer {
+  display: flex;
+  text-align: center;
+}
+.projectObjectives {
+  width: 25%;
+  margin: auto;
+  text-align: center;
+  vertical-align: top;
+  border: 2px solid white;
+  padding: 1%;
+  border-radius: 10px;
+}
+
+.projectObjectives a {
+  pointer-events: all;
+}
+
+.objectivesContainer .bodyText {
+  font-size: calc(10px + 0.8vw);
+  text-align: center;
+}
+
+.fundsContainer {
+  display: flex;
+  text-align: center;
+}
+.projectFunds {
+  width: 45%;
+  margin: 0 auto;
+  text-align: center;
+  vertical-align: top;
+  border: 2px solid white;
+  padding: 1%;
+  border-radius: 10px;
+}
+
+.whitepaperSection {
+  border: 1px solid white;
+  padding: 3%;
+  border-radius: 50px;
+}
+
+.whitepaperBulletPoint {
+  text-align: center;
+  border: 2px solid white;
+  width: 70%;
+  margin: auto;
+  padding: 0 1%;
+  border-radius: 10px;
+}
+.whitepaperBulletPoint .bodyText {
+  text-align: center;
+}
+.tableOfContents {
+  padding: 1%;
+  display: flex;
+}
+.tableOfContents .bodyText {
+  margin: auto;
+  font-size: 1.25vw;
+  pointer-events: all;
+  text-align: center;
+  width: 100%;
+  text-decoration: none;
+  padding: 1%;
+}
+.tableOfContents .bodyText:hover {
+  font-weight: 900;
+}
+.tableOfContents .footerDivider {
+  border-radius: 50%;
+}
+
+@media screen and (max-width: 1000px) {
+  .tableOfContents {
+    display: block;
+  }
+  .tableOfContents .bodyText {
+    font-size: calc(12px + 0.5vw);
+  }
+}
+/* ################################################################################################################################# */
+/* ################################################################################################################################# */
+/* ##############################################     RARITY PAGE    ############################################################### */
+/* ################################################################################################################################# */
+/* ################################################################################################################################# */
+.rareBodyTitle {
+  font: normal;
+}
+
+.rarebody1 {
+  pointer-events: all;
+  overflow: hidden;
+  top: 0;
+  right: 0;
+  left: 0;
+  padding: 15% 5% 10% 5%;
+  text-align: center;
+}
+
+.rarebody2 {
+  overflow: hidden;
+  top: 0;
+  right: 0;
+  left: 0;
+  padding: 10% 5%;
+  text-align: left;
+}
+
+/* ################################# list of all items and rarity ################################################ */
+.itemRarity {
+  display: flex;
+  text-align: center;
+  padding: 1%;
+}
+.itemRareContainer {
+  text-align: center;
+  color: black;
+  padding: 1%;
+  width: 25%;
+  margin: auto;
+  border-radius: 10px;
+  background: linear-gradient(
+    0deg,
+    rgba(91, 90, 92, 0.75) 0%,
+    rgba(19, 18, 18, 0.75) 100%
+  );
+}
+.itemRareTitle {
+  font-weight: 800;
+  font-size: calc(15px+0.75vw);
+  color: #f1f1f1;
+  text-align: center;
+  background-color: black;
+  border-radius: 5px;
+  padding: 2%;
+  cursor: pointer;
+  border: 1px solid black;
+}
+.itemRareTitle:hover {
+  background-color: rgb(27, 27, 27);
+}
+rareTableRow {
+  display: flex;
+  text-align: center;
+  color: black;
+
+  background-color: white;
+  border: 1px solid black;
+}
+rareTableRow:hover,
+rareTableRow:hover rareTableItem {
+  font-weight: 1000;
+  background-color: #85ec96;
+}
+rareTableTitle {
+  text-align: center;
+  font-size: calc(15px+0.75vw);
+  font-weight: 900;
+  color: black;
+  padding: 1%;
+  width: 33%;
+  margin: auto;
+  border-radius: 0px;
+  background: white;
+  text-decoration: underline;
+}
+rareTableItem {
+  text-align: center;
+  padding: 1%;
+  width: 33%;
+  margin: auto;
+  border-radius: 0px;
+  background: white;
+  font-size: calc(10px+0.75vw);
+}
+
+/* toggle button click to show table */
+.background {
+  display: none;
+}
+.backgroundOn {
+  display: contents;
+}
+.eyes {
+  display: none;
+}
+.eyesOn {
+  display: contents;
+}
+.headwear {
+  display: none;
+}
+.headwearOn {
+  display: contents;
+}
+.mouth {
+  display: none;
+}
+.mouthOn {
+  display: contents;
+}
+.clothes {
+  display: none;
+}
+.clothesOn {
+  display: contents;
+}
+.accessories {
+  display: none;
+}
+.accessoriesOn {
+  display: contents;
+}
+.chain {
+  display: none;
+}
+.chainOn {
+  display: contents;
+}
+.piercings {
+  display: none;
+}
+.piercingsOn {
+  display: contents;
+}
+.skin {
+  display: none;
+}
+.skinOn {
+  display: contents;
+}
+.threatLevel {
+  display: none;
+}
+.threatLevelOn {
+  display: contents;
+}
+
+/* ################################################ SEARCH/RANK NFT RARITY TABLE ################################################ */
+.rareContainer {
+  color: white;
+  font-weight: 800;
+  padding: 2%;
+  border-radius: 40px;
+  background: linear-gradient(
+    0deg,
+    rgba(0, 0, 0, 0.85) 0%,
+    rgba(20, 20, 20, 0.85) 100%
+  );
+  left: 30%;
+  right: 30%;
+  text-align: center;
+}
+table.dataTable {
+  width: 100%;
+  margin: 0 auto;
+  clear: both;
+  border-collapse: separate;
+  border-spacing: 0;
+}
+
+table.dataTable thead th,
+table.dataTable tfoot th {
+  font-weight: bold;
+}
+
+table.dataTable thead th,
+table.dataTable thead td {
+  padding: 10px 18px;
+}
+
+table.dataTable thead th:active,
+table.dataTable thead td:active {
+  outline: none;
+}
+
+table.dataTable tfoot th,
+table.dataTable tfoot td {
+  padding: 10px 18px 6px 18px;
+  border-top: 1px solid #111;
+}
+
+table.dataTable tbody th,
+table.dataTable tbody td {
+  padding: 8px 10px;
+}
+
+#table_wrapper {
+  margin: 20px 40px;
+}
+
+table tr th,
+table tr td {
+  text-align: center;
+  background-color: black;
+  border-radius: 10px;
+}
+
+#table_wrapper .dataTables_length,
+#table_wrapper .dataTables_filter {
+  margin-bottom: 30px;
+  font-size: 10px;
+  text-transform: uppercase;
+  float: right;
+  margin-left: 20px;
+}
+
+/* ------------------------------------------------------------------------------------search and box container */
+#table_wrapper .dataTables_length label,
+#table_wrapper .dataTables_filter label {
+  color: #ffffff !important;
+  font-size: 150%;
+  border-radius: 20px;
+  padding: 20px;
+}
+
+/* IMPORTANT */
+#table_wrapper .dataTables_paginate a {
+  display: none;
+}
+
+#table_wrapper .dataTables_info {
+  color: white;
+  padding: 0.5% 0% 0% 0%;
+  font-size: 10px;
+  text-transform: uppercase;
+  float: left;
+}
+
+/* ------------------------------------------------------------------------------------search bar */
+#table_wrapper .dataTables_filter input {
+  margin: 0 3px;
+}
+
+#table_wrapper table {
+  font-size: 12px;
+  border-radius: 40px;
+  background: grey;
+  border-collapse: collapse;
+  text-align: center;
+  width: 100%;
+}
+
+#table_wrapper table th {
+  font-size: calc(10px + 0.25vw);
+  font-weight: normal;
+  color: black;
+  padding: 1%;
+  text-align: center;
+  background-color: white;
+  font-weight: bolder;
+  width: 5%;
+}
+
+#table_wrapper .dataTables_scrollHead th.sorting,
+#table_wrapper .dataTables_scrollHead th.sorting_asc,
+#table_wrapper .dataTables_scrollHead th.sorting_desc {
+  position: static;
+  cursor: pointer;
+}
+
+#table_wrapper .dataTables_scrollHead th.sorting:before,
+#table_wrapper .dataTables_scrollHead th.sorting_asc:before,
+#table_wrapper .dataTables_scrollHead th.sorting:after,
+#table_wrapper .dataTables_scrollHead th.sorting_desc:after {
+  border: 4px solid transparent;
+  position: static;
+  display: block;
+  content: "";
+  height: 0;
+  width: 0;
+  opacity: 0.6;
+}
+
+#table_wrapper .dataTables_scrollHead th.sorting:before,
+#table_wrapper .dataTables_scrollHead th.sorting_asc:before {
+  border-bottom-color: green;
+}
+
+#table_wrapper .dataTables_scrollHead th.sorting:after,
+#table_wrapper .dataTables_scrollHead th.sorting_desc:after {
+  border-top-color: red;
+}
+
+#table_wrapper table td {
+  width: 1px;
+  color: white;
+  font-size: 115%;
+  padding: 0.5% 1%;
+  font-weight: 100;
+  text-align: center;
+  background-color: black;
+}
+
+#table_wrapper table tbody tr:hover td {
+  color: black;
+  background-color: rgb(131, 240, 176);
+}
+
+/* ################################################################################################################################# */
+/* ################################################################################################################################# */
+/* ##########################################     GENERATION PAGE      ############################################################ */
+/* ################################################################################################################################# */
+/* ################################################################################################################################# */
+.genbody1 {
+  overflow: hidden;
+  top: 0;
+  right: 0;
+  left: 0;
+  padding: 15% 5%;
+  text-align: center;
+}
+.genRow {
+  display: flex;
+  padding: 0 0 5% 0;
+}
+
+.genContainer {
+  color: #f1f1f1;
+  text-align: center;
+  background-color: black;
+  border-radius: 4px;
+  padding: 2%;
+  width: 30%;
+  margin: auto;
+}
+
+.genTitle {
+  font-weight: 800;
+  font-size: 400%;
+  padding: 2%;
+}
+
+.genPicture {
+  width: 75%;
+  height: 75%;
+  padding: 0 0 0% 0;
+  border-radius: 5px;
+  border: 10px solid rgb(46, 45, 4);
+}
+
+.genProgress {
+  background-color: white;
+  padding: 1% 2%;
+  width: 75%;
+  margin: auto;
+  border: 10px solid black;
+  border-radius: 50px;
+  color: black;
+  font-size: larger;
+}
+.genBurned {
+  padding: 1%;
+  border: 5px solid black;
+  border-radius: 15px;
+  width: 60%;
+  margin: auto;
+  color: black;
+  font-size: larger;
+  background-color: rgb(253, 51, 51);
+}
+.genMerge {
+  padding: 1%;
+  width: 60%;
+  border: 5px solid black;
+  border-radius: 15px;
+  margin: auto;
+  color: black;
+  font-size: larger;
+  background-color: rgb(4, 189, 245);
+}
+.genRemain {
+  padding: 1%;
+  width: 60%;
+  border: 5px solid black;
+  border-radius: 15px;
+  margin: auto;
+  color: black;
+  font-size: larger;
+  background-color: rgb(13, 211, 13);
+}
+
+/* ################################################################################################################################# */
+/* ################################################################################################################################# */
+/* ##############################################    FAQ PAGE      ################################################################# */
+/* ################################################################################################################################# */
+/* ################################################################################################################################# */
+.faqbody1 {
+  overflow: hidden;
+  top: 0;
+  right: 0;
+  left: 0;
+  padding: 15% 10%;
+  background-image: url("art/pen6816.png");
+  background-size: 25% 50%;
+  text-align: center;
+}
+.faqbody1 .bodyTitle {
+  font-size: 150%;
+  padding: 1% 0;
+  margin: auto;
+  width: fit-content;
+}
+
+.faqContainer {
+  pointer-events: all;
+  font-size: 70px;
+  color: black;
+  padding: 2% 10% 5% 10%;
+  border-radius: 40px;
+  width: 80%;
+  margin: auto;
+  left: 30%;
+  right: 30%;
+}
+
+.faqanswer {
+  border: 2px solid rgb(50, 31, 223);
+  border-radius: 10px;
+  text-align: center;
+  padding: 0% 0%;
+  background-color: rgba(19, 8, 114, 0.75);
+}
+.faqanswer:hover {
+  background-color: rgba(50, 32, 211, 0.75);
+}
+.faq {
+  font-size: calc(10px + 1vw);
+  font-weight: 700;
+  transition: 0.5s ease;
+  color: white;
+}
+
+.answer {
+  display: none;
+  font-size: 30%;
+  transition: 0.5s ease;
+  color: white;
+}
+.faq:hover {
+  -webkit-transform: rotate(0deg) translate(0px, 0px);
+  transform: rotate(0deg) translate(2%, 0px);
+}
+.answer:hover {
+  -webkit-transform: rotate(0deg) translate(0px, 0px);
+  transform: rotate(0deg) translate(-2%, 0px);
+}
+.changeFAQ .faq {
+  padding: 0 0 0 5%;
+  text-align: left;
+  text-decoration: underline;
+}
+.changeFAQ .answer {
+  display: block;
+  margin: auto;
+  padding: 0 5% 0 5%;
+  text-align: left;
+}
+.formatLink {
+  text-decoration: underline;
+  color: white;
+}
+.formatLink:hover {
+  color: rgb(211, 53, 211);
+}
+
+/* ################################################################################################################################# */
+/* ################################################################################################################################# */
+/* ##############################################   MINT PAGE      ################################################################## */
+/* ################################################################################################################################# */
+/* ################################################################################################################################# */
+.mintButton {
+  display: none;
+  border: none;
+  color: white;
+  padding: 2% 3%;
+  text-align: center;
+  text-decoration: none;
+  font-size: 50px;
+  border-radius: 5px;
+  cursor: pointer;
+  background-color: #3366ff;
+}
+
+.mintButton:hover {
+  background-color: #0a0066;
+}
+
+.countdownContainer {
+  font-size: 500%;
+  color: white;
+  font-weight: 900;
+  padding: 20px 30px 20px 30px;
+  border-radius: 150px;
+  width: 50%;
+  margin: auto;
+  background: linear-gradient(
+    0deg,
+    rgba(65, 64, 66, 0.75) 0%,
+    rgba(37, 36, 36, 0.75) 100%
+  );
+  left: 30%;
+  right: 30%;
+}
+
+.mintbody1 {
+  overflow: hidden;
+  width: auto;
+  min-height: auto;
+  right: 0;
+  left: 0;
+  padding: 15% 0% 15% 0%;
+  text-align: center;
+  color: white;
+}
+
+/* ################################################################################################################################# */
+/* ################################################################################################################################# */
+/* ##############################################     COLLECTION PAGE      ######################################################### */
+/* ################################################################################################################################# */
+/* ################################################################################################################################# */
+.colbody1 {
+  overflow: hidden;
+  top: 0;
+  right: 0;
+  left: 0;
+  padding: 15% 5%;
+  background-image: url("coolbg.png");
+}
+
+.nftTable {
+  text-align: center;
+}
+
+.row {
+  height: 100%;
+  width: 100%;
+}
+
+.nftGallery {
+  width: 33.33%;
+  padding: 2.5% 0%;
+}
+/* ################################################################################################################################# */
+/* ################################################################################################################################# */
+/* ##############################################     small screen      ############################################################ */
+/* ################################################################################################################################# */
+/* ################################################################################################################################# */
+
+@media screen and (max-width: 800px) {
+  .header {
+    display: block;
+    position: relative;
+    padding: 5% 10%;
+    text-align: center;
+    border-radius: 0;
+  }
+  .headerWords {
+    text-align: center;
+    width: fit-content;
+    margin: auto;
+  }
+  .headerTitle {
+    width: auto;
+    margin: auto;
+  }
+  .headerMintButton {
+    text-align: center;
+    width: fit-content;
+    margin: auto;
+  }
+  .header a {
+    float: none;
+    display: block;
+  }
+  .header-right {
+    width: auto;
+    float: none;
+    padding: 1%;
+    margin: auto;
+    display: flex;
+  }
+  .footer {
+    display: block;
+    text-align: center;
+  }
+  .dropdown {
+    float: none;
+    padding: 2%;
+    overflow: hidden;
+    text-align: center;
+    width: fit-content;
+    margin: auto;
+  }
+  .dropdown-content {
+    position: absolute;
+    width: 50%;
+    margin: auto;
+    left: 10%;
+    right: 10%;
+  }
+  .logo {
+    margin: auto;
+  }
+  .header-social {
+    float: none;
+    padding: 0%;
+    margin: auto;
+  }
+  .headerSocialLogos {
+    display: flex;
+    margin: auto;
+  }
+
+  .body4 .whitepaperHeader {
+    font-size: 20px;
+  }
+  .countdown {
+    font-size: 30px;
+  }
+  .mintButton {
+    font-size: 20px;
+  }
+  .objectivesContainer {
+    display: block;
+  }
+  .projectObjectives {
+    width: 55%;
+  }
+  .fundsContainer {
+    display: block;
+  }
+  .projectFunds {
+    width: 75%;
+  }
+  .whitepaperWords .bodySubtitle,
+  .whitepaperHeader,
+  .whitepaperWords .bodyText {
+    text-align: center;
+  }
+
+  .itemRarity {
+    display: block;
+  }
+  .itemRareContainer {
+    width: 80%;
+  }
+  .body2 .inlineWordPic,
+  .body4 .inlineWordPic,
+  .body5 .inlineWordPic {
+    display: block;
+  }
+  .inlineWordPic .bodyText {
+    width: 100%;
+  }
+  .unfix {
+    top: 0px;
+  }
+  .body4 .phases {
+    width: 80%;
+  }
+  .roadmap .whitepaperHeader {
+    font-size: 200%;
+  }
+  .bodyRoadmap {
+    display: block;
+  }
+  .roadmap {
+    width: 80%;
+  }
+  .containter {
+    padding: 0 3%;
+  }
+  .footerSection {
+    width: 70%;
+  }
+}
