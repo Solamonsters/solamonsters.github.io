@@ -232,6 +232,11 @@ body {
   margin: auto;
 }
 
+.mySlides img {
+  width: 100%;
+  border-radius: 20px;
+}
+
 .slideshowButtons {
   text-align: center;
   width: 100%;
@@ -849,6 +854,18 @@ rareTableItem {
 }
 
 /* toggle button click to show table */
+.species {
+  display: none;
+}
+.speciesOn {
+  display: contents;
+}
+.dividends {
+  display: none;
+}
+.dividendsOn {
+  display: contents;
+}
 .background {
   display: none;
 }
