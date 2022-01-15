@@ -452,6 +452,9 @@ body {
 .body4 .whitepaperHeader {
   text-align: center;
 }
+.objectivesContainer .projectObjectives p {
+  font-size: calc(10px + 0.5vw);
+}
 
 .body4 .phases {
   width: 30%;
@@ -785,6 +788,35 @@ body {
   text-align: left;
 }
 
+/* open close rarity attribute buttons */
+.openCloseContainer {
+  width: 40%;
+  margin: auto;
+  pointer-events: all;
+}
+.openButton {
+  width: 40%;
+  text-align: center;
+  margin: auto;
+  padding: 1%;
+  border-radius: 5px;
+}
+.openButton:hover {
+  font-size: calc(7px + 0.75vw);
+  background-color: rgb(27, 27, 27);
+}
+.closeButton {
+  width: 40%;
+  text-align: center;
+  margin: auto;
+  padding: 1%;
+  border-radius: 5px;
+}
+.closeButton:hover {
+  font-size: calc(5px + 0.75vw);
+  background-color: rgb(27, 27, 27);
+}
+
 /* ################################# list of all items and rarity ################################################ */
 .itemRarity {
   display: flex;
@@ -795,7 +827,7 @@ body {
   text-align: center;
   color: black;
   padding: 1%;
-  width: 25%;
+  width: 30%;
   margin: auto;
   border-radius: 10px;
   background: linear-gradient(
@@ -829,11 +861,11 @@ rareTableRow {
 rareTableRow:hover,
 rareTableRow:hover rareTableItem {
   font-weight: 1000;
-  background-color: #85ec96;
+  background-color: #20eaac;
 }
 rareTableTitle {
   text-align: center;
-  font-size: calc(15px+0.75vw);
+  font-size: calc(5px + 0.75vw);
   font-weight: 900;
   color: black;
   padding: 1%;
@@ -850,7 +882,7 @@ rareTableItem {
   margin: auto;
   border-radius: 0px;
   background: white;
-  font-size: calc(10px+0.75vw);
+  font-size: calc(5px + 0.5vw);
 }
 
 /* toggle button click to show table */
@@ -1252,7 +1284,7 @@ table tr td {
   color: white;
 }
 .formatLink:hover {
-  color: rgb(211, 53, 211);
+  color: rgb(50, 31, 223);
 }
 
 /* ################################################################################################################################# */
@@ -1270,11 +1302,11 @@ table tr td {
   font-size: 50px;
   border-radius: 5px;
   cursor: pointer;
-  background-color: #3366ff;
+  border: 2px solid rgb(50, 31, 223);
 }
 
 .mintButton:hover {
-  background-color: #0a0066;
+  background-color: rgba(50, 32, 211, 0.75);
 }
 
 .countdownContainer {
@@ -1342,7 +1374,7 @@ table tr td {
   .header {
     display: block;
     position: relative;
-    padding: 5% 10%;
+    padding: 5% 1%;
     text-align: center;
     border-radius: 0;
   }
@@ -1367,7 +1399,6 @@ table tr td {
   .header-right {
     width: auto;
     float: none;
-    padding: 1%;
     margin: auto;
     display: flex;
   }
@@ -1465,5 +1496,8 @@ table tr td {
   }
   .phasesContainer {
     display: block;
+  }
+  .openCloseContainer {
+    width: 80%;
   }
 }

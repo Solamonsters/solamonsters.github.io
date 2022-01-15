@@ -1,19 +1,17 @@
 $(document).ready(function () {
     $("#table").DataTable({
         columns: [
-            { title: "NFT" },
-            { title: "Gen" },
+            { title: "Name" },
             { title: "Background" },
             { title: "Skin" },
             { title: "Headwear" },
             { title: "Eyes" },
             { title: "Mouth" },
-            { title: "clothes" },
+            { title: "Clothes" },
             { title: "Chain" },
             { title: "Piercings" },
-            { title: "Accesories" },
             { title: "Threat Level" },
-            { title: "Rarity Score" },
+            { title: "Rank" },
             { title: "View Token" },
         ],
         data: [

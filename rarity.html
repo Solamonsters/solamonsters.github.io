@@ -21,8 +21,89 @@
       <!-- -------------rarity item charts------------- -->
       <div class="rarebody1">
         <div class="rareContainer">
-          <p class="bodyTitle">Item Rarities</p>
-           
+          <p class="bodyTitle">Attribute Rarities</p>
+          <!------------------------------------------------------------------ buttons  -->
+            <div class="openCloseContainer">
+              <div style="display: flex; text-align: center;">
+                <div class="openButton" onclick="openAll()">Show All</div>
+                <div class="closeButton" onclick="closeAll()">Close All</div>
+                <script>
+                function openAll() {
+                  document
+                      .getElementById("speciesAttribute")
+                      .classList.add("speciesOn");
+                  document
+                      .getElementById("backgroundAttribute")
+                      .classList.add("backgroundOn");
+                  document
+                      .getElementById("skinAttribute")
+                      .classList.add("skinOn");
+                  document
+                      .getElementById("headwearAttribute")
+                      .classList.add("headwearOn");
+                  document
+                      .getElementById("eyesAttribute")
+                      .classList.add("eyesOn");
+                  document
+                      .getElementById("mouthAttribute")
+                      .classList.add("mouthOn");
+                  document
+                      .getElementById("clothesAttribute")
+                      .classList.add("clothesOn");
+                  document
+                      .getElementById("chainAttribute")
+                      .classList.add("chainOn");
+                  document
+                      .getElementById("piercingsAttribute")
+                      .classList.add("piercingsOn");
+                  document
+                      .getElementById("threatLevelAttribute")
+                      .classList.add("threatLevelOn");
+                  document
+                      .getElementById("dividendsAttribute")
+                      .classList.add("dividendsOn");
+                  
+                  }
+                function closeAll() {
+                  document
+                      .getElementById("speciesAttribute")
+                      .classList.remove("speciesOn");
+                  document
+                      .getElementById("backgroundAttribute")
+                      .classList.remove("backgroundOn");
+                  document
+                      .getElementById("skinAttribute")
+                      .classList.remove("skinOn");
+                  document
+                      .getElementById("headwearAttribute")
+                      .classList.remove("headwearOn");
+                  document
+                      .getElementById("eyesAttribute")
+                      .classList.remove("eyesOn");
+                  document
+                      .getElementById("mouthAttribute")
+                      .classList.remove("mouthOn");
+                  document
+                      .getElementById("clothesAttribute")
+                      .classList.remove("clothesOn");
+                  document
+                      .getElementById("chainAttribute")
+                      .classList.remove("chainOn");
+                  document
+                      .getElementById("piercingsAttribute")
+                      .classList.remove("piercingsOn");
+                  document
+                      .getElementById("threatLevelAttribute")
+                      .classList.remove("threatLevelOn");
+                  document
+                      .getElementById("dividendsAttribute")
+                      .classList.remove("dividendsOn");
+                  
+                  }
+              </script>
+              </div>
+            </div>
+           <br>
           <!--xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx first row of tables -->
           <div class="itemRarity">
             <!------------------------------------------------------------------ species  -->
@@ -367,6 +448,137 @@
                   <rareTableTitle>#/8,888</rareTableTitle>
                   <rareTableTitle>Rarity</rareTableTitle>
                 </rareTableRow>
+                <rareTableRow>
+                <rareTableItem> 
+                Solamonster Crown
+                </rareTableItem>
+                <rareTableItem>
+                12
+                </rareTableItem>
+                <rareTableItem>
+                0.5%
+                </rareTableItem>
+                </rareTableRow>
+
+                <rareTableRow>
+                <rareTableItem>
+                Diamond Crown
+                </rareTableItem>
+                <rareTableItem>
+                48
+                </rareTableItem>
+                <rareTableItem>
+                2.2%
+                </rareTableItem>
+                </rareTableRow>
+
+                <rareTableRow>
+                <rareTableItem>
+                Gold Crown
+                </rareTableItem>
+                <rareTableItem>
+                65
+                </rareTableItem>
+                <rareTableItem>
+                2.9%
+                </rareTableItem>
+                </rareTableRow>
+
+                <rareTableRow>
+                <rareTableItem>
+                Silver Crown
+                </rareTableItem>
+                <rareTableItem>
+                82
+                </rareTableItem>
+                <rareTableItem>
+                3.7%
+                </rareTableItem>
+                </rareTableRow>
+
+                <rareTableRow>
+                <rareTableItem>
+                Gold Halo
+                </rareTableItem>
+                <rareTableItem>
+                134
+                </rareTableItem>
+                <rareTableItem>
+                6.0%
+                </rareTableItem>
+                </rareTableRow>
+
+                <rareTableRow>
+                <rareTableItem>
+                Blue Halo
+                </rareTableItem>
+                <rareTableItem>
+                141
+                </rareTableItem>
+                <rareTableItem>
+                6.3%
+                </rareTableItem>
+                </rareTableRow>
+
+                <rareTableRow>
+                <rareTableItem>
+                Purple Halo
+                </rareTableItem>
+                <rareTableItem>
+                152
+                </rareTableItem>
+                <rareTableItem>
+                6.8%
+                </rareTableItem>
+                </rareTableRow>
+
+                <rareTableRow>
+                <rareTableItem>
+                Green Halo
+                </rareTableItem>
+                <rareTableItem>
+                159
+                </rareTableItem>
+                <rareTableItem>
+                7.2%
+                </rareTableItem>
+                </rareTableRow>
+
+                <rareTableRow>
+                <rareTableItem>
+                Tiny Ball Cap
+                </rareTableItem>
+                <rareTableItem>
+                199
+                </rareTableItem>
+                <rareTableItem>
+                9.0%
+                </rareTableItem>
+                </rareTableRow>
+
+                <rareTableRow>
+                <rareTableItem>
+                Sweatband
+                </rareTableItem>
+                <rareTableItem>
+                206
+                </rareTableItem>
+                <rareTableItem>
+                9.3%
+                </rareTableItem>
+                </rareTableRow>
+
+                <rareTableRow>
+                <rareTableItem>
+                None
+                </rareTableItem>
+                <rareTableItem>
+                1024
+                </rareTableItem>
+                <rareTableItem>
+                46.1%
+                </rareTableItem>
+                </rareTableRow>
               </div>
             </div>
             <!------------------------------------------------------------------ eyes  -->
@@ -395,6 +607,89 @@
                   <rareTableTitle>#/8,888</rareTableTitle>
                   <rareTableTitle>Rarity</rareTableTitle>
                 </rareTableRow>
+                <rareTableRow>
+                <rareTableItem>
+                Laser Beam
+                </rareTableItem>
+                <rareTableItem>
+                20
+                </rareTableItem>
+                <rareTableItem>
+                0.9%
+                </rareTableItem>
+                </rareTableRow>
+
+                <rareTableRow>
+                <rareTableItem>
+                Diamond
+                </rareTableItem>
+                <rareTableItem>
+                138
+                </rareTableItem>
+                <rareTableItem>
+                6.2%
+                </rareTableItem>
+                </rareTableRow>
+
+                <rareTableRow>
+                <rareTableItem>
+                Money
+                </rareTableItem>
+                <rareTableItem>
+                231
+                </rareTableItem>
+                <rareTableItem>
+                10.4%
+                </rareTableItem>
+                </rareTableRow>
+
+                <rareTableRow>
+                <rareTableItem>
+                Hypnotized
+                </rareTableItem>
+                <rareTableItem>
+                382
+                </rareTableItem>
+                <rareTableItem>
+                17.2%
+                </rareTableItem>
+                </rareTableRow>
+
+                <rareTableRow>
+                <rareTableItem>
+                3D Glasses
+                </rareTableItem>
+                <rareTableItem>
+                422
+                </rareTableItem>
+                <rareTableItem>
+                19.0%
+                </rareTableItem>
+                </rareTableRow>
+
+                <rareTableRow>
+                <rareTableItem>
+                Sunglasses
+                </rareTableItem>
+                <rareTableItem>
+                447
+                </rareTableItem>
+                <rareTableItem>
+                20.1%
+                </rareTableItem>
+                </rareTableRow>
+
+                <rareTableRow>
+                <rareTableItem>
+                None
+                </rareTableItem>
+                <rareTableItem>
+                582
+                </rareTableItem>
+                <rareTableItem>
+                26.2%
+                </rareTableItem>
+                </rareTableRow>
               </div>
             </div>
             <!------------------------------------------------------------------ mouth  -->
@@ -422,6 +717,113 @@
                   <rareTableTitle>Item</rareTableTitle>
                   <rareTableTitle>#/8,888</rareTableTitle>
                   <rareTableTitle>Rarity</rareTableTitle>
+                </rareTableRow>
+                <rareTableRow>
+                <rareTableItem>
+                Diamond Grill
+                </rareTableItem>
+                <rareTableItem>
+                16
+                </rareTableItem>
+                <rareTableItem>
+                0.7%
+                </rareTableItem>
+                </rareTableRow>
+
+                <rareTableRow>
+                <rareTableItem>
+                Gold Brick
+                </rareTableItem>
+                <rareTableItem>
+                33
+                </rareTableItem>
+                <rareTableItem>
+                1.5%
+                </rareTableItem>
+                </rareTableRow>
+
+                <rareTableRow>
+                <rareTableItem>
+                Money Stack
+                </rareTableItem>
+                <rareTableItem>
+                71
+                </rareTableItem>
+                <rareTableItem>
+                3.2%
+                </rareTableItem>
+                </rareTableRow>
+
+                <rareTableRow>
+                <rareTableItem>
+                Gold Grill
+                </rareTableItem>
+                <rareTableItem>
+                153
+                </rareTableItem>
+                <rareTableItem>
+                6.9%
+                </rareTableItem>
+                </rareTableRow>
+
+                <rareTableRow>
+                <rareTableItem>
+                Pipe
+                </rareTableItem>
+                <rareTableItem>
+                238
+                </rareTableItem>
+                <rareTableItem>
+                10.7%
+                </rareTableItem>
+                </rareTableRow>
+
+                <rareTableRow>
+                <rareTableItem>
+                Bubblegum
+                </rareTableItem>
+                <rareTableItem>
+                291
+                </rareTableItem>
+                <rareTableItem>
+                13.1%
+                </rareTableItem>
+                </rareTableRow>
+
+                <rareTableRow>
+                <rareTableItem>
+                Smoke
+                </rareTableItem>
+                <rareTableItem>
+                344
+                </rareTableItem>
+                <rareTableItem>
+                15.5%
+                </rareTableItem>
+                </rareTableRow>
+
+                <rareTableRow>
+                <rareTableItem>
+                Tongue
+                </rareTableItem>
+                <rareTableItem>
+                436
+                </rareTableItem>
+                <rareTableItem>
+                19.6%
+                </rareTableItem>
+                </rareTableRow>
+
+                <rareTableRow>
+                <rareTableItem>
+                None
+                </rareTableItem>
+                <rareTableItem>
+                640
+                </rareTableItem>
+                <rareTableItem>
+                28.8%
+                </rareTableItem>
                 </rareTableRow>
               </div>
             </div>       
@@ -454,6 +856,113 @@
                   <rareTableTitle>#/8,888</rareTableTitle>
                   <rareTableTitle>Rarity</rareTableTitle>
                 </rareTableRow>
+                <rareTableRow>
+                <rareTableItem>
+                Solamonster T-Shirt
+                </rareTableItem>
+                <rareTableItem>
+                35
+                </rareTableItem>
+                <rareTableItem>
+                1.6%
+                </rareTableItem>
+                </rareTableRow>
+
+                <rareTableRow>
+                <rareTableItem>
+                Jersey
+                </rareTableItem>
+                <rareTableItem>
+                147
+                </rareTableItem>
+                <rareTableItem>
+                6.6%
+                </rareTableItem>
+                </rareTableRow>
+
+                <rareTableRow>
+                <rareTableItem>
+                Tie-Dye T-Shirt
+                </rareTableItem>
+                <rareTableItem>
+                182
+                </rareTableItem>
+                <rareTableItem>
+                8.2%
+                </rareTableItem>
+                </rareTableRow>
+
+                <rareTableRow>
+                <rareTableItem>
+                Smiley T-Shirt
+                </rareTableItem>
+                <rareTableItem>
+                218
+                </rareTableItem>
+                <rareTableItem>
+                9.8%
+                </rareTableItem>
+                </rareTableRow>
+
+                <rareTableRow>
+                <rareTableItem>
+                Red Striped T-Shirt
+                </rareTableItem>
+                <rareTableItem>
+                278
+                </rareTableItem>
+                <rareTableItem>
+                12.5%
+                </rareTableItem>
+                </rareTableRow>
+
+                <rareTableRow>
+                <rareTableItem>
+                Navy Striped T-Shirt
+                </rareTableItem>
+                <rareTableItem>
+                302
+                </rareTableItem>
+                <rareTableItem>
+                13.6%
+                </rareTableItem>
+                </rareTableRow>
+
+                <rareTableRow>
+                <rareTableItem>
+                Orange T-Shirt
+                </rareTableItem>
+                <rareTableItem>
+                318
+                </rareTableItem>
+                <rareTableItem>
+                14.3%
+                </rareTableItem>
+                </rareTableRow>
+
+                <rareTableRow>
+                <rareTableItem>
+                White T-Shirt
+                </rareTableItem>
+                <rareTableItem>
+                351
+                </rareTableItem>
+                <rareTableItem>
+                15.8%
+                </rareTableItem>
+                </rareTableRow>
+
+                <rareTableRow>
+                <rareTableItem>
+                None
+                </rareTableItem>
+                <rareTableItem>
+                391
+                </rareTableItem>
+                <rareTableItem>
+                17.6%
+                </rareTableItem>
+                </rareTableRow>
               </div>
             </div>
             <!------------------------------------------------------------------ Chain  -->
@@ -481,6 +990,101 @@
                   <rareTableTitle>Item</rareTableTitle>
                   <rareTableTitle>#/8,888</rareTableTitle>
                   <rareTableTitle>Rarity</rareTableTitle>
+                </rareTableRow>
+                <rareTableRow>
+                <rareTableItem>
+                Solamonster Chain
+                </rareTableItem>
+                <rareTableItem>
+                9
+                </rareTableItem>
+                <rareTableItem>
+                0.4%
+                </rareTableItem>
+                </rareTableRow>
+
+                <rareTableRow>
+                <rareTableItem>
+                Two Diamond Chains
+                </rareTableItem>
+                <rareTableItem>
+                131
+                </rareTableItem>
+                <rareTableItem>
+                5.9%
+                </rareTableItem>
+                </rareTableRow>
+
+                <rareTableRow>
+                <rareTableItem>
+                Two Gold Chains
+                </rareTableItem>
+                <rareTableItem>
+                182
+                </rareTableItem>
+                <rareTableItem>
+                8.2%
+                </rareTableItem>
+                </rareTableRow>
+
+                <rareTableRow>
+                <rareTableItem>
+                Two Silver Chains
+                </rareTableItem>
+                <rareTableItem>
+                238
+                </rareTableItem>
+                <rareTableItem>
+                10.7%
+                </rareTableItem>
+                </rareTableRow>
+
+                <rareTableRow>
+                <rareTableItem>
+                Diamond Chain
+                </rareTableItem>
+                <rareTableItem>
+                360
+                </rareTableItem>
+                <rareTableItem>
+                16.2%
+                </rareTableItem>
+                </rareTableRow>
+
+                <rareTableRow>
+                <rareTableItem>
+                Gold Chain
+                </rareTableItem>
+                <rareTableItem>
+                409
+                </rareTableItem>
+                <rareTableItem>
+                18.4%
+                </rareTableItem>
+                </rareTableRow>
+
+                <rareTableRow>
+                <rareTableItem>
+                Silver Chain
+                </rareTableItem>
+                <rareTableItem>
+                442
+                </rareTableItem>
+                <rareTableItem>
+                19.9%
+                </rareTableItem>
+                </rareTableRow>
+
+                <rareTableRow>
+                <rareTableItem>
+                None
+                </rareTableItem>
+                <rareTableItem>
+                451
+                </rareTableItem>
+                <rareTableItem>
+                20.3%
+                </rareTableItem>
                 </rareTableRow>
               </div>
             </div>
@@ -511,6 +1115,101 @@
                   <rareTableTitle>Item</rareTableTitle>
                   <rareTableTitle>#/8,888</rareTableTitle>
                   <rareTableTitle>Rarity</rareTableTitle>
+                </rareTableRow>
+                <rareTableRow>
+                <rareTableItem>
+                Solamonster Set
+                </rareTableItem>
+                <rareTableItem>
+                76
+                </rareTableItem>
+                <rareTableItem>
+                3.4%
+                </rareTableItem>
+                </rareTableRow>
+
+                <rareTableRow>
+                <rareTableItem>
+                Diamond Set
+                </rareTableItem>
+                <rareTableItem>
+                151
+                </rareTableItem>
+                <rareTableItem>
+                6.8%
+                </rareTableItem>
+                </rareTableRow>
+
+                <rareTableRow>
+                <rareTableItem>
+                Gold Set
+                </rareTableItem>
+                <rareTableItem>
+                216
+                </rareTableItem>
+                <rareTableItem>
+                9.7%
+                </rareTableItem>
+                </rareTableRow>
+
+                <rareTableRow>
+                <rareTableItem>
+                Silver Set
+                </rareTableItem>
+                <rareTableItem>
+                262
+                </rareTableItem>
+                <rareTableItem>
+                11.8%
+                </rareTableItem>
+                </rareTableRow>
+
+                <rareTableRow>
+                <rareTableItem>
+                Diamond Earring
+                </rareTableItem>
+                <rareTableItem>
+                342
+                </rareTableItem>
+                <rareTableItem>
+                15.4%
+                </rareTableItem>
+                </rareTableRow>
+
+                <rareTableRow>
+                <rareTableItem>
+                Gold Earring
+                </rareTableItem>
+                <rareTableItem>
+                384
+                </rareTableItem>
+                <rareTableItem>
+                17.3%
+                </rareTableItem>
+                </rareTableRow>
+
+                <rareTableRow>
+                <rareTableItem>
+                Silver Earring
+                </rareTableItem>
+                <rareTableItem>
+                393
+                </rareTableItem>
+                <rareTableItem>
+                17.7%
+                </rareTableItem>
+                </rareTableRow>
+
+                <rareTableRow>
+                <rareTableItem>
+                None
+                </rareTableItem>
+                <rareTableItem>
+                398
+                </rareTableItem>
+                <rareTableItem>
+                17.9%
+                </rareTableItem>
                 </rareTableRow>
               </div>
             </div>
@@ -545,12 +1244,59 @@
                   <rareTableTitle>#/8,888</rareTableTitle>
                   <rareTableTitle>Rarity</rareTableTitle>
                 </rareTableRow>
+                <rareTableRow>
+                <rareTableItem>
+                Extreme
+                </rareTableItem>
+                <rareTableItem>
+                55
+                </rareTableItem>
+                <rareTableItem>
+                2.5%
+                </rareTableItem>
+                </rareTableRow>
+
+                <rareTableRow>
+                <rareTableItem>
+                High
+                </rareTableItem>
+                <rareTableItem>
+                168
+                </rareTableItem>
+                <rareTableItem>
+                7.6%
+                </rareTableItem>
+                </rareTableRow>
+
+                <rareTableRow>
+                <rareTableItem>
+                Moderate
+                </rareTableItem>
+                <rareTableItem>
+                888
+                </rareTableItem>
+                <rareTableItem>
+                40.0%
+                </rareTableItem>
+                </rareTableRow>
+
+                <rareTableRow>
+                <rareTableItem>
+                Minimal
+                </rareTableItem>
+                <rareTableItem>
+                1111
+                </rareTableItem>
+                <rareTableItem>
+                50.0%
+                </rareTableItem>
+                </rareTableRow>
               </div>
-            </div>
+            </div>            
             <!------------------------------------------------------------------ dividend shares  -->
             <div class="itemRareContainer">
               <div class="itemRareTitle" onclick="openDividends()">
-                Dividend Shares
+                Dividends
               </div>
               <script>
                 function openDividends() {
@@ -574,6 +1320,53 @@
                   <rareTableTitle>Item</rareTableTitle>
                   <rareTableTitle>#/8,888</rareTableTitle>
                   <rareTableTitle>Rarity</rareTableTitle>
+                </rareTableRow>
+                <rareTableRow>
+                <rareTableItem>
+                2 shares
+                </rareTableItem>
+                <rareTableItem>
+                55
+                </rareTableItem>
+                <rareTableItem>
+                2.5%
+                </rareTableItem>
+                </rareTableRow>
+
+                <rareTableRow>
+                <rareTableItem>
+                1.5 shares
+                </rareTableItem>
+                <rareTableItem>
+                168
+                </rareTableItem>
+                <rareTableItem>
+                7.6%
+                </rareTableItem>
+                </rareTableRow>
+
+                <rareTableRow>
+                <rareTableItem>
+                1.1 shares
+                </rareTableItem>
+                <rareTableItem>
+                888
+                </rareTableItem>
+                <rareTableItem>
+                40.0%
+                </rareTableItem>
+                </rareTableRow>
+
+                <rareTableRow>
+                <rareTableItem>
+                1 share
+                </rareTableItem>
+                <rareTableItem>
+                1111
+                </rareTableItem>
+                <rareTableItem>
+                50.0%
+                </rareTableItem>
                 </rareTableRow>
               </div>
             </div>
