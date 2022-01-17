@@ -48,7 +48,7 @@
             c = a.sZeroRecords;
         !a.sEmptyTable &&
             c &&
-            "Rankings will go live after mint" === b.sEmptyTable &&
+            "Rankings will go live post mint" === b.sEmptyTable &&
             F(a, a, "sZeroRecords", "sEmptyTable");
         !a.sLoadingRecords &&
             c &&
@@ -4355,7 +4355,7 @@
                 sNext: "Next",
                 sPrevious: "Previous",
             },
-            sEmptyTable: "Rankings will go live after mint",
+            sEmptyTable: "Rankings will go live post mint",
             sInfo: "Displaying _END_ out of 10 000 NFTs",
             sInfoEmpty: "Showing 0 of 0 NFTs",
             sInfoFiltered: "(filtered from _MAX_ total NFTs)",

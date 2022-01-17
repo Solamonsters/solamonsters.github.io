@@ -12,7 +12,7 @@ var variable = '' +
     '    <br />' +
     '    <div class="headerSocialLogos">' +
     '      <a' +
-    '        href="https://www.twitter.com/SolamonstersSoc"' +
+    '        href="https://www.twitter.com/SolamonstersNFT"' +
     '        target="_blank"' +
     '        class="logo"' +
     '        ><img' +
@@ -83,7 +83,7 @@ document.write(variable);
         <br />
         <div class="headerSocialLogos">
             <a
-                href="https://www.twitter.com/SolamonstersSoc"
+                href="https://www.twitter.com/SolamonstersNFT"
                 target="_blank"
                 class="logo"
             ><img

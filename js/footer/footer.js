@@ -18,7 +18,7 @@ var variable = '' +
   '    >' +
   '    <div>' +
   '    <a' +
-  '      href="https://www.twitter.com/SolamonstersSoc"' +
+  '      href="https://www.twitter.com/SolamonstersNFT"' +
   '      target="_blank"' +
   '      class="footerSocial"' +
   '      ><img src="assets/twitter-logo.png" width="30px" height="22px"' +
@@ -81,7 +81,7 @@ document.write(variable);
 //       >Back to top</a
 //     >
 //     <a
-//       href="https://www.twitter.com/SolamonstersSoc"
+//       href="https://www.twitter.com/SolamonstersNFT"
 //       target="_blank"
 //       class="footerSocial"
 //       ><img src="assets/twitter-logo.png" width="30px" height="22px"

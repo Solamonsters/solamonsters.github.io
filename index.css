@@ -13,6 +13,7 @@ body {
 /* ##############################################     HEADER      ################################################################## */
 /* ################################################################################################################################# */
 /* ################################################################################################################################# */
+
 .header {
   text-align: center;
   z-index: 5;
@@ -23,6 +24,17 @@ body {
   padding: 0% 2% 1% 2%;
   background-color: rgb(0, 0, 0);
 }
+
+/* .header {
+  text-align: center;
+  z-index: 5;
+  margin: 0;
+  overflow: visible;
+  display: flex;
+  position: fixed;
+  padding: 0% 2% 1% 2%;
+  background-color: rgb(0, 0, 0);
+} */
 
 .unfix {
   top: -500px;
@@ -505,8 +517,13 @@ body {
 }
 .container .bodyText {
   font-size: calc(10px + 0.5vw);
-  margin: 15px;
+  margin: 0;
 }
+.container .roadmapSmall {
+  font-size: calc(5px + 0.5vw);
+  margin: 0;
+}
+
 .timeline {
   position: relative;
   margin: 0 auto;
@@ -574,19 +591,22 @@ body {
   padding: 0px;
   background-color: rgb(255, 255, 255);
   position: relative;
+  text-align: center;
 }
 .contentLeft {
-  border-radius: 40px 0px;
+  border-radius: 40px 0 40px 0;
 }
 .contentRight {
-  border-radius: 0px 40px;
+  border-radius: 0 40px 0 40px;
 }
 
 .content .bodyText {
   font-weight: 800;
   color: black;
   text-align: center;
-  padding: 2%;
+  padding: 0.5% 0;
+  width: 75%;
+  margin: auto;
 }
 
 /* _________________________________________________________homepage team */
@@ -752,14 +772,6 @@ body {
   border-radius: 50%;
 }
 
-@media screen and (max-width: 1000px) {
-  .tableOfContents {
-    display: block;
-  }
-  .tableOfContents .bodyText {
-    font-size: calc(12px + 0.5vw);
-  }
-}
 /* ################################################################################################################################# */
 /* ################################################################################################################################# */
 /* ##############################################     RARITY PAGE    ############################################################### */
@@ -1370,6 +1382,21 @@ table tr td {
 /* ################################################################################################################################# */
 /* ################################################################################################################################# */
 
+@media screen and (max-width: 1000px) {
+  .tableOfContents {
+    display: block;
+  }
+  .tableOfContents .bodyText {
+    font-size: calc(12px + 0.5vw);
+  }
+  .content .bodyText {
+    padding: 1% 0;
+  }
+  .timeline {
+    width: 90%;
+  }
+}
+
 @media screen and (max-width: 800px) {
   .header {
     display: block;
@@ -1499,5 +1526,11 @@ table tr td {
   }
   .openCloseContainer {
     width: 80%;
+  }
+  .contentLeft {
+    border-radius: 10px 0 25px 0;
+  }
+  .contentRight {
+    border-radius: 0 10px 0 25px;
   }
 }
