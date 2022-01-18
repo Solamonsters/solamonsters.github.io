@@ -21,7 +21,7 @@ var variable = '' +
     '          height="auto"' +
     '          style="min-width: 25px"' +
     '      /></a>' +
-    '      <a href="https://discord.gg/6ADhm438NM" target="_blank" class="logo"' +
+    '      <a href="https://discord.gg" target="_blank" class="logo"' +
     '        ><img' +
     '          src="assets/discord-logo.png"' +
     '          width="20%"' +
@@ -92,7 +92,7 @@ document.write(variable);
                     height="auto"
                     style="min-width: 25px"
                 /></a>
-            <a href="https://discord.gg/6ADhm438NM" target="_blank" class="logo"
+            <a href="https://discord.gg" target="_blank" class="logo"
             ><img
                     src="assets/discord-logo.png"
                     width="20%"
