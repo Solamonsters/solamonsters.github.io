@@ -986,6 +986,35 @@ rareTableItem {
   right: 30%;
   text-align: center;
 }
+
+.linkME {
+  text-decoration: underline;
+  font-size: calc(10px + 0.25vw);
+  color: white;
+  display: inline;
+  margin: auto;
+}
+.rarityRankPic {
+  text-decoration: none;
+  font-size: calc(10px + 0.25vw);
+  color: white;
+  display: inline;
+  margin: auto;
+}
+.rarityRankPic img {
+  display: flex;
+  width: 20%;
+  margin: auto;
+}
+.rarityRankPic:hover {
+  display: block;
+}
+.rarityRankPic:hover img {
+  display: flex;
+  width: 100%;
+  margin: auto;
+}
+
 table.dataTable {
   width: 100%;
   margin: 0 auto;
@@ -1021,7 +1050,7 @@ table.dataTable tbody td {
 }
 
 #table_wrapper {
-  margin: 20px 40px;
+  margin: 10px 5%;
 }
 
 table tr th,
@@ -1033,11 +1062,36 @@ table tr td {
 
 #table_wrapper .dataTables_length,
 #table_wrapper .dataTables_filter {
-  margin-bottom: 30px;
+  margin-bottom: 10px;
   font-size: 10px;
   text-transform: uppercase;
-  float: right;
-  margin-left: 20px;
+  display: flex;
+  width: fit-content;
+  margin-left: auto;
+}
+
+.ellipsis {
+  display: none;
+}
+/* ------------------------------------------------------------------------------------buttons */
+
+.dt-buttons {
+  display: block;
+}
+
+.dt-button {
+  color: #000000;
+  background: rgb(255, 255, 255);
+  margin-left: 5px;
+  margin-right: 5px;
+  padding: 6px 12px;
+  cursor: pointer;
+  text-decoration: none;
+  border: 0 none;
+  border-radius: 2px;
+  font-size: 11px;
+  line-height: 1.3;
+  text-transform: uppercase;
 }
 
 /* ------------------------------------------------------------------------------------search and box container */
@@ -1045,8 +1099,7 @@ table tr td {
 #table_wrapper .dataTables_filter label {
   color: #ffffff !important;
   font-size: 150%;
-  border-radius: 20px;
-  padding: 20px;
+  width: 100%;
 }
 
 /* IMPORTANT */
@@ -1070,7 +1123,7 @@ table tr td {
 #table_wrapper table {
   font-size: 12px;
   border-radius: 40px;
-  background: grey;
+  background: rgb(32, 31, 31);
   border-collapse: collapse;
   text-align: center;
   width: 100%;
@@ -1125,11 +1178,16 @@ table tr td {
   font-weight: 100;
   text-align: center;
   background-color: black;
+  border-top: 1px solid rgb(32, 31, 31);
 }
 
 #table_wrapper table tbody tr:hover td {
   color: black;
   background-color: rgb(131, 240, 176);
+}
+#table_wrapper table tbody tr:hover .linkME,
+#table_wrapper table tbody tr:hover .rarityRankPic {
+  color: black;
 }
 
 /* ################################################################################################################################# */
@@ -1394,6 +1452,11 @@ table tr td {
   }
   .timeline {
     width: 90%;
+  }
+  #table_wrapper .dataTables_length,
+  #table_wrapper .dataTables_filter {
+    margin-top: 10px;
+    width: 100%;
   }
 }
 
