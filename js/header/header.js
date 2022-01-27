@@ -9,7 +9,6 @@ var variable = '' +
     '    <a href="/" class="logo">' +
     '      <img src="assets/solamonsters-logo.png" width="100%" height="auto" />' +
     '    </a>' +
-    '    <br />' +
     '    <div class="headerSocialLogos">' +
     '      <a' +
     '        href="https://www.twitter.com/SolamonstersNFT"' +
@@ -32,12 +31,8 @@ var variable = '' +
     '  </div>' +
     '  <!-------------------------------------------------------- right -->' +
     '  <div class="header-right">' +
-    '    <a href="rarity" class="headerWords">Rarity</a>' +
-    '    <a href="/#/roadmap" class="headerWords">Roadmap</a>' +
-    '    <a href="/#/faq" class="headerWords">FAQ</a>' +
-    '    <a href="whitepaper" class="headerWords">Whitepaper</a>' +
-    '    <a href="mint" class="headerMintButton">Mint</a>' +
-    '' +
+
+
     '    <!-- dropdown menu -->' +
     '    <div' +
     '      class="dropdown"' +
@@ -51,13 +46,14 @@ var variable = '' +
     '' +
     '      <!-- dropdown content -->' +
     '      <div class="dropdown-content">' +
-    '        <a href="generation" class="headerWords">Generations</a>' +
-    '        <a href="https://www.magiceden.io/" target="_blank" class="headerWords"' +
-    '          >Marketplace</a' +
-    '        >' +
-    '        <a href="collection" class="headerWords">NFT Gallery</a>' +
+    '        <a href="gallery" class="headerWords">NFT Gallery</a>' +
+    '        <a href="rarity" class="headerWords">Rarity</a>' +
     '      </div>' +
     '    </div>' +
+    '    <a href="/#/roadmap" class="headerWords">Roadmap</a>' +
+    '    <a href="/#/faq" class="headerWords">FAQ</a>' +
+    '    <a href="whitepaper" class="headerWords">Whitepaper</a>' +
+    '    <a href="mint" class="headerMintButton">Mint</a>' +
     '  </div>' +
     '</div>' +
     '' +
