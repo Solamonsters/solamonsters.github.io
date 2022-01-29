@@ -21,7 +21,7 @@ body {
   overflow: visible;
   display: flex;
   position: fixed;
-  padding: 0% 0% 1% 0%;
+  padding: 0% 0% 0.3% 0%;
   background-color: rgb(0, 0, 0);
   width: 100%;
 }
@@ -128,7 +128,7 @@ body {
   margin: auto;
   overflow: hidden;
   border-radius: 10px;
-  /* padding: 1vw; */
+  padding: 0.5vw;
   text-align: center;
 }
 
@@ -1176,6 +1176,12 @@ table tr td {
 #table_wrapper table tbody tr:hover .linkME,
 #table_wrapper table tbody tr:hover .rarityRankPic {
   color: black;
+}
+tfoot {
+  display: table-header-group;
+}
+input {
+  width: 80%;
 }
 
 /* ################################################################################################################################# */
