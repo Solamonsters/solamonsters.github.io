@@ -17,7 +17,7 @@ $(document).ready(function () {
                 { title: "Rank" },
                 { title: "Name" },
                 { title: "Background" },
-                { title: "Skin" },
+                { title: "Body" },
                 { title: "Headwear" },
                 { title: "Eyes" },
                 { title: "Mouth" },
