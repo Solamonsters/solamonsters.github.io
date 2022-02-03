@@ -1,0 +1,959 @@
+<!DOCTYPE html>
+<html>
+  <!-- ######################################################################### HTML HEAD ###################################################################-->
+  <head>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="index.css" />
+    <title>The Solamonsters Society</title>
+    <link rel="icon" href="assets/solamonsters-logo.png" />
+  </head>
+
+  <!-- ########################################################################### HTML BODY ################################################################ -->
+  <body>
+    <!-------------------------------------------------------------------------------------------------------------------------------->
+    <!--------------------------------------------- HEADER --------------------------------------------------------------------------->
+    <!-------------------------------------------------------------------------------------------------------------------------------->
+    <script src="js/header/header.js"></script>
+    <!-------------------------------------------------------------------------------------------------------------------------------->
+    <!--------------------------------------------- HEADER END  ---------------------------------------------------------------------->
+    <!-------------------------------------------------------------------------------------------------------------------------------->
+    <div class="rarityBackground">
+      <div class="bufferSmall"></div>
+      <div class="headerBuffer"></div>
+      <!-- -------------rarity item charts------------- -->
+      <div class="rarebody">
+        <div class="rareContainer">
+          <p class="bodyTitle">Attribute Rarities</p>
+          <!------------------------------------------------------------------ buttons  -->
+            <div class="openCloseContainer">
+              <div style="display: flex; text-align: center;">
+                <div class="openButton" onclick="openAll()">Show All</div>
+                <div class="closeButton" onclick="closeAll()">Close All</div>
+                <script>
+                function openAll() {
+                  document
+                      .getElementById("1Attribute")
+                      .classList.add("on1");
+                  document
+                      .getElementById("2Attribute")
+                      .classList.add("on2");
+                  document
+                      .getElementById("3Attribute")
+                      .classList.add("on3");
+                  document
+                      .getElementById("4Attribute")
+                      .classList.add("on4");
+                  document
+                      .getElementById("5Attribute")
+                      .classList.add("on5");
+                  document
+                      .getElementById("6Attribute")
+                      .classList.add("on6");
+                  document
+                      .getElementById("7Attribute")
+                      .classList.add("on7");
+                  document
+                      .getElementById("8Attribute")
+                      .classList.add("on8");
+                  document
+                      .getElementById("9Attribute")
+                      .classList.add("on9");
+                  document
+                      .getElementById("10Attribute")
+                      .classList.add("on10");
+                  document
+                      .getElementById("11Attribute")
+                      .classList.add("on11");         
+                  }
+                function closeAll() {
+                  document
+                      .getElementById("1Attribute")
+                      .classList.remove("on1");
+                  document
+                      .getElementById("2Attribute")
+                      .classList.remove("on2");
+                  document
+                      .getElementById("3Attribute")
+                      .classList.remove("on3");
+                  document
+                      .getElementById("4Attribute")
+                      .classList.remove("on4");
+                  document
+                      .getElementById("5Attribute")
+                      .classList.remove("on5");
+                  document
+                      .getElementById("6Attribute")
+                      .classList.remove("on6");
+                  document
+                      .getElementById("7Attribute")
+                      .classList.remove("on7");
+                  document
+                      .getElementById("8Attribute")
+                      .classList.remove("on8");
+                  document
+                      .getElementById("9Attribute")
+                      .classList.remove("on9");
+                  document
+                      .getElementById("10Attribute")
+                      .classList.remove("on10");
+                  document
+                      .getElementById("11Attribute")
+                      .classList.remove("on11"); 
+                  }
+              </script>
+              </div>
+            </div>
+           <br>
+          <!--xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx first row of tables -->
+          <div class="itemRarity">
+            <!------------------------------------------------------------------ species  -->
+            <div class="itemRareContainer">
+              <div class="itemRareTitle" onclick="open1()">Species</div>
+              <script>
+                function open1() {
+                  if (
+                    document
+                      .getElementById("1Attribute")
+                      .classList.contains("on1")
+                  ) {
+                    document
+                      .getElementById("1Attribute")
+                      .classList.remove("on1");
+                  } else {
+                    document
+                      .getElementById("1Attribute")
+                      .classList.add("on1");
+                  }
+                }
+              </script>
+              <div class="att1" id="1Attribute">
+                <rareTableRow>
+                  <rareTableTitle>Item</rareTableTitle>
+                  <rareTableTitle>#/8,888</rareTableTitle>
+                  <rareTableTitle>Rarity</rareTableTitle>
+                </rareTableRow>
+                <rareTableRow>
+                <rareTableItem>Ventus</rareTableItem> 
+                <rareTableItem>2222</rareTableItem>
+                <rareTableItem>25.0%</rareTableItem>
+                </rareTableRow>
+
+                <rareTableRow>
+                <rareTableItem>Ignis</rareTableItem>
+                <rareTableItem>2222</rareTableItem>
+                <rareTableItem>25.0%</rareTableItem>
+                </rareTableRow>
+
+                <rareTableRow>
+                <rareTableItem>Terra</rareTableItem>
+                <rareTableItem>2222</rareTableItem>
+                <rareTableItem>25.0%</rareTableItem>
+                </rareTableRow>
+
+                <rareTableRow>
+                <rareTableItem>Aquae</rareTableItem>
+                <rareTableItem>2222</rareTableItem>
+                <rareTableItem>25.0%</rareTableItem>
+                </rareTableRow>
+              </div>
+            </div> 
+            <!------------------------------------------------------------------ background  -->
+            <div class="itemRareContainer">
+              <!-- title -->
+              <div class="itemRareTitle" onclick="open2()">
+                Background
+              </div>
+              <script>
+                function open2() {
+                  if (
+                    document
+                      .getElementById("2Attribute")
+                      .classList.contains("on2")
+                  ) {
+                    document
+                      .getElementById("2Attribute")
+                      .classList.remove("on2");
+                  } else {
+                    document
+                      .getElementById("2Attribute")
+                      .classList.add("on2");
+                  }
+                }
+              </script>
+              <!-- table -->
+              <div class="att2" id="2Attribute">
+                <rareTableRow>
+                  <rareTableTitle>Item</rareTableTitle>
+                  <rareTableTitle>#/8,888</rareTableTitle>
+                  <rareTableTitle>Rarity</rareTableTitle>
+                </rareTableRow>
+                <rareTableRow>
+                <rareTableItem>Gold Vortex</rareTableItem>
+                <rareTableItem>356</rareTableItem>
+                <rareTableItem>4.0%</rareTableItem>
+                </rareTableRow>
+
+                <rareTableRow>
+                <rareTableItem>Red Vortex</rareTableItem>
+                <rareTableItem>444</rareTableItem>
+                <rareTableItem>5.0%</rareTableItem>
+                </rareTableRow>
+
+                <rareTableRow>
+                <rareTableItem>Blue Vortex</rareTableItem>
+                <rareTableItem>532</rareTableItem>
+                <rareTableItem>6.0%</rareTableItem>
+                </rareTableRow>
+
+                <rareTableRow>
+                <rareTableItem>Purple Vortex</rareTableItem>
+                <rareTableItem>624</rareTableItem>
+                <rareTableItem>7.0%</rareTableItem>
+                </rareTableRow>
+
+                <rareTableRow>
+                <rareTableItem>Mint Vortex</rareTableItem>
+                <rareTableItem>712</rareTableItem>
+                <rareTableItem>8.0%</rareTableItem>
+                </rareTableRow>
+
+                <rareTableRow>
+                <rareTableItem>Gold</rareTableItem>
+                <rareTableItem>1068</rareTableItem>
+                <rareTableItem>12.0%</rareTableItem>
+                </rareTableRow>
+
+                <rareTableRow>
+                <rareTableItem>Red</rareTableItem>
+                <rareTableItem>1156</rareTableItem>
+                <rareTableItem>13.0%</rareTableItem>
+                </rareTableRow>
+
+                <rareTableRow>
+                <rareTableItem>Blue</rareTableItem>
+                <rareTableItem>1244</rareTableItem>
+                <rareTableItem>14.0%</rareTableItem>
+                </rareTableRow>
+
+                <rareTableRow>
+                <rareTableItem>Purple</rareTableItem>
+                <rareTableItem>1332</rareTableItem>
+                <rareTableItem>15.0%</rareTableItem>
+                </rareTableRow>
+
+                <rareTableRow>
+                <rareTableItem>Mint</rareTableItem>
+                <rareTableItem>1420</rareTableItem>
+                <rareTableItem>16.0%</rareTableItem>
+                </rareTableRow>
+              </div>
+            </div>
+            <!------------------------------------------------------------------ body  -->
+            <div class="itemRareContainer">
+              <div class="itemRareTitle" onclick="open3()">Body</div>
+              <script>
+                function open3() {
+                  if (
+                    document
+                      .getElementById("3Attribute")
+                      .classList.contains("on3")
+                  ) {
+                    document
+                      .getElementById("3Attribute")
+                      .classList.remove("on3");
+                  } else {
+                    document
+                      .getElementById("3Attribute")
+                      .classList.add("on3");
+                  }
+                }
+              </script>
+              <div class="att3" id="3Attribute">
+                <rareTableRow>
+                  <rareTableTitle>Item</rareTableTitle>
+                  <rareTableTitle>#/8,888</rareTableTitle>
+                  <rareTableTitle>Rarity</rareTableTitle>
+                </rareTableRow>
+                <rareTableRow>
+                  <rareTableItem>Amethyst</rareTableItem>
+                  <rareTableItem>1512</rareTableItem>
+                  <rareTableItem>17.0%</rareTableItem>
+                  </rareTableRow>
+
+                  <rareTableRow>
+                  <rareTableItem>Emerald</rareTableItem>
+                  <rareTableItem>1644</rareTableItem>
+                  <rareTableItem>18.5%</rareTableItem>
+                  </rareTableRow>
+
+                  <rareTableRow>
+                  <rareTableItem>Amber</rareTableItem>
+                  <rareTableItem>1776</rareTableItem>
+                  <rareTableItem>20.0%</rareTableItem>
+                  </rareTableRow>
+
+                  <rareTableRow>
+                  <rareTableItem>Lapis</rareTableItem>
+                  <rareTableItem>1912</rareTableItem>
+                  <rareTableItem>21.5%</rareTableItem>
+                  </rareTableRow>
+
+                  <rareTableRow>
+                  <rareTableItem>Ruby</rareTableItem>
+                  <rareTableItem>2044</rareTableItem>
+                  <rareTableItem>23.0%</rareTableItem>
+                  </rareTableRow>
+              </div>
+            </div>           
+          </div>
+          <!--xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx second row of tables -->
+          <div class="itemRarity">
+            <!------------------------------------------------------------------ headwear  -->
+            <div class="itemRareContainer">
+              <div class="itemRareTitle" onclick="open4()">Headwear</div>
+              <script>
+                function open4() {
+                  if (
+                    document
+                      .getElementById("4Attribute")
+                      .classList.contains("on4")
+                  ) {
+                    document
+                      .getElementById("4Attribute")
+                      .classList.remove("on4");
+                  } else {
+                    document
+                      .getElementById("4Attribute")
+                      .classList.add("on4");
+                  }
+                }
+              </script>
+              <div class="att4" id="4Attribute">
+                <rareTableRow>
+                  <rareTableTitle>Item</rareTableTitle>
+                  <rareTableTitle>#/8,888</rareTableTitle>
+                  <rareTableTitle>Rarity</rareTableTitle>
+                </rareTableRow>
+                <rareTableRow>
+                <rareTableItem>Solamonster Crown</rareTableItem>
+                <rareTableItem>48</rareTableItem>
+                <rareTableItem>0.5%</rareTableItem>
+                </rareTableRow>
+
+                <rareTableRow>
+                <rareTableItem>Diamond Crown</rareTableItem>
+                <rareTableItem>192</rareTableItem>
+                <rareTableItem>2.2%</rareTableItem>
+                </rareTableRow>
+
+                <rareTableRow>
+                <rareTableItem>Gold Crown</rareTableItem>
+                <rareTableItem>260</rareTableItem>
+                <rareTableItem>2.9%</rareTableItem>
+                </rareTableRow>
+
+                <rareTableRow>
+                <rareTableItem>Silver Crown</rareTableItem>
+                <rareTableItem>328</rareTableItem>
+                <rareTableItem>3.7%</rareTableItem>
+                </rareTableRow>
+
+                <rareTableRow>
+                <rareTableItem>Gold Halo</rareTableItem>
+                <rareTableItem>536</rareTableItem>
+                <rareTableItem>6.0%</rareTableItem>
+                </rareTableRow>
+
+                <rareTableRow>
+                <rareTableItem>Purple Halo</rareTableItem>
+                <rareTableItem>564</rareTableItem>
+                <rareTableItem>6.3%</rareTableItem>
+                </rareTableRow>
+
+                <rareTableRow>
+                <rareTableItem>Top Hat</rareTableItem>
+                <rareTableItem>608</rareTableItem>
+                <rareTableItem>6.8%</rareTableItem>
+                </rareTableRow>
+
+                <rareTableRow>
+                <rareTableItem>Bucket Hat</rareTableItem>
+                <rareTableItem>636</rareTableItem>
+                <rareTableItem>7.2%</rareTableItem>
+                </rareTableRow>
+
+                <rareTableRow>
+                <rareTableItem>Ball Cap</rareTableItem>
+                <rareTableItem>796</rareTableItem>
+                <rareTableItem>9.0%</rareTableItem>
+                </rareTableRow>
+
+                <rareTableRow>
+                <rareTableItem>Sweatband</rareTableItem>
+                <rareTableItem>824</rareTableItem>
+                <rareTableItem>9.3%</rareTableItem>
+                </rareTableRow>
+
+                <rareTableRow>
+                <rareTableItem>None</rareTableItem>
+                <rareTableItem>4096</rareTableItem>
+                <rareTableItem>46.1%</rareTableItem>
+                </rareTableRow>
+              </div>
+            </div>
+            <!------------------------------------------------------------------ eyes  -->
+            <div class="itemRareContainer">
+              <div class="itemRareTitle" onclick="open5()">Eyes</div>
+              <script>
+                function open5() {
+                  if (
+                    document
+                      .getElementById("5Attribute")
+                      .classList.contains("on5")
+                  ) {
+                    document
+                      .getElementById("5Attribute")
+                      .classList.remove("on5");
+                  } else {
+                    document
+                      .getElementById("5Attribute")
+                      .classList.add("on5");
+                  }
+                }
+              </script>
+              <div class="att5" id="5Attribute">
+                <rareTableRow>
+                  <rareTableTitle>Item</rareTableTitle>
+                  <rareTableTitle>#/8,888</rareTableTitle>
+                  <rareTableTitle>Rarity</rareTableTitle>
+                </rareTableRow>
+                <rareTableRow>
+                <rareTableItem>Laser Beam</rareTableItem>
+                <rareTableItem>80</rareTableItem>
+                <rareTableItem>0.9%</rareTableItem>
+                </rareTableRow>
+
+                <rareTableRow>
+                <rareTableItem>Diamond</rareTableItem>
+                <rareTableItem>552</rareTableItem>
+                <rareTableItem>6.2%</rareTableItem>
+                </rareTableRow>
+
+                <rareTableRow>
+                <rareTableItem>Money</rareTableItem>
+                <rareTableItem>924</rareTableItem>
+                <rareTableItem>10.4%</rareTableItem>
+                </rareTableRow>
+
+                <rareTableRow>
+                <rareTableItem>Hypnotized</rareTableItem>
+                <rareTableItem>1528</rareTableItem>
+                <rareTableItem>17.2%</rareTableItem>
+                </rareTableRow>
+
+                <rareTableRow>
+                <rareTableItem>3D Glasses</rareTableItem>
+                <rareTableItem>1684</rareTableItem>
+                <rareTableItem>19.0%</rareTableItem>
+                </rareTableRow>
+
+                <rareTableRow>
+                <rareTableItem>Sunglasses</rareTableItem>
+                <rareTableItem>1792</rareTableItem>
+                <rareTableItem>20.1%</rareTableItem>
+                </rareTableRow>
+
+                <rareTableRow>
+                <rareTableItem>None</rareTableItem>
+                <rareTableItem>2328</rareTableItem>
+                <rareTableItem>26.2%</rareTableItem>
+                </rareTableRow>
+              </div>
+            </div>
+            <!------------------------------------------------------------------ mouth  -->
+            <div class="itemRareContainer">
+              <div class="itemRareTitle" onclick="open6()">Mouth</div>
+              <script>
+                function open6() {
+                  if (
+                    document
+                      .getElementById("6Attribute")
+                      .classList.contains("on6")
+                  ) {
+                    document
+                      .getElementById("6Attribute")
+                      .classList.remove("on6");
+                  } else {
+                    document
+                      .getElementById("6Attribute")
+                      .classList.add("on6");
+                  }
+                }
+              </script>
+              <div class="att6" id="6Attribute">
+                <rareTableRow>
+                  <rareTableTitle>Item</rareTableTitle>
+                  <rareTableTitle>#/8,888</rareTableTitle>
+                  <rareTableTitle>Rarity</rareTableTitle>
+                </rareTableRow>
+                <rareTableRow>
+                <rareTableItem>Diamond Grill</rareTableItem>
+                <rareTableItem>64</rareTableItem>
+                <rareTableItem>0.7%</rareTableItem>
+                </rareTableRow>
+
+                <rareTableRow>
+                <rareTableItem>Gold Brick</rareTableItem>
+                <rareTableItem>132</rareTableItem>
+                <rareTableItem>1.5%</rareTableItem>
+                </rareTableRow>
+
+                <rareTableRow>
+                <rareTableItem>Money Stack</rareTableItem>
+                <rareTableItem>284</rareTableItem>
+                <rareTableItem>3.2%</rareTableItem>
+                </rareTableRow>
+
+                <rareTableRow>
+                <rareTableItem>Gold Grill</rareTableItem>
+                <rareTableItem>612</rareTableItem>
+                <rareTableItem>6.9%</rareTableItem>
+                </rareTableRow>
+
+                <rareTableRow>
+                <rareTableItem>Pipe</rareTableItem>
+                <rareTableItem>952</rareTableItem>
+                <rareTableItem>10.7%</rareTableItem>
+                </rareTableRow>
+
+                <rareTableRow>
+                <rareTableItem>Bubblegum</rareTableItem>
+                <rareTableItem>1164</rareTableItem>
+                <rareTableItem>13.1%</rareTableItem>
+                </rareTableRow>
+
+                <rareTableRow>
+                <rareTableItem>Smoke</rareTableItem>
+                <rareTableItem>1376</rareTableItem>
+                <rareTableItem>15.5%</rareTableItem>
+                </rareTableRow>
+
+                <rareTableRow>
+                <rareTableItem>Tongue</rareTableItem>
+                <rareTableItem>1744</rareTableItem>
+                <rareTableItem>19.6%</rareTableItem>
+                </rareTableRow>
+
+                <rareTableRow>
+                <rareTableItem>None</rareTableItem>
+                <rareTableItem>2560</rareTableItem>
+                <rareTableItem>28.8%</rareTableItem>
+                </rareTableRow>
+              </div>
+            </div>       
+          </div>
+          <!--xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx third row of tables -->
+          <div class="itemRarity">
+            <!------------------------------------------------------------------ clothes  -->
+            <div class="itemRareContainer">
+              <div class="itemRareTitle" onclick="open7()">Clothes</div>
+              <script>
+                function open7() {
+                  if (
+                    document
+                      .getElementById("7Attribute")
+                      .classList.contains("on7")
+                  ) {
+                    document
+                      .getElementById("7Attribute")
+                      .classList.remove("on7");
+                  } else {
+                    document
+                      .getElementById("7Attribute")
+                      .classList.add("on7");
+                  }
+                }
+              </script>
+              <div class="att7" id="7Attribute">
+                <rareTableRow>
+                  <rareTableTitle>Item</rareTableTitle>
+                  <rareTableTitle>#/8,888</rareTableTitle>
+                  <rareTableTitle>Rarity</rareTableTitle>
+                </rareTableRow>
+                <rareTableRow>
+                <rareTableItem>Solamonster Tee</rareTableItem>
+                <rareTableItem>140</rareTableItem>
+                <rareTableItem>1.6%</rareTableItem>
+                </rareTableRow>
+
+                <rareTableRow>
+                <rareTableItem>Jersey</rareTableItem>
+                <rareTableItem>588</rareTableItem>
+                <rareTableItem>6.6%</rareTableItem>
+                </rareTableRow>
+
+                <rareTableRow>
+                <rareTableItem>Tie-Dye Tee</rareTableItem>
+                <rareTableItem>728</rareTableItem>
+                <rareTableItem>8.2%</rareTableItem>
+                </rareTableRow>
+
+                <rareTableRow>
+                <rareTableItem>Smiley Tee</rareTableItem>
+                <rareTableItem>872</rareTableItem>
+                <rareTableItem>9.8%</rareTableItem>
+                </rareTableRow>
+
+                <rareTableRow>
+                <rareTableItem>Money Tee</rareTableItem>
+                <rareTableItem>1112</rareTableItem>
+                <rareTableItem>12.5%</rareTableItem>
+                </rareTableRow>
+
+                <rareTableRow>
+                <rareTableItem>Red Striped Tee</rareTableItem>
+                <rareTableItem>1208</rareTableItem>
+                <rareTableItem>13.6%</rareTableItem>
+                </rareTableRow>
+
+                <rareTableRow>
+                <rareTableItem>Navy Striped Tee</rareTableItem>
+                <rareTableItem>1272</rareTableItem>
+                <rareTableItem>14.3%</rareTableItem>
+                </rareTableRow>
+
+                <rareTableRow>
+                <rareTableItem>Orange Tee</rareTableItem>
+                <rareTableItem>1404</rareTableItem>
+                <rareTableItem>15.8%</rareTableItem>
+                </rareTableRow>
+
+                <rareTableRow>
+                <rareTableItem>None</rareTableItem>
+                <rareTableItem>1564</rareTableItem>
+                <rareTableItem>17.6%</rareTableItem>
+                </rareTableRow>
+              </div>
+            </div>
+            <!------------------------------------------------------------------ Chain  -->
+            <div class="itemRareContainer">
+              <div class="itemRareTitle" onclick="open8()">Chain</div>
+              <script>
+                function open8() {
+                  if (
+                    document
+                      .getElementById("8Attribute")
+                      .classList.contains("on8")
+                  ) {
+                    document
+                      .getElementById("8Attribute")
+                      .classList.remove("on8");
+                  } else {
+                    document
+                      .getElementById("8Attribute")
+                      .classList.add("on8");
+                  }
+                }
+              </script>
+              <div class="att8" id="8Attribute">
+                <rareTableRow>
+                  <rareTableTitle>Item</rareTableTitle>
+                  <rareTableTitle>#/8,888</rareTableTitle>
+                  <rareTableTitle>Rarity</rareTableTitle>
+                </rareTableRow>
+                <rareTableRow>
+                <rareTableItem>Solamonster Chain</rareTableItem>
+                <rareTableItem>36</rareTableItem>
+                <rareTableItem>0.4%</rareTableItem>
+                </rareTableRow>
+
+                <rareTableRow>
+                <rareTableItem>Two Diamond Chains</rareTableItem>
+                <rareTableItem>524</rareTableItem>
+                <rareTableItem>5.9%</rareTableItem>
+                </rareTableRow>
+
+                <rareTableRow>
+                <rareTableItem>Two Gold Chains</rareTableItem>
+                <rareTableItem>728</rareTableItem>
+                <rareTableItem>8.2%</rareTableItem>
+                </rareTableRow>
+
+                <rareTableRow>
+                <rareTableItem>Two Silver Chains</rareTableItem>
+                <rareTableItem>952</rareTableItem>
+                <rareTableItem>10.7%</rareTableItem>
+                </rareTableRow>
+
+                <rareTableRow>
+                <rareTableItem>Diamond Chain</rareTableItem>
+                <rareTableItem>1440</rareTableItem>
+                <rareTableItem>16.2%</rareTableItem>
+                </rareTableRow>
+
+                <rareTableRow>
+                <rareTableItem>Gold Chain</rareTableItem>
+                <rareTableItem>1636</rareTableItem>
+                <rareTableItem>18.4%</rareTableItem>
+                </rareTableRow>
+
+                <rareTableRow>
+                <rareTableItem>Silver Chain</rareTableItem>
+                <rareTableItem>1768</rareTableItem>
+                <rareTableItem>19.9%</rareTableItem>
+                </rareTableRow>
+
+                <rareTableRow>
+                <rareTableItem>None</rareTableItem>
+                <rareTableItem>1804</rareTableItem>
+                <rareTableItem>20.3%</rareTableItem>
+                </rareTableRow>
+              </div>
+            </div>
+            <!------------------------------------------------------------------ piercings  -->
+            <div class="itemRareContainer">
+              <div class="itemRareTitle" onclick="open9()">
+                Piercings
+              </div>
+              <script>
+                function open9() {
+                  if (
+                    document
+                      .getElementById("9Attribute")
+                      .classList.contains("on9")
+                  ) {
+                    document
+                      .getElementById("9Attribute")
+                      .classList.remove("on9");
+                  } else {
+                    document
+                      .getElementById("9Attribute")
+                      .classList.add("on9");
+                  }
+                }
+              </script>
+              <div class="att9" id="9Attribute">
+                <rareTableRow>
+                  <rareTableTitle>Item</rareTableTitle>
+                  <rareTableTitle>#/8,888</rareTableTitle>
+                  <rareTableTitle>Rarity</rareTableTitle>
+                </rareTableRow>
+                <rareTableRow>
+                <rareTableItem>Solamonster Set</rareTableItem>
+                <rareTableItem>304</rareTableItem>
+                <rareTableItem>3.4%</rareTableItem>
+                </rareTableRow>
+
+                <rareTableRow>
+                <rareTableItem>Diamond Set</rareTableItem>
+                <rareTableItem>604</rareTableItem>
+                <rareTableItem>6.8%</rareTableItem>
+                </rareTableRow>
+
+                <rareTableRow>
+                <rareTableItem>Gold Set</rareTableItem>
+                <rareTableItem>864</rareTableItem>
+                <rareTableItem>9.7%</rareTableItem>
+                </rareTableRow>
+
+                <rareTableRow>
+                <rareTableItem>Silver Set</rareTableItem>
+                <rareTableItem>1048</rareTableItem>
+                <rareTableItem>11.8%</rareTableItem>
+                </rareTableRow>
+
+                <rareTableRow>
+                <rareTableItem>Diamond Earring</rareTableItem>
+                <rareTableItem>1368</rareTableItem>
+                <rareTableItem>15.4%</rareTableItem>
+                </rareTableRow>
+
+                <rareTableRow>
+                <rareTableItem>Gold Earring</rareTableItem>
+                <rareTableItem>1536</rareTableItem>
+                <rareTableItem>17.3%</rareTableItem>
+                </rareTableRow>
+
+                <rareTableRow>
+                <rareTableItem>Silver Earring</rareTableItem>
+                <rareTableItem>1572</rareTableItem>
+                <rareTableItem>17.7%</rareTableItem>
+                </rareTableRow>
+
+                <rareTableRow>
+                <rareTableItem>None</rareTableItem>
+                <rareTableItem>1592</rareTableItem>
+                <rareTableItem>17.9%</rareTableItem>
+                </rareTableRow>
+              </div>
+            </div>
+          </div>
+          <!--xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx fourth row of tables -->
+          <div class="itemRarity">
+            <!------------------------------------------------------------------ threat level  -->
+            <div class="itemRareContainer">
+              <div class="itemRareTitle" onclick="open10()">
+                Threat Level
+              </div>
+              <script>
+                function open10() {
+                  if (
+                    document
+                      .getElementById("10Attribute")
+                      .classList.contains("on10")
+                  ) {
+                    document
+                      .getElementById("10Attribute")
+                      .classList.remove("on10");
+                  } else {
+                    document
+                      .getElementById("10Attribute")
+                      .classList.add("on10");
+                  }
+                }
+              </script>
+              <div class="att10" id="10Attribute">
+                <rareTableRow>
+                  <rareTableTitle>Item</rareTableTitle>
+                  <rareTableTitle>#/8,888</rareTableTitle>
+                  <rareTableTitle>Rarity</rareTableTitle>
+                </rareTableRow>
+                <rareTableRow>
+                <rareTableItem>Extreme</rareTableItem>
+                <rareTableItem>220</rareTableItem>
+                <rareTableItem>2.5%</rareTableItem>
+                </rareTableRow>
+
+                <rareTableRow>
+                <rareTableItem>High</rareTableItem>
+                <rareTableItem>672</rareTableItem>
+                <rareTableItem>7.6%</rareTableItem>
+                </rareTableRow>
+
+                <rareTableRow>
+                <rareTableItem>Moderate</rareTableItem>
+                <rareTableItem>3552</rareTableItem>
+                <rareTableItem>40.0%</rareTableItem>
+                </rareTableRow>
+
+                <rareTableRow>
+                <rareTableItem>Minimal</rareTableItem>
+                <rareTableItem>4444</rareTableItem>
+                <rareTableItem>50.0%</rareTableItem>
+                </rareTableRow>
+              </div>
+            </div>            
+            <!------------------------------------------------------------------ dividend shares  -->
+            <div class="itemRareContainer">
+              <div class="itemRareTitle" onclick="open11()">
+                Dividends
+              </div>
+              <script>
+                function open11() {
+                  if (
+                    document
+                      .getElementById("11Attribute")
+                      .classList.contains("on11")
+                  ) {
+                    document
+                      .getElementById("11Attribute")
+                      .classList.remove("on11");
+                  } else {
+                    document
+                      .getElementById("11Attribute")
+                      .classList.add("on11");
+                  }
+                }
+              </script>
+              <div class="att11" id="11Attribute">
+                <rareTableRow>
+                  <rareTableTitle>Item</rareTableTitle>
+                  <rareTableTitle>#/8,888</rareTableTitle>
+                  <rareTableTitle>Rarity</rareTableTitle>
+                </rareTableRow>
+                <rareTableRow>
+                <rareTableItem>1 share</rareTableItem>
+                <rareTableItem>220</rareTableItem>
+                <rareTableItem>2.5%</rareTableItem>
+                </rareTableRow>
+
+                <rareTableRow>
+                <rareTableItem>0.75 shares</rareTableItem>
+                <rareTableItem>672</rareTableItem>
+                <rareTableItem>7.6%</rareTableItem>
+                </rareTableRow>
+
+                <rareTableRow>
+                <rareTableItem>0.55 shares</rareTableItem>
+                <rareTableItem>3552</rareTableItem>
+                <rareTableItem>40.0%</rareTableItem>
+                </rareTableRow>
+
+                <rareTableRow>
+                <rareTableItem>0.5 shares</rareTableItem>
+                <rareTableItem>4444</rareTableItem>
+                <rareTableItem>50.0%</rareTableItem>
+                </rareTableRow>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="headerBuffer"></div>
+      <!------------------------------------------------------------------------------------------- rarity ranking search -->
+      <div class="rarebody">
+        <div class="rareContainer">
+          <p class="bodyTitle">The Solamonsters Society Rarity Ranking</h1>
+          <p style="text-align: center; width: 100%; margin: auto;">Export Data:</p>
+          <table id="table" class="display" style="width:100%; overflow: auto;">
+            <thead>
+              <tr>
+                <th>Rank</th>
+                <th>Name</th>
+                <th>Background</th>
+                <th>Body</th>
+                <th>Headwear</th>
+                <th>Eyes</th>
+                <th>Mouth</th>
+                <th>Clothes</th>
+                <th>Chains</th>
+                <th>Piercings</th>
+                <th>Threat Level</th>
+                <th>View on ME</th>
+              </tr>
+            </thead>
+            <tbody></tbody>
+            <tfoot>
+              <tr>
+                <th>Rank</th>
+                <th>Name</th>
+                <th>Background</th>
+                <th>Body</th>
+                <th>Headwear</th>
+                <th>Eyes</th>
+                <th>Mouth</th>
+                <th>Clothes</th>
+                <th>Chains</th>
+                <th>Piercings</th>
+                <th>Threat Level</th>
+                <th>View on ME</th>
+              </tr>             
+            </tfoot>
+          </table>
+          <script src="js/rarity-the_solamonsters_society/table.js"></script>
+          <script src="js/rarity-the_solamonsters_society/data.js"></script>
+        </div>
+      </div>
+      <div class="headerBuffer"></div>
+    </div>
+    
+  
+    <!-------------------------------------------------------------------------------------------------------------------------------->
+    <!--------------------------------------------- FOOTER      ---------------------------------------------------------------------->
+    <!-------------------------------------------------------------------------------------------------------------------------------->
+    <script src="js/footer/footer.js"></script>
+    <!-------------------------------------------------------------------------------------------------------------------------------->
+    <!--------------------------------------------- FOOTER END  ---------------------------------------------------------------------->
+    <!-------------------------------------------------------------------------------------------------------------------------------->
+  </body>
+</html>

@@ -890,76 +890,76 @@ rareTableItem {
 }
 
 /* toggle button click to show table */
-.species {
+.att1 {
   display: none;
 }
-.speciesOn {
+.on1 {
   display: contents;
 }
-.dividends {
+.att2 {
   display: none;
 }
-.dividendsOn {
+.on2 {
   display: contents;
 }
-.background {
+.att3 {
   display: none;
 }
-.backgroundOn {
+.on3 {
   display: contents;
 }
-.eyes {
+.att4 {
   display: none;
 }
-.eyesOn {
+.on4 {
   display: contents;
 }
-.headwear {
+.att5 {
   display: none;
 }
-.headwearOn {
+.on5 {
   display: contents;
 }
-.mouth {
+.att6 {
   display: none;
 }
-.mouthOn {
+.on6 {
   display: contents;
 }
-.clothes {
+.att7 {
   display: none;
 }
-.clothesOn {
+.on7 {
   display: contents;
 }
-.accessories {
+.att8 {
   display: none;
 }
-.accessoriesOn {
+.on8 {
   display: contents;
 }
-.chain {
+.att9 {
   display: none;
 }
-.chainOn {
+.on9 {
   display: contents;
 }
-.piercings {
+.att10 {
   display: none;
 }
-.piercingsOn {
+.on10 {
   display: contents;
 }
-.skin {
+.att11 {
   display: none;
 }
-.skinOn {
+.on11 {
   display: contents;
 }
-.threatLevel {
+.att1 {
   display: none;
 }
-.threatLevelOn {
+.on1 {
   display: contents;
 }
 
@@ -974,7 +974,17 @@ rareTableItem {
   right: 30%;
   text-align: center;
 }
-
+.rarityThumbnailLink {
+  margin: auto;
+}
+.rarityThumbnailLink img {
+  border-radius: 10px;
+  width: 60%;
+}
+.rarityThumbnailLink:hover img {
+  border-radius: 10px;
+  width: 80%;
+}
 .linkME {
   text-decoration: underline;
   font-size: calc(10px + 0.25vw);
@@ -986,23 +996,21 @@ rareTableItem {
   text-decoration: none;
   font-size: calc(10px + 0.25vw);
   color: white;
-  display: inline;
-  margin: auto;
-}
-.rarityRankPic img {
-  display: flex;
-  width: 20%;
-  margin: auto;
-}
-.rarityRankPic:hover {
   display: block;
-}
-.rarityRankPic:hover img {
-  display: flex;
-  width: 100%;
   margin: auto;
 }
-
+.rarityRankPic:hover .rarityPicDiv {
+  padding: 50%;
+}
+.rarityPicDiv {
+  content: "";
+  padding: 10%;
+  background-size: contain;
+  background-repeat: no-repeat;
+  display: flex;
+  margin: auto;
+  width: fit-content;
+}
 table.dataTable {
   width: 100%;
   margin: 0 auto;
@@ -1038,7 +1046,7 @@ table.dataTable tbody td {
 }
 
 #table_wrapper {
-  margin: 10px 5%;
+  margin: 10px 0;
 }
 
 table tr th,
@@ -1123,9 +1131,8 @@ table tr td {
   color: black;
   padding: 1%;
   text-align: center;
-  background-color: white;
   font-weight: bolder;
-  width: 5%;
+  width: 8%;
 }
 
 #table_wrapper .dataTables_scrollHead th.sorting,
@@ -1151,11 +1158,13 @@ table tr td {
 #table_wrapper .dataTables_scrollHead th.sorting:before,
 #table_wrapper .dataTables_scrollHead th.sorting_asc:before {
   border-bottom-color: green;
+  display: none;
 }
 
 #table_wrapper .dataTables_scrollHead th.sorting:after,
 #table_wrapper .dataTables_scrollHead th.sorting_desc:after {
   border-top-color: red;
+  display: none;
 }
 
 #table_wrapper table td {
@@ -1177,11 +1186,20 @@ table tr td {
 #table_wrapper table tbody tr:hover .rarityRankPic {
   color: black;
 }
-tfoot {
-  display: table-header-group;
-}
+
 input {
   width: 80%;
+  border-radius: 5px;
+}
+
+#table_wrapper table thead th {
+  background-color: rgb(255, 255, 255);
+  font-size: calc(11px + 0.25vw);
+}
+#table_wrapper table tfoot th {
+  background-color: rgb(255, 255, 255);
+  height: fit-content;
+  padding: 0.5%;
 }
 
 /* ################################################################################################################################# */

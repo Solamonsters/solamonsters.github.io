@@ -1,0 +1,1812 @@
+<!DOCTYPE html>
+<html>
+  <!-- ######################################################################### HTML HEAD ###################################################################-->
+  <head>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="index.css" />
+    <title>The Solamonsters Society</title>
+    <link rel="icon" href="assets/solamonsters-logo.png" />
+  </head>
+
+  <!-- ########################################################################### HTML BODY ################################################################ -->
+  <body>
+    <!-------------------------------------------------------------------------------------------------------------------------------->
+    <!--------------------------------------------- HEADER --------------------------------------------------------------------------->
+    <!-------------------------------------------------------------------------------------------------------------------------------->
+    <script src="js/header/header.js"></script>
+    <!-------------------------------------------------------------------------------------------------------------------------------->
+    <!--------------------------------------------- HEADER END  ---------------------------------------------------------------------->
+    <!-------------------------------------------------------------------------------------------------------------------------------->
+    <div class="rarityBackground">
+      <div class="bufferSmall"></div>
+      <div class="headerBuffer"></div>
+            <!-- -------------rarity item charts------------- -->
+      <div class="rarebody">
+        <div class="rareContainer">
+          <p class="bodyTitle">Attribute Rarities</p>
+          <!------------------------------------------------------------------ buttons  -->
+            <div class="openCloseContainer">
+              <div style="display: flex; text-align: center;">
+                <div class="openButton" onclick="openAll()">Show All</div>
+                <div class="closeButton" onclick="closeAll()">Close All</div>
+                <script>
+                function openAll() {
+                  document
+                      .getElementById("1Attribute")
+                      .classList.add("on1");
+                  document
+                      .getElementById("2Attribute")
+                      .classList.add("on2");
+                  document
+                      .getElementById("3Attribute")
+                      .classList.add("on3");
+                  document
+                      .getElementById("4Attribute")
+                      .classList.add("on4");
+                  document
+                      .getElementById("5Attribute")
+                      .classList.add("on5");
+                  document
+                      .getElementById("6Attribute")
+                      .classList.add("on6");
+                  document
+                      .getElementById("7Attribute")
+                      .classList.add("on7");
+                  document
+                      .getElementById("8Attribute")
+                      .classList.add("on8");
+                  document
+                      .getElementById("9Attribute")
+                      .classList.add("on9");    
+                  }
+                function closeAll() {
+                  document
+                      .getElementById("1Attribute")
+                      .classList.remove("on1");
+                  document
+                      .getElementById("2Attribute")
+                      .classList.remove("on2");
+                  document
+                      .getElementById("3Attribute")
+                      .classList.remove("on3");
+                  document
+                      .getElementById("4Attribute")
+                      .classList.remove("on4");
+                  document
+                      .getElementById("5Attribute")
+                      .classList.remove("on5");
+                  document
+                      .getElementById("6Attribute")
+                      .classList.remove("on6");
+                  document
+                      .getElementById("7Attribute")
+                      .classList.remove("on7");
+                  document
+                      .getElementById("8Attribute")
+                      .classList.remove("on8");
+                  document
+                      .getElementById("9Attribute")
+                      .classList.remove("on9");
+                  }
+              </script>
+              </div>
+            </div>
+           <br>
+          <!--xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx first row of tables -->
+          <div class="itemRarity">
+            <!------------------------------------------------------------------ species  -->
+            <div class="itemRareContainer">
+              <div class="itemRareTitle" onclick="open1()">Background</div>
+              <script>
+                function open1() {
+                  if (
+                    document
+                      .getElementById("1Attribute")
+                      .classList.contains("on1")
+                  ) {
+                    document
+                      .getElementById("1Attribute")
+                      .classList.remove("on1");
+                  } else {
+                    document
+                      .getElementById("1Attribute")
+                      .classList.add("on1");
+                  }
+                }
+              </script>
+              <div class="att1" id="1Attribute">
+                <rareTableRow>
+                  <rareTableTitle>Item</rareTableTitle>
+                  <rareTableTitle>#/10,000</rareTableTitle>
+                  <rareTableTitle>Rarity</rareTableTitle>
+                </rareTableRow>
+                <rareTableRow>
+                <rareTableItem> Green</rareTableItem>
+                <rareTableItem>880</rareTableItem>   
+                <rareTableItem>17.60%</rareTableItem>
+                </rareTableRow>
+                <rareTableRow>
+                <rareTableItem> Light-orange</rareTableItem>
+                <rareTableItem>889</rareTableItem>
+                <rareTableItem>17.78%</rareTableItem>
+                </rareTableRow>
+                <rareTableRow>
+                <rareTableItem> Red</rareTableItem>
+                <rareTableItem>895</rareTableItem>
+                <rareTableItem>17.90%</rareTableItem>
+                </rareTableRow>
+                <rareTableRow>
+                <rareTableItem> Magenta</rareTableItem>
+                <rareTableItem>901</rareTableItem>
+                <rareTableItem>18.02%</rareTableItem>
+                </rareTableRow>
+                <rareTableRow>
+                <rareTableItem> Light-yellow</rareTableItem>
+                <rareTableItem>901</rareTableItem>
+                <rareTableItem>18.02%</rareTableItem>
+                </rareTableRow>
+                <rareTableRow>
+                <rareTableItem> Violet</rareTableItem>
+                <rareTableItem>902</rareTableItem>
+                <rareTableItem>18.04%</rareTableItem>
+                </rareTableRow>
+                <rareTableRow>
+                <rareTableItem> Light-blue</rareTableItem>
+                <rareTableItem>903</rareTableItem>
+                <rareTableItem>18.06%</rareTableItem>
+                </rareTableRow>
+                <rareTableRow>
+                <rareTableItem> Pink</rareTableItem>
+                <rareTableItem>919</rareTableItem>
+                <rareTableItem>18.38%</rareTableItem>
+                </rareTableRow>
+                <rareTableRow>
+                <rareTableItem> Noire</rareTableItem>
+                <rareTableItem>925</rareTableItem>
+                <rareTableItem>18.50%</rareTableItem>
+                </rareTableRow>
+                <rareTableRow>
+                <rareTableItem> Dark-red</rareTableItem>
+                <rareTableItem>931</rareTableItem>
+                <rareTableItem>18.62%</rareTableItem>
+                </rareTableRow>
+                <rareTableRow>
+                <rareTableItem> Gold</rareTableItem>
+                <rareTableItem>954</rareTableItem>
+                <rareTableItem>19.08%</rareTableItem>
+                </rareTableRow>
+              </div>
+            </div> 
+            <!------------------------------------------------------------------ background  -->
+            <div class="itemRareContainer">
+              <!-- title -->
+              <div class="itemRareTitle" onclick="open2()">
+                Base Model
+              </div>
+              <script>
+                function open2() {
+                  if (
+                    document
+                      .getElementById("2Attribute")
+                      .classList.contains("on2")
+                  ) {
+                    document
+                      .getElementById("2Attribute")
+                      .classList.remove("on2");
+                  } else {
+                    document
+                      .getElementById("2Attribute")
+                      .classList.add("on2");
+                  }
+                }
+              </script>
+              <!-- table -->
+              <div class="att2" id="2Attribute">
+                <rareTableRow>
+                  <rareTableTitle>Item</rareTableTitle>
+                  <rareTableTitle>#/10,000</rareTableTitle>
+                  <rareTableTitle>Rarity</rareTableTitle>
+                </rareTableRow>
+                <rareTableRow>
+                <rareTableItem>Pale</rareTableItem>    
+                <rareTableItem>2364</rareTableItem>    
+                <rareTableItem>47.28%</rareTableItem>  
+                </rareTableRow>
+                <rareTableRow>
+                <rareTableItem>Natural</rareTableItem> 
+                <rareTableItem>2489</rareTableItem>    
+                <rareTableItem>49.78%</rareTableItem>  
+                </rareTableRow>
+                <rareTableRow>
+                <rareTableItem>Chestnut</rareTableItem>
+                <rareTableItem>2573</rareTableItem>    
+                <rareTableItem>51.46%</rareTableItem>  
+                </rareTableRow>
+                <rareTableRow>
+                <rareTableItem>Tan</rareTableItem>
+                <rareTableItem>2574</rareTableItem>
+                <rareTableItem>51.48%</rareTableItem>
+                </rareTableRow>
+              </div>
+            </div>
+            <!------------------------------------------------------------------ body  -->
+            <div class="itemRareContainer">
+              <div class="itemRareTitle" onclick="open3()">Desk</div>
+              <script>
+                function open3() {
+                  if (
+                    document
+                      .getElementById("3Attribute")
+                      .classList.contains("on3")
+                  ) {
+                    document
+                      .getElementById("3Attribute")
+                      .classList.remove("on3");
+                  } else {
+                    document
+                      .getElementById("3Attribute")
+                      .classList.add("on3");
+                  }
+                }
+              </script>
+              <div class="att3" id="3Attribute">
+                <rareTableRow>
+                  <rareTableTitle>Item</rareTableTitle>
+                  <rareTableTitle>#/10,000</rareTableTitle>
+                  <rareTableTitle>Rarity</rareTableTitle>
+                </rareTableRow>
+                <rareTableRow>
+                <rareTableItem> Silver Metal</rareTableItem>
+                <rareTableItem>2458</rareTableItem>
+                <rareTableItem>49.16%</rareTableItem>       
+                </rareTableRow>
+                <rareTableRow>
+                <rareTableItem> Red Metal</rareTableItem>   
+                <rareTableItem>2469</rareTableItem>
+                <rareTableItem>49.38%</rareTableItem>       
+                </rareTableRow>
+                <rareTableRow>
+                <rareTableItem> Purple Metal</rareTableItem>
+                <rareTableItem>2494</rareTableItem>
+                <rareTableItem>49.88%</rareTableItem>       
+                </rareTableRow>
+                <rareTableRow>
+                <rareTableItem> Bronze Metal</rareTableItem>
+                <rareTableItem>2579</rareTableItem>
+                <rareTableItem>51.58%</rareTableItem>
+                </rareTableRow>
+              </div>
+            </div>           
+          </div>
+          <!--xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx second row of tables -->
+          <div class="itemRarity">
+            <!------------------------------------------------------------------ headwear  -->
+            <div class="itemRareContainer">
+              <div class="itemRareTitle" onclick="open4()">Monitor 1</div>
+              <script>
+                function open4() {
+                  if (
+                    document
+                      .getElementById("4Attribute")
+                      .classList.contains("on4")
+                  ) {
+                    document
+                      .getElementById("4Attribute")
+                      .classList.remove("on4");
+                  } else {
+                    document
+                      .getElementById("4Attribute")
+                      .classList.add("on4");
+                  }
+                }
+              </script>
+              <div class="att4" id="4Attribute">
+                <rareTableRow>
+                  <rareTableTitle>Item</rareTableTitle>
+                  <rareTableTitle>#/10,000</rareTableTitle>
+                  <rareTableTitle>Rarity</rareTableTitle>
+                </rareTableRow>
+                <rareTableRow>
+                <rareTableItem>Barret</rareTableItem>       
+                <rareTableItem>9</rareTableItem>
+                <rareTableItem>0.18%</rareTableItem>        
+                </rareTableRow>
+                <rareTableRow>
+                <rareTableItem>Jet Protocol</rareTableItem> 
+                <rareTableItem>13  </rareTableItem>
+                <rareTableItem>0.26%</rareTableItem>        
+                </rareTableRow>
+                <rareTableRow>
+                <rareTableItem>Solana Valley</rareTableItem>
+                <rareTableItem>15 </rareTableItem>
+                <rareTableItem>0.30%</rareTableItem>        
+                </rareTableRow>
+                <rareTableRow>
+                <rareTableItem>Frank</rareTableItem>
+                <rareTableItem>15</rareTableItem>
+                <rareTableItem>0.30%</rareTableItem>
+                </rareTableRow>
+                <rareTableRow>
+                <rareTableItem>Aurory</rareTableItem>
+                <rareTableItem>15        </rareTableItem>
+                <rareTableItem>0.30%</rareTableItem>
+                </rareTableRow>
+                <rareTableRow>
+                <rareTableItem>Grape</rareTableItem>
+                <rareTableItem>16</rareTableItem>
+                <rareTableItem>0.32%</rareTableItem>
+                </rareTableRow>
+                <rareTableRow>
+                <rareTableItem>Future Finance</rareTableItem>
+                <rareTableItem>16</rareTableItem>
+                <rareTableItem>0.32%</rareTableItem>
+                </rareTableRow>
+                <rareTableRow>
+                <rareTableItem>Unicris</rareTableItem>
+                <rareTableItem>16       </rareTableItem>
+                <rareTableItem>0.32%</rareTableItem>
+                </rareTableRow>
+                <rareTableRow>
+                <rareTableItem>Solflare</rareTableItem>
+                <rareTableItem>16      </rareTableItem>
+                <rareTableItem>0.32%</rareTableItem>
+                </rareTableRow>
+                <rareTableRow>
+                <rareTableItem>Raydium</rareTableItem>
+                <rareTableItem>16       </rareTableItem>
+                <rareTableItem>0.32%</rareTableItem>
+                </rareTableRow>
+                <rareTableRow>
+                <rareTableItem>Scoopshop</rareTableItem>
+                <rareTableItem>17     </rareTableItem>
+                <rareTableItem>0.34%</rareTableItem>
+                </rareTableRow>
+                <rareTableRow>
+                <rareTableItem>Star Atlas</rareTableItem>
+                <rareTableItem>17    </rareTableItem>
+                <rareTableItem>0.34%</rareTableItem>
+                </rareTableRow>
+                <rareTableRow>
+                <rareTableItem>Drift</rareTableItem>
+                <rareTableItem>18</rareTableItem>
+                <rareTableItem>0.36%</rareTableItem>
+                </rareTableRow>
+                <rareTableRow>
+                <rareTableItem>Socean</rareTableItem>
+                <rareTableItem>18        </rareTableItem>
+                <rareTableItem>0.36%</rareTableItem>
+                </rareTableRow>
+                <rareTableRow>
+                <rareTableItem>Dialect</rareTableItem>
+                <rareTableItem>18</rareTableItem>
+                <rareTableItem>0.36%</rareTableItem>
+                </rareTableRow>
+                <rareTableRow>
+                <rareTableItem>Serum</rareTableItem>
+                <rareTableItem>19</rareTableItem>
+                <rareTableItem>0.38%</rareTableItem>
+                </rareTableRow>
+                <rareTableRow>
+                <rareTableItem>Thugbirdz Dao</rareTableItem>
+                <rareTableItem>19</rareTableItem>
+                <rareTableItem>0.38%</rareTableItem>
+                </rareTableRow>
+                <rareTableRow>
+                <rareTableItem>Levi Korg</rareTableItem>
+                <rareTableItem>19</rareTableItem>
+                <rareTableItem>0.38%</rareTableItem>
+                </rareTableRow>
+                <rareTableRow>
+                <rareTableItem>Wumbo</rareTableItem>
+                <rareTableItem>20</rareTableItem>
+                <rareTableItem>0.40%</rareTableItem>
+                </rareTableRow>
+                <rareTableRow>
+                <rareTableItem>Rogue Sharks</rareTableItem>
+                <rareTableItem>20</rareTableItem>
+                <rareTableItem>0.40%</rareTableItem>
+                </rareTableRow>
+                <rareTableRow>
+                <rareTableItem>Fabricpunk Alt</rareTableItem>
+                <rareTableItem>20</rareTableItem>
+                <rareTableItem>0.40%</rareTableItem>
+                </rareTableRow>
+                <rareTableRow>
+                <rareTableItem>Genesysgo</rareTableItem>
+                <rareTableItem>20</rareTableItem>
+                <rareTableItem>0.40%</rareTableItem>
+                </rareTableRow>
+                <rareTableRow>
+                <rareTableItem>Pengulice</rareTableItem>
+                <rareTableItem>20</rareTableItem>
+                <rareTableItem>0.40%</rareTableItem>
+                </rareTableRow>
+                <rareTableRow>
+                <rareTableItem>Digitaleyes</rareTableItem>
+                <rareTableItem>20</rareTableItem>
+                <rareTableItem>0.40%</rareTableItem>
+                </rareTableRow>
+                <rareTableRow>
+                <rareTableItem>Marginfi</rareTableItem>
+                <rareTableItem>21</rareTableItem>
+                <rareTableItem>0.42%</rareTableItem>
+                </rareTableRow>
+                <rareTableRow>
+                <rareTableItem>Waifu Dao</rareTableItem>
+                <rareTableItem>21</rareTableItem>
+                <rareTableItem>0.42%</rareTableItem>
+                </rareTableRow>
+                <rareTableRow>
+                <rareTableItem>Fabric</rareTableItem>
+                <rareTableItem>21</rareTableItem>
+                <rareTableItem>0.42%</rareTableItem>
+                </rareTableRow>
+                <rareTableRow>
+                <rareTableItem>Solsea</rareTableItem>
+                <rareTableItem>22</rareTableItem>
+                <rareTableItem>0.44%</rareTableItem>
+                </rareTableRow>
+                <rareTableRow>
+                <rareTableItem>Edgar</rareTableItem>
+                <rareTableItem>22</rareTableItem>
+                <rareTableItem>0.44%</rareTableItem>
+                </rareTableRow>
+                <rareTableRow>
+                <rareTableItem>Interstellar</rareTableItem>
+                <rareTableItem>22</rareTableItem>
+                <rareTableItem>0.44%</rareTableItem>
+                </rareTableRow>
+                <rareTableRow>
+                <rareTableItem>Boring</rareTableItem>
+                <rareTableItem>22</rareTableItem>
+                <rareTableItem>0.44%</rareTableItem>
+                </rareTableRow>
+                <rareTableRow>
+                <rareTableItem>Sgf United</rareTableItem>
+                <rareTableItem>23</rareTableItem>
+                <rareTableItem>0.46%</rareTableItem>
+                </rareTableRow>
+                <rareTableRow>
+                <rareTableItem>Aurory Logo</rareTableItem>
+                <rareTableItem>23</rareTableItem>
+                <rareTableItem>0.46%</rareTableItem>
+                </rareTableRow>
+                <rareTableRow>
+                <rareTableItem>Cropper</rareTableItem>
+                <rareTableItem>23</rareTableItem>
+                <rareTableItem>0.46%</rareTableItem>
+                </rareTableRow>
+                <rareTableRow>
+                <rareTableItem>Geckos</rareTableItem>
+                <rareTableItem>23</rareTableItem>
+                <rareTableItem>0.46%</rareTableItem>
+                </rareTableRow>
+                <rareTableRow>
+                <rareTableItem>Defi Land Ingame</rareTableItem>
+                <rareTableItem>23</rareTableItem>
+                <rareTableItem>0.46%</rareTableItem>
+                </rareTableRow>
+                <rareTableRow>
+                <rareTableItem>Fabric Alt</rareTableItem>
+                <rareTableItem>23</rareTableItem>
+                <rareTableItem>0.46%</rareTableItem>
+                </rareTableRow>
+                <rareTableRow>
+                <rareTableItem>Defi Land Sign In</rareTableItem>
+                <rareTableItem>23</rareTableItem>
+                <rareTableItem>0.46%</rareTableItem>
+                </rareTableRow>
+                <rareTableRow>
+                <rareTableItem>Elysian</rareTableItem>
+                <rareTableItem>24</rareTableItem>
+                <rareTableItem>0.48%</rareTableItem>
+                </rareTableRow>
+                <rareTableRow>
+                <rareTableItem>Offpiste</rareTableItem>
+                <rareTableItem>24</rareTableItem>
+                <rareTableItem>0.48%</rareTableItem>
+                </rareTableRow>
+                <rareTableRow>
+                <rareTableItem>Liq</rareTableItem>
+                <rareTableItem>24</rareTableItem>
+                <rareTableItem>0.48%</rareTableItem>
+                </rareTableRow>
+                <rareTableRow>
+                <rareTableItem>Sillylittledao</rareTableItem>
+                <rareTableItem>24</rareTableItem>
+                <rareTableItem>0.48%</rareTableItem>
+                </rareTableRow>
+                <rareTableRow>
+                <rareTableItem>Defi Land</rareTableItem>
+                <rareTableItem>25</rareTableItem>
+                <rareTableItem>0.50%</rareTableItem>
+                </rareTableRow>
+                <rareTableRow>
+                <rareTableItem>Apricot</rareTableItem>
+                <rareTableItem>25</rareTableItem>
+                <rareTableItem>0.50%</rareTableItem>
+                </rareTableRow>
+                <rareTableRow>
+                <rareTableItem>Solmane</rareTableItem>
+                <rareTableItem>25</rareTableItem>
+                <rareTableItem>0.50%</rareTableItem>
+                </rareTableRow>
+                <rareTableRow>
+                <rareTableItem>Goo</rareTableItem>
+                <rareTableItem>25</rareTableItem>
+                <rareTableItem>0.50%</rareTableItem>
+                </rareTableRow>
+                <rareTableRow>
+                <rareTableItem>Alpha Art Exchange</rareTableItem>
+                <rareTableItem>26</rareTableItem>
+                <rareTableItem>0.52%</rareTableItem>
+                </rareTableRow>
+                <rareTableRow>
+                <rareTableItem>Defi Land Welcome</rareTableItem>
+                <rareTableItem>26</rareTableItem>
+                <rareTableItem>0.52%</rareTableItem>
+                </rareTableRow>
+                <rareTableRow>
+                <rareTableItem>Investin</rareTableItem>
+                <rareTableItem>26</rareTableItem>
+                <rareTableItem>0.52%</rareTableItem>
+                </rareTableRow>
+                <rareTableRow>
+                <rareTableItem>Solfarm</rareTableItem>
+                <rareTableItem>26</rareTableItem>
+                <rareTableItem>0.52%</rareTableItem>
+                </rareTableRow>
+                <rareTableRow>
+                <rareTableItem>Solend</rareTableItem>
+                <rareTableItem>26</rareTableItem>
+                <rareTableItem>0.52%</rareTableItem>
+                </rareTableRow>
+                <rareTableRow>
+                <rareTableItem>Tungstencube</rareTableItem>
+                <rareTableItem>26</rareTableItem>
+                <rareTableItem>0.52%</rareTableItem>
+                </rareTableRow>
+                <rareTableRow>
+                <rareTableItem>Bricks</rareTableItem>
+                <rareTableItem>26</rareTableItem>
+                <rareTableItem>0.52%</rareTableItem>
+                </rareTableRow>
+                <rareTableRow>
+                <rareTableItem>Samo</rareTableItem>
+                <rareTableItem>26</rareTableItem>
+                <rareTableItem>0.52%</rareTableItem>
+                </rareTableRow>
+                <rareTableRow>
+                <rareTableItem>Kaiju</rareTableItem>
+                <rareTableItem>26</rareTableItem>
+                <rareTableItem>0.52%</rareTableItem>
+                </rareTableRow>
+                <rareTableRow>
+                <rareTableItem>Psyoptions</rareTableItem>
+                <rareTableItem>27</rareTableItem>
+                <rareTableItem>0.54%</rareTableItem>
+                </rareTableRow>
+                <rareTableRow>
+                <rareTableItem>Solonauts</rareTableItem>
+                <rareTableItem>27</rareTableItem>
+                <rareTableItem>0.54%</rareTableItem>
+                </rareTableRow>
+                <rareTableRow>
+                <rareTableItem>Phantom</rareTableItem>
+                <rareTableItem>27</rareTableItem>
+                <rareTableItem>0.54%</rareTableItem>
+                </rareTableRow>
+                <rareTableRow>
+                <rareTableItem>Mango Markets</rareTableItem>
+                <rareTableItem>27</rareTableItem>
+                <rareTableItem>0.54%</rareTableItem>
+                </rareTableRow>
+                <rareTableRow>
+                <rareTableItem>Red Panda Squad</rareTableItem>
+                <rareTableItem>28</rareTableItem>
+                <rareTableItem>0.56%</rareTableItem>
+                </rareTableRow>
+                <rareTableRow>
+                <rareTableItem>Sgf</rareTableItem>
+                <rareTableItem>28</rareTableItem>
+                <rareTableItem>0.56%</rareTableItem>
+                </rareTableRow>
+                <rareTableRow>
+                <rareTableItem>Fabricpunk</rareTableItem>
+                <rareTableItem>29</rareTableItem>
+                <rareTableItem>0.58%</rareTableItem>
+                </rareTableRow>
+                <rareTableRow>
+                <rareTableItem>Steven</rareTableItem>
+                <rareTableItem>30</rareTableItem>
+                <rareTableItem>0.60%</rareTableItem>
+                </rareTableRow>
+                <rareTableRow>
+                <rareTableItem>Solsnek</rareTableItem>
+                <rareTableItem>30</rareTableItem>
+                <rareTableItem>0.60%</rareTableItem>
+                </rareTableRow>
+                <rareTableRow>
+                <rareTableItem>Solrise</rareTableItem>
+                <rareTableItem>31</rareTableItem>
+                <rareTableItem>0.62%</rareTableItem>
+                </rareTableRow>
+                <rareTableRow>
+                <rareTableItem>Ninja</rareTableItem>
+                <rareTableItem>33</rareTableItem>
+                <rareTableItem>0.66%</rareTableItem>
+                </rareTableRow>
+                <rareTableRow>
+                <rareTableItem>Solana</rareTableItem>
+                <rareTableItem>35</rareTableItem>
+                <rareTableItem>0.70%</rareTableItem>
+                </rareTableRow>
+                <rareTableRow>
+                <rareTableItem>Cryptonary</rareTableItem>
+                <rareTableItem>36</rareTableItem>
+                <rareTableItem>0.72%</rareTableItem>
+                </rareTableRow>
+                <rareTableRow>
+                <rareTableItem>Access Granted</rareTableItem>
+                <rareTableItem>880</rareTableItem>
+                <rareTableItem>17.60%</rareTableItem>
+                </rareTableRow>
+                <rareTableRow>
+                <rareTableItem>Matrix</rareTableItem>
+                <rareTableItem>916</rareTableItem>
+                <rareTableItem>18.32%</rareTableItem>
+                </rareTableRow>
+                <rareTableRow>
+                <rareTableItem>Surveillance Blue</rareTableItem>
+                <rareTableItem>929</rareTableItem>
+                <rareTableItem>18.58%</rareTableItem>
+                </rareTableRow>
+                <rareTableRow>
+                <rareTableItem>Trading Dark</rareTableItem>
+                <rareTableItem>930</rareTableItem>
+                <rareTableItem>18.60%</rareTableItem>
+                </rareTableRow>
+                <rareTableRow>
+                <rareTableItem>Hacked</rareTableItem>
+                <rareTableItem>932</rareTableItem>
+                <rareTableItem>18.64%</rareTableItem>
+                </rareTableRow>
+                <rareTableRow>
+                <rareTableItem>Linux</rareTableItem>
+                <rareTableItem>935</rareTableItem>
+                <rareTableItem>18.70%</rareTableItem>
+                </rareTableRow>
+                <rareTableRow>
+                <rareTableItem>Glitch Two</rareTableItem>
+                <rareTableItem>941</rareTableItem>
+                <rareTableItem>18.82%</rareTableItem>
+                </rareTableRow>
+                <rareTableRow>
+                <rareTableItem>Trading White</rareTableItem>
+                <rareTableItem>983</rareTableItem>
+                <rareTableItem>19.66%</rareTableItem>
+                </rareTableRow>
+                <rareTableRow>
+                <rareTableItem>Glitch One</rareTableItem>
+                <rareTableItem>1012</rareTableItem>
+                <rareTableItem>20.24%</rareTableItem>
+                </rareTableRow>
+              </div>
+            </div>
+            <!------------------------------------------------------------------ eyes  -->
+            <div class="itemRareContainer">
+              <div class="itemRareTitle" onclick="open5()">Monitor 2</div>
+              <script>
+                function open5() {
+                  if (
+                    document
+                      .getElementById("5Attribute")
+                      .classList.contains("on5")
+                  ) {
+                    document
+                      .getElementById("5Attribute")
+                      .classList.remove("on5");
+                  } else {
+                    document
+                      .getElementById("5Attribute")
+                      .classList.add("on5");
+                  }
+                }
+              </script>
+              <div class="att5" id="5Attribute">
+                <rareTableRow>
+                  <rareTableTitle>Item</rareTableTitle>
+                  <rareTableTitle>#/10,000</rareTableTitle>
+                  <rareTableTitle>Rarity</rareTableTitle>
+                </rareTableRow>
+                <rareTableRow>
+                <rareTableItem>Grape</rareTableItem>
+                <rareTableItem>26</rareTableItem>
+                <rareTableItem>0.52%</rareTableItem>
+                </rareTableRow>
+                <rareTableRow>
+                <rareTableItem>Cryptonary</rareTableItem>        
+                <rareTableItem>33</rareTableItem>
+                <rareTableItem>0.66%</rareTableItem>
+                </rareTableRow>
+                <rareTableRow>
+                <rareTableItem>Alpha Art Exchange</rareTableItem>
+                <rareTableItem>35</rareTableItem>
+                <rareTableItem>0.70%</rareTableItem>
+                </rareTableRow>
+                <rareTableRow>
+                <rareTableItem>Unicris</rareTableItem>
+                <rareTableItem>35</rareTableItem>
+                <rareTableItem>0.70%</rareTableItem>
+                </rareTableRow>
+                <rareTableRow>
+                <rareTableItem>Solrise</rareTableItem>
+                <rareTableItem>35</rareTableItem>
+                <rareTableItem>0.70%</rareTableItem>
+                </rareTableRow>
+                <rareTableRow>
+                <rareTableItem>Tungstencube</rareTableItem>
+                <rareTableItem>35</rareTableItem>
+                <rareTableItem>0.70%</rareTableItem>
+                </rareTableRow>
+                <rareTableRow>
+                <rareTableItem>Defi Land</rareTableItem>
+                <rareTableItem>35</rareTableItem>
+                <rareTableItem>0.70%</rareTableItem>
+                </rareTableRow>
+                <rareTableRow>
+                <rareTableItem>Steven</rareTableItem>
+                <rareTableItem>36</rareTableItem>
+                <rareTableItem>0.72%</rareTableItem>
+                </rareTableRow>
+                <rareTableRow>
+                <rareTableItem>Sgf United</rareTableItem>
+                <rareTableItem>36</rareTableItem>
+                <rareTableItem>0.72%</rareTableItem>
+                </rareTableRow>
+                <rareTableRow>
+                <rareTableItem>Solonauts</rareTableItem>
+                <rareTableItem>36</rareTableItem>
+                <rareTableItem>0.72%</rareTableItem>
+                </rareTableRow>
+                <rareTableRow>
+                <rareTableItem>Psyoptions</rareTableItem>
+                <rareTableItem>37</rareTableItem>
+                <rareTableItem>0.74%</rareTableItem>
+                </rareTableRow>
+                <rareTableRow>
+                <rareTableItem>Solsnek</rareTableItem>
+                <rareTableItem>38</rareTableItem>
+                <rareTableItem>0.76%</rareTableItem>
+                </rareTableRow>
+                <rareTableRow>
+                <rareTableItem>Serum</rareTableItem>
+                <rareTableItem>39</rareTableItem>
+                <rareTableItem>0.78%</rareTableItem>
+                </rareTableRow>
+                <rareTableRow>
+                <rareTableItem>Genesysgo</rareTableItem>
+                <rareTableItem>39</rareTableItem>
+                <rareTableItem>0.78%</rareTableItem>
+                </rareTableRow>
+                <rareTableRow>
+                <rareTableItem>Marginfi</rareTableItem>
+                <rareTableItem>40</rareTableItem>
+                <rareTableItem>0.80%</rareTableItem>
+                </rareTableRow>
+                <rareTableRow>
+                <rareTableItem>Defi Land Welcome</rareTableItem>
+                <rareTableItem>40</rareTableItem>
+                <rareTableItem>0.80%</rareTableItem>
+                </rareTableRow>
+                <rareTableRow>
+                <rareTableItem>Phantom</rareTableItem>
+                <rareTableItem>40</rareTableItem>
+                <rareTableItem>0.80%</rareTableItem>
+                </rareTableRow>
+                <rareTableRow>
+                <rareTableItem>Fabricpunk Alt</rareTableItem>
+                <rareTableItem>41</rareTableItem>
+                <rareTableItem>0.82%</rareTableItem>
+                </rareTableRow>
+                <rareTableRow>
+                <rareTableItem>Solfarm</rareTableItem>
+                <rareTableItem>41</rareTableItem>
+                <rareTableItem>0.82%</rareTableItem>
+                </rareTableRow>
+                <rareTableRow>
+                <rareTableItem>Offpiste</rareTableItem>
+                <rareTableItem>41</rareTableItem>
+                <rareTableItem>0.82%</rareTableItem>
+                </rareTableRow>
+                <rareTableRow>
+                <rareTableItem>Goo</rareTableItem>
+                <rareTableItem>42</rareTableItem>
+                <rareTableItem>0.84%</rareTableItem>
+                </rareTableRow>
+                <rareTableRow>
+                <rareTableItem>Wumbo</rareTableItem>
+                <rareTableItem>42</rareTableItem>
+                <rareTableItem>0.84%</rareTableItem>
+                </rareTableRow>
+                <rareTableRow>
+                <rareTableItem>Sillylittledao</rareTableItem>
+                <rareTableItem>42</rareTableItem>
+                <rareTableItem>0.84%</rareTableItem>
+                </rareTableRow>
+                <rareTableRow>
+                <rareTableItem>Mango Markets</rareTableItem>
+                <rareTableItem>42</rareTableItem>
+                <rareTableItem>0.84%</rareTableItem>
+                </rareTableRow>
+                <rareTableRow>
+                <rareTableItem>Solend</rareTableItem>
+                <rareTableItem>42</rareTableItem>
+                <rareTableItem>0.84%</rareTableItem>
+                </rareTableRow>
+                <rareTableRow>
+                <rareTableItem>Barret</rareTableItem>
+                <rareTableItem>43</rareTableItem>
+                <rareTableItem>0.86%</rareTableItem>
+                </rareTableRow>
+                <rareTableRow>
+                <rareTableItem>Fabric Alt</rareTableItem>
+                <rareTableItem>43</rareTableItem>
+                <rareTableItem>0.86%</rareTableItem>
+                </rareTableRow>
+                <rareTableRow>
+                <rareTableItem>Waifu Dao</rareTableItem>
+                <rareTableItem>43</rareTableItem>
+                <rareTableItem>0.86%</rareTableItem>
+                </rareTableRow>
+                <rareTableRow>
+                <rareTableItem>Defi Land Ingame</rareTableItem>
+                <rareTableItem>44</rareTableItem>
+                <rareTableItem>0.88%</rareTableItem>
+                </rareTableRow>
+                <rareTableRow>
+                <rareTableItem>Kaiju</rareTableItem>
+                <rareTableItem>44</rareTableItem>
+                <rareTableItem>0.88%</rareTableItem>
+                </rareTableRow>
+                <rareTableRow>
+                <rareTableItem>Geckos</rareTableItem>
+                <rareTableItem>44</rareTableItem>
+                <rareTableItem>0.88%</rareTableItem>
+                </rareTableRow>
+                <rareTableRow>
+                <rareTableItem>Ninja</rareTableItem>
+                <rareTableItem>45</rareTableItem>
+                <rareTableItem>0.90%</rareTableItem>
+                </rareTableRow>
+                <rareTableRow>
+                <rareTableItem>Future Finance</rareTableItem>
+                <rareTableItem>45</rareTableItem>
+                <rareTableItem>0.90%</rareTableItem>
+                </rareTableRow>
+                <rareTableRow>
+                <rareTableItem>Scoopshop</rareTableItem>
+                <rareTableItem>45</rareTableItem>
+                <rareTableItem>0.90%</rareTableItem>
+                </rareTableRow>
+                <rareTableRow>
+                <rareTableItem>Samo</rareTableItem>
+                <rareTableItem>45</rareTableItem>
+                <rareTableItem>0.90%</rareTableItem>
+                </rareTableRow>
+                <rareTableRow>
+                <rareTableItem>Levi Korg</rareTableItem>
+                <rareTableItem>45</rareTableItem>
+                <rareTableItem>0.90%</rareTableItem>
+                </rareTableRow>
+                <rareTableRow>
+                <rareTableItem>Defi Land Sign In</rareTableItem>
+                <rareTableItem>45</rareTableItem>
+                <rareTableItem>0.90%</rareTableItem>
+                </rareTableRow>
+                <rareTableRow>
+                <rareTableItem>Apricot</rareTableItem>
+                <rareTableItem>45</rareTableItem>
+                <rareTableItem>0.90%</rareTableItem>
+                </rareTableRow>
+                <rareTableRow>
+                <rareTableItem>Red Panda Squad</rareTableItem>
+                <rareTableItem>45</rareTableItem>
+                <rareTableItem>0.90%</rareTableItem>
+                </rareTableRow>
+                <rareTableRow>
+                <rareTableItem>Rogue Sharks</rareTableItem>
+                <rareTableItem>46</rareTableItem>
+                <rareTableItem>0.92%</rareTableItem>
+                </rareTableRow>
+                <rareTableRow>
+                <rareTableItem>Frank</rareTableItem>
+                <rareTableItem>46</rareTableItem>
+                <rareTableItem>0.92%</rareTableItem>
+                </rareTableRow>
+                <rareTableRow>
+                <rareTableItem>Thugbirdz Dao</rareTableItem>
+                <rareTableItem>46</rareTableItem>
+                <rareTableItem>0.92%</rareTableItem>
+                </rareTableRow>
+                <rareTableRow>
+                <rareTableItem>Solflare</rareTableItem>
+                <rareTableItem>46</rareTableItem>
+                <rareTableItem>0.92%</rareTableItem>
+                </rareTableRow>
+                <rareTableRow>
+                <rareTableItem>Liq</rareTableItem>
+                <rareTableItem>46</rareTableItem>
+                <rareTableItem>0.92%</rareTableItem>
+                </rareTableRow>
+                <rareTableRow>
+                <rareTableItem>Dialect</rareTableItem>
+                <rareTableItem>46</rareTableItem>
+                <rareTableItem>0.92%</rareTableItem>
+                </rareTableRow>
+                <rareTableRow>
+                <rareTableItem>Socean</rareTableItem>
+                <rareTableItem>47</rareTableItem>
+                <rareTableItem>0.94%</rareTableItem>
+                </rareTableRow>
+                <rareTableRow>
+                <rareTableItem>Solsea</rareTableItem>
+                <rareTableItem>47</rareTableItem>
+                <rareTableItem>0.94%</rareTableItem>
+                </rareTableRow>
+                <rareTableRow>
+                <rareTableItem>Sgf</rareTableItem>
+                <rareTableItem>47</rareTableItem>
+                <rareTableItem>0.94%</rareTableItem>
+                </rareTableRow>
+                <rareTableRow>
+                <rareTableItem>Solmane</rareTableItem>
+                <rareTableItem>47</rareTableItem>
+                <rareTableItem>0.94%</rareTableItem>
+                </rareTableRow>
+                <rareTableRow>
+                <rareTableItem>Investin</rareTableItem>
+                <rareTableItem>47</rareTableItem>
+                <rareTableItem>0.94%</rareTableItem>
+                </rareTableRow>
+                <rareTableRow>
+                <rareTableItem>Digitaleyes</rareTableItem>
+                <rareTableItem>48</rareTableItem>
+                <rareTableItem>0.96%</rareTableItem>
+                </rareTableRow>
+                <rareTableRow>
+                <rareTableItem>Interstellar</rareTableItem>
+                <rareTableItem>48</rareTableItem>
+                <rareTableItem>0.96%</rareTableItem>
+                </rareTableRow>
+                <rareTableRow>
+                <rareTableItem>Solana Valley</rareTableItem>
+                <rareTableItem>49</rareTableItem>
+                <rareTableItem>0.98%</rareTableItem>
+                </rareTableRow>
+                <rareTableRow>
+                <rareTableItem>Pengulice</rareTableItem>
+                <rareTableItem>49</rareTableItem>
+                <rareTableItem>0.98%</rareTableItem>
+                </rareTableRow>
+                <rareTableRow>
+                <rareTableItem>Fabric</rareTableItem>
+                <rareTableItem>49</rareTableItem>
+                <rareTableItem>0.98%</rareTableItem>
+                </rareTableRow>
+                <rareTableRow>
+                <rareTableItem>Drift</rareTableItem>
+                <rareTableItem>50</rareTableItem>
+                <rareTableItem>1.00%</rareTableItem>
+                </rareTableRow>
+                <rareTableRow>
+                <rareTableItem>Aurory Logo</rareTableItem>
+                <rareTableItem>50</rareTableItem>
+                <rareTableItem>1.00%</rareTableItem>
+                </rareTableRow>
+                <rareTableRow>
+                <rareTableItem>Edgar</rareTableItem>
+                <rareTableItem>50</rareTableItem>
+                <rareTableItem>1.00%</rareTableItem>
+                </rareTableRow>
+                <rareTableRow>
+                <rareTableItem>Jet Protocol</rareTableItem>
+                <rareTableItem>51</rareTableItem>
+                <rareTableItem>1.02%</rareTableItem>
+                </rareTableRow>
+                <rareTableRow>
+                <rareTableItem>Aurory</rareTableItem>
+                <rareTableItem>52</rareTableItem>
+                <rareTableItem>1.04%</rareTableItem>
+                </rareTableRow>
+                <rareTableRow>
+                <rareTableItem>Raydium</rareTableItem>
+                <rareTableItem>52</rareTableItem>
+                <rareTableItem>1.04%</rareTableItem>
+                </rareTableRow>
+                <rareTableRow>
+                <rareTableItem>Star Atlas</rareTableItem>
+                <rareTableItem>52</rareTableItem>
+                <rareTableItem>1.04%</rareTableItem>
+                </rareTableRow>
+                <rareTableRow>
+                <rareTableItem>Solana</rareTableItem>
+                <rareTableItem>53</rareTableItem>
+                <rareTableItem>1.06%</rareTableItem>
+                </rareTableRow>
+                <rareTableRow>
+                <rareTableItem>Cropper</rareTableItem>
+                <rareTableItem>55</rareTableItem>
+                <rareTableItem>1.10%</rareTableItem>
+                </rareTableRow>
+                <rareTableRow>
+                <rareTableItem>Fabricpunk</rareTableItem>
+                <rareTableItem>55</rareTableItem>
+                <rareTableItem>1.10%</rareTableItem>
+                </rareTableRow>
+                <rareTableRow>
+                <rareTableItem>Boring</rareTableItem>
+                <rareTableItem>56</rareTableItem>
+                <rareTableItem>1.12%</rareTableItem>
+                </rareTableRow>
+                <rareTableRow>
+                <rareTableItem>Elysian</rareTableItem>
+                <rareTableItem>59</rareTableItem>
+                <rareTableItem>1.18%</rareTableItem>
+                </rareTableRow>
+                <rareTableRow>
+                <rareTableItem>Bricks</rareTableItem>
+                <rareTableItem>60</rareTableItem>
+                <rareTableItem>1.20%</rareTableItem>
+                </rareTableRow>
+                <rareTableRow>
+                <rareTableItem>Access Granted</rareTableItem>
+                <rareTableItem>973</rareTableItem>
+                <rareTableItem>19.46%</rareTableItem>
+                </rareTableRow>
+                <rareTableRow>
+                <rareTableItem>Matrix</rareTableItem>
+                <rareTableItem>984</rareTableItem>
+                <rareTableItem>19.68%</rareTableItem>
+                </rareTableRow>
+                <rareTableRow>
+                <rareTableItem>Glitch One</rareTableItem>
+                <rareTableItem>992</rareTableItem>
+                <rareTableItem>19.84%</rareTableItem>
+                </rareTableRow>
+                <rareTableRow>
+                <rareTableItem>Linux</rareTableItem>
+                <rareTableItem>999</rareTableItem>
+                <rareTableItem>19.98%</rareTableItem>
+                </rareTableRow>
+                <rareTableRow>
+                <rareTableItem>Glitch Two</rareTableItem>
+                <rareTableItem>1003</rareTableItem>
+                <rareTableItem>20.06%</rareTableItem>
+                </rareTableRow>
+                <rareTableRow>
+                <rareTableItem>Trading Dark</rareTableItem>
+                <rareTableItem>1008</rareTableItem>
+                <rareTableItem>20.16%</rareTableItem>
+                </rareTableRow>
+                <rareTableRow>
+                <rareTableItem>Hacked</rareTableItem>
+                <rareTableItem>1023</rareTableItem>
+                <rareTableItem>20.46%</rareTableItem>
+                </rareTableRow>
+              </div>
+            </div>
+            <!------------------------------------------------------------------ mouth  -->
+            <div class="itemRareContainer">
+              <div class="itemRareTitle" onclick="open6()">Monitor 3</div>
+              <script>
+                function open6() {
+                  if (
+                    document
+                      .getElementById("6Attribute")
+                      .classList.contains("on6")
+                  ) {
+                    document
+                      .getElementById("6Attribute")
+                      .classList.remove("on6");
+                  } else {
+                    document
+                      .getElementById("6Attribute")
+                      .classList.add("on6");
+                  }
+                }
+              </script>
+              <div class="att6" id="6Attribute">
+                <rareTableRow>
+                  <rareTableTitle>Item</rareTableTitle>
+                  <rareTableTitle>#/10,000</rareTableTitle>
+                  <rareTableTitle>Rarity</rareTableTitle>
+                </rareTableRow>
+                <rareTableRow>
+                <rareTableItem>Drift</rareTableItem>        
+                <rareTableItem>31</rareTableItem>
+                <rareTableItem>0.62%</rareTableItem>        
+                </rareTableRow>
+                <rareTableRow>
+                <rareTableItem>Solana Valley</rareTableItem>
+                <rareTableItem>34</rareTableItem>
+                <rareTableItem>0.68%</rareTableItem>        
+                </rareTableRow>
+                <rareTableRow>
+                <rareTableItem>Cryptonary</rareTableItem>   
+                <rareTableItem>34</rareTableItem>
+                <rareTableItem>0.68%</rareTableItem>        
+                </rareTableRow>
+                <rareTableRow>
+                <rareTableItem>Bricks</rareTableItem>
+                <rareTableItem>36</rareTableItem>
+                <rareTableItem>0.72%</rareTableItem>
+                </rareTableRow>
+                <rareTableRow>
+                <rareTableItem>Fabricpunk</rareTableItem>
+                <rareTableItem>36</rareTableItem>
+                <rareTableItem>0.72%</rareTableItem>
+                </rareTableRow>
+                <rareTableRow>
+                <rareTableItem>Serum</rareTableItem>
+                <rareTableItem>37</rareTableItem>
+                <rareTableItem>0.74%</rareTableItem>
+                </rareTableRow>
+                <rareTableRow>
+                <rareTableItem>Elysian</rareTableItem>
+                <rareTableItem>37</rareTableItem>
+                <rareTableItem>0.74%</rareTableItem>
+                </rareTableRow>
+                <rareTableRow>
+                <rareTableItem>Future Finance</rareTableItem>
+                <rareTableItem>37</rareTableItem>
+                <rareTableItem>0.74%</rareTableItem>
+                </rareTableRow>
+                <rareTableRow>
+                <rareTableItem>Rogue Sharks</rareTableItem>
+                <rareTableItem>38</rareTableItem>
+                <rareTableItem>0.76%</rareTableItem>
+                </rareTableRow>
+                <rareTableRow>
+                <rareTableItem>Aurory</rareTableItem>
+                <rareTableItem>38</rareTableItem>
+                <rareTableItem>0.76%</rareTableItem>
+                </rareTableRow>
+                <rareTableRow>
+                <rareTableItem>Steven</rareTableItem>
+                <rareTableItem>38</rareTableItem>
+                <rareTableItem>0.76%</rareTableItem>
+                </rareTableRow>
+                <rareTableRow>
+                <rareTableItem>Solsea</rareTableItem>
+                <rareTableItem>38</rareTableItem>
+                <rareTableItem>0.76%</rareTableItem>
+                </rareTableRow>
+                <rareTableRow>
+                <rareTableItem>Red Panda Squad</rareTableItem>
+                <rareTableItem>38</rareTableItem>
+                <rareTableItem>0.76%</rareTableItem>
+                </rareTableRow>
+                <rareTableRow>
+                <rareTableItem>Solsnek</rareTableItem>
+                <rareTableItem>38</rareTableItem>
+                <rareTableItem>0.76%</rareTableItem>
+                </rareTableRow>
+                <rareTableRow>
+                <rareTableItem>Liq</rareTableItem>
+                <rareTableItem>38</rareTableItem>
+                <rareTableItem>0.76%</rareTableItem>
+                </rareTableRow>
+                <rareTableRow>
+                <rareTableItem>Barret</rareTableItem>
+                <rareTableItem>39</rareTableItem>
+                <rareTableItem>0.78%</rareTableItem>
+                </rareTableRow>
+                <rareTableRow>
+                <rareTableItem>Solfarm</rareTableItem>
+                <rareTableItem>39</rareTableItem>
+                <rareTableItem>0.78%</rareTableItem>
+                </rareTableRow>
+                <rareTableRow>
+                <rareTableItem>Defi Land Welcome</rareTableItem>
+                <rareTableItem>39</rareTableItem>
+                <rareTableItem>0.78%</rareTableItem>
+                </rareTableRow>
+                <rareTableRow>
+                <rareTableItem>Apricot</rareTableItem>
+                <rareTableItem>40</rareTableItem>
+                <rareTableItem>0.80%</rareTableItem>
+                </rareTableRow>
+                <rareTableRow>
+                <rareTableItem>Aurory Logo</rareTableItem>
+                <rareTableItem>41</rareTableItem>
+                <rareTableItem>0.82%</rareTableItem>
+                </rareTableRow>
+                <rareTableRow>
+                <rareTableItem>Solana</rareTableItem>
+                <rareTableItem>42</rareTableItem>
+                <rareTableItem>0.84%</rareTableItem>
+                </rareTableRow>
+                <rareTableRow>
+                <rareTableItem>Solflare</rareTableItem>
+                <rareTableItem>42</rareTableItem>
+                <rareTableItem>0.84%</rareTableItem>
+                </rareTableRow>
+                <rareTableRow>
+                <rareTableItem>Scoopshop</rareTableItem>
+                <rareTableItem>42</rareTableItem>
+                <rareTableItem>0.84%</rareTableItem>
+                </rareTableRow>
+                <rareTableRow>
+                <rareTableItem>Waifu Dao</rareTableItem>
+                <rareTableItem>42</rareTableItem>
+                <rareTableItem>0.84%</rareTableItem>
+                </rareTableRow>
+                <rareTableRow>
+                <rareTableItem>Offpiste</rareTableItem>
+                <rareTableItem>42</rareTableItem>
+                <rareTableItem>0.84%</rareTableItem>
+                </rareTableRow>
+                <rareTableRow>
+                <rareTableItem>Solonauts</rareTableItem>
+                <rareTableItem>43</rareTableItem>
+                <rareTableItem>0.86%</rareTableItem>
+                </rareTableRow>
+                <rareTableRow>
+                <rareTableItem>Pengulice</rareTableItem>
+                <rareTableItem>43</rareTableItem>
+                <rareTableItem>0.86%</rareTableItem>
+                </rareTableRow>
+                <rareTableRow>
+                <rareTableItem>Defi Land Ingame</rareTableItem>
+                <rareTableItem>43</rareTableItem>
+                <rareTableItem>0.86%</rareTableItem>
+                </rareTableRow>
+                <rareTableRow>
+                <rareTableItem>Solend</rareTableItem>
+                <rareTableItem>43</rareTableItem>
+                <rareTableItem>0.86%</rareTableItem>
+                </rareTableRow>
+                <rareTableRow>
+                <rareTableItem>Sgf United</rareTableItem>
+                <rareTableItem>43</rareTableItem>
+                <rareTableItem>0.86%</rareTableItem>
+                </rareTableRow>
+                <rareTableRow>
+                <rareTableItem>Grape</rareTableItem>
+                <rareTableItem>44</rareTableItem>
+                <rareTableItem>0.88%</rareTableItem>
+                </rareTableRow>
+                <rareTableRow>
+                <rareTableItem>Geckos</rareTableItem>
+                <rareTableItem>44</rareTableItem>
+                <rareTableItem>0.88%</rareTableItem>
+                </rareTableRow>
+                <rareTableRow>
+                <rareTableItem>Fabric Alt</rareTableItem>
+                <rareTableItem>44</rareTableItem>
+                <rareTableItem>0.88%</rareTableItem>
+                </rareTableRow>
+                <rareTableRow>
+                <rareTableItem>Psyoptions</rareTableItem>
+                <rareTableItem>44</rareTableItem>
+                <rareTableItem>0.88%</rareTableItem>
+                </rareTableRow>
+                <rareTableRow>
+                <rareTableItem>Phantom</rareTableItem>
+                <rareTableItem>44</rareTableItem>
+                <rareTableItem>0.88%</rareTableItem>
+                </rareTableRow>
+                <rareTableRow>
+                <rareTableItem>Fabric</rareTableItem>
+                <rareTableItem>44</rareTableItem>
+                <rareTableItem>0.88%</rareTableItem>
+                </rareTableRow>
+                <rareTableRow>
+                <rareTableItem>Boring</rareTableItem>
+                <rareTableItem>44</rareTableItem>
+                <rareTableItem>0.88%</rareTableItem>
+                </rareTableRow>
+                <rareTableRow>
+                <rareTableItem>Ninja</rareTableItem>
+                <rareTableItem>45</rareTableItem>
+                <rareTableItem>0.90%</rareTableItem>
+                </rareTableRow>
+                <rareTableRow>
+                <rareTableItem>Cropper</rareTableItem>
+                <rareTableItem>45</rareTableItem>
+                <rareTableItem>0.90%</rareTableItem>
+                </rareTableRow>
+                <rareTableRow>
+                <rareTableItem>Investin</rareTableItem>
+                <rareTableItem>45</rareTableItem>
+                <rareTableItem>0.90%</rareTableItem>
+                </rareTableRow>
+                <rareTableRow>
+                <rareTableItem>Unicris</rareTableItem>
+                <rareTableItem>46</rareTableItem>
+                <rareTableItem>0.92%</rareTableItem>
+                </rareTableRow>
+                <rareTableRow>
+                <rareTableItem>Fabricpunk Alt</rareTableItem>
+                <rareTableItem>46</rareTableItem>
+                <rareTableItem>0.92%</rareTableItem>
+                </rareTableRow>
+                <rareTableRow>
+                <rareTableItem>Thugbirdz Dao</rareTableItem>
+                <rareTableItem>46</rareTableItem>
+                <rareTableItem>0.92%</rareTableItem>
+                </rareTableRow>
+                <rareTableRow>
+                <rareTableItem>Digitaleyes</rareTableItem>
+                <rareTableItem>46</rareTableItem>
+                <rareTableItem>0.92%</rareTableItem>
+                </rareTableRow>
+                <rareTableRow>
+                <rareTableItem>Interstellar</rareTableItem>
+                <rareTableItem>46</rareTableItem>
+                <rareTableItem>0.92%</rareTableItem>
+                </rareTableRow>
+                <rareTableRow>
+                <rareTableItem>Defi Land</rareTableItem>
+                <rareTableItem>47</rareTableItem>
+                <rareTableItem>0.94%</rareTableItem>
+                </rareTableRow>
+                <rareTableRow>
+                <rareTableItem>Frank</rareTableItem>
+                <rareTableItem>47</rareTableItem>
+                <rareTableItem>0.94%</rareTableItem>
+                </rareTableRow>
+                <rareTableRow>
+                <rareTableItem>Goo</rareTableItem>
+                <rareTableItem>47</rareTableItem>
+                <rareTableItem>0.94%</rareTableItem>
+                </rareTableRow>
+                <rareTableRow>
+                <rareTableItem>Wumbo</rareTableItem>
+                <rareTableItem>47</rareTableItem>
+                <rareTableItem>0.94%</rareTableItem>
+                </rareTableRow>
+                <rareTableRow>
+                <rareTableItem>Samo</rareTableItem>
+                <rareTableItem>47</rareTableItem>
+                <rareTableItem>0.94%</rareTableItem>
+                </rareTableRow>
+                <rareTableRow>
+                <rareTableItem>Raydium</rareTableItem>
+                <rareTableItem>48</rareTableItem>
+                <rareTableItem>0.96%</rareTableItem>
+                </rareTableRow>
+                <rareTableRow>
+                <rareTableItem>Alpha Art Exchange</rareTableItem>
+                <rareTableItem>48</rareTableItem>
+                <rareTableItem>0.96%</rareTableItem>
+                </rareTableRow>
+                <rareTableRow>
+                <rareTableItem>Tungstencube</rareTableItem>
+                <rareTableItem>50</rareTableItem>
+                <rareTableItem>1.00%</rareTableItem>
+                </rareTableRow>
+                <rareTableRow>
+                <rareTableItem>Marginfi</rareTableItem>
+                <rareTableItem>51</rareTableItem>
+                <rareTableItem>1.02%</rareTableItem>
+                </rareTableRow>
+                <rareTableRow>
+                <rareTableItem>Kaiju</rareTableItem>
+                <rareTableItem>51</rareTableItem>
+                <rareTableItem>1.02%</rareTableItem>
+                </rareTableRow>
+                <rareTableRow>
+                <rareTableItem>Solrise</rareTableItem>
+                <rareTableItem>51</rareTableItem>
+                <rareTableItem>1.02%</rareTableItem>
+                </rareTableRow>
+                <rareTableRow>
+                <rareTableItem>Defi Land Sign In</rareTableItem>
+                <rareTableItem>51</rareTableItem>
+                <rareTableItem>1.02%</rareTableItem>
+                </rareTableRow>
+                <rareTableRow>
+                <rareTableItem>Edgar</rareTableItem>
+                <rareTableItem>52</rareTableItem>
+                <rareTableItem>1.04%</rareTableItem>
+                </rareTableRow>
+                <rareTableRow>
+                <rareTableItem>Mango Markets</rareTableItem>
+                <rareTableItem>52</rareTableItem>
+                <rareTableItem>1.04%</rareTableItem>
+                </rareTableRow>
+                <rareTableRow>
+                <rareTableItem>Socean</rareTableItem>
+                <rareTableItem>53</rareTableItem>
+                <rareTableItem>1.06%</rareTableItem>
+                </rareTableRow>
+                <rareTableRow>
+                <rareTableItem>Sgf</rareTableItem>
+                <rareTableItem>53</rareTableItem>
+                <rareTableItem>1.06%</rareTableItem>
+                </rareTableRow>
+                <rareTableRow>
+                <rareTableItem>Sillylittledao</rareTableItem>
+                <rareTableItem>54</rareTableItem>
+                <rareTableItem>1.08%</rareTableItem>
+                </rareTableRow>
+                <rareTableRow>
+                <rareTableItem>Star Atlas</rareTableItem>
+                <rareTableItem>54</rareTableItem>
+                <rareTableItem>1.08%</rareTableItem>
+                </rareTableRow>
+                <rareTableRow>
+                <rareTableItem>Genesysgo</rareTableItem>
+                <rareTableItem>55</rareTableItem>
+                <rareTableItem>1.10%</rareTableItem>
+                </rareTableRow>
+                <rareTableRow>
+                <rareTableItem>Jet Protocol</rareTableItem>
+                <rareTableItem>56</rareTableItem>
+                <rareTableItem>1.12%</rareTableItem>
+                </rareTableRow>
+                <rareTableRow>
+                <rareTableItem>Solmane</rareTableItem>
+                <rareTableItem>56</rareTableItem>
+                <rareTableItem>1.12%</rareTableItem>
+                </rareTableRow>
+                <rareTableRow>
+                <rareTableItem>Levi Korg</rareTableItem>
+                <rareTableItem>58</rareTableItem>
+                <rareTableItem>1.16%</rareTableItem>
+                </rareTableRow>
+                <rareTableRow>
+                <rareTableItem>Dialect</rareTableItem>
+                <rareTableItem>66</rareTableItem>
+                <rareTableItem>1.32%</rareTableItem>
+                </rareTableRow>
+                <rareTableRow>
+                <rareTableItem>Linux</rareTableItem>
+                <rareTableItem>948</rareTableItem>
+                <rareTableItem>18.96%</rareTableItem>
+                </rareTableRow>
+                <rareTableRow>
+                <rareTableItem>Glitch Two</rareTableItem>
+                <rareTableItem>959</rareTableItem>
+                <rareTableItem>19.18%</rareTableItem>
+                </rareTableRow>
+                <rareTableRow>
+                <rareTableItem>Matrix</rareTableItem>
+                <rareTableItem>990</rareTableItem>
+                <rareTableItem>19.80%</rareTableItem>
+                </rareTableRow>
+                <rareTableRow>
+                <rareTableItem>Hacked</rareTableItem>
+                <rareTableItem>1001</rareTableItem>
+                <rareTableItem>20.02%</rareTableItem>
+                </rareTableRow>
+                <rareTableRow>
+                <rareTableItem>Glitch One</rareTableItem>
+                <rareTableItem>1007</rareTableItem>
+                <rareTableItem>20.14%</rareTableItem>
+                </rareTableRow>
+                <rareTableRow>
+                <rareTableItem>Trading Dark</rareTableItem>
+                <rareTableItem>1027</rareTableItem>
+                <rareTableItem>20.54%</rareTableItem>
+                </rareTableRow>
+                <rareTableRow>
+                <rareTableItem>Access Granted</rareTableItem>
+                <rareTableItem>1030</rareTableItem>
+                <rareTableItem>20.60%</rareTableItem>
+                </rareTableRow>
+              </div>
+            </div>       
+          </div>
+          <!--xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx third row of tables -->
+          <div class="itemRarity">
+            <!------------------------------------------------------------------ clothes  -->
+            <div class="itemRareContainer">
+              <div class="itemRareTitle" onclick="open7()">Mouth</div>
+              <script>
+                function open7() {
+                  if (
+                    document
+                      .getElementById("7Attribute")
+                      .classList.contains("on7")
+                  ) {
+                    document
+                      .getElementById("7Attribute")
+                      .classList.remove("on7");
+                  } else {
+                    document
+                      .getElementById("7Attribute")
+                      .classList.add("on7");
+                  }
+                }
+              </script>
+              <div class="att7" id="7Attribute">
+                <rareTableRow>
+                  <rareTableTitle>Item</rareTableTitle>
+                  <rareTableTitle>#/10,000</rareTableTitle>
+                  <rareTableTitle>Rarity</rareTableTitle>
+                </rareTableRow>
+                <rareTableRow>
+                <rareTableItem> Purple Smile</rareTableItem>
+                <rareTableItem>1629</rareTableItem>
+                <rareTableItem>32.58%</rareTableItem>       
+                </rareTableRow>
+                <rareTableRow>
+                <rareTableItem> Red Smirk</rareTableItem>   
+                <rareTableItem>1655</rareTableItem>
+                <rareTableItem>33.10%</rareTableItem>       
+                </rareTableRow>
+                <rareTableRow>
+                <rareTableItem> Purple Smirk</rareTableItem>
+                <rareTableItem>1661</rareTableItem>
+                <rareTableItem>33.22%</rareTableItem>       
+                </rareTableRow>
+                <rareTableRow>
+                <rareTableItem> Pink Smile</rareTableItem>
+                <rareTableItem>1667</rareTableItem>
+                <rareTableItem>33.34%</rareTableItem>
+                </rareTableRow>
+                <rareTableRow>
+                <rareTableItem> Red Smile</rareTableItem>
+                <rareTableItem>1688</rareTableItem>
+                <rareTableItem>33.76%</rareTableItem>
+                </rareTableRow>
+                <rareTableRow>
+                <rareTableItem> Pink Smirk</rareTableItem>
+                <rareTableItem>1700</rareTableItem>
+                <rareTableItem>34.00%</rareTableItem>
+                </rareTableRow>
+              </div>
+            </div>
+            <!------------------------------------------------------------------ Chain  -->
+            <div class="itemRareContainer">
+              <div class="itemRareTitle" onclick="open8()">Hoodie</div>
+              <script>
+                function open8() {
+                  if (
+                    document
+                      .getElementById("8Attribute")
+                      .classList.contains("on8")
+                  ) {
+                    document
+                      .getElementById("8Attribute")
+                      .classList.remove("on8");
+                  } else {
+                    document
+                      .getElementById("8Attribute")
+                      .classList.add("on8");
+                  }
+                }
+              </script>
+              <div class="att8" id="8Attribute">
+                <rareTableRow>
+                  <rareTableTitle>Item</rareTableTitle>
+                  <rareTableTitle>#/10,000</rareTableTitle>
+                  <rareTableTitle>Rarity</rareTableTitle>
+                </rareTableRow>
+                <rareTableRow>
+                <rareTableItem> Neon Solana Hacker</rareTableItem>        
+                <rareTableItem>720</rareTableItem>
+                <rareTableItem>14.40%</rareTableItem>
+                </rareTableRow>
+                <rareTableRow>
+                <rareTableItem> Unmasked Squid Game Hacker</rareTableItem>
+                <rareTableItem>723</rareTableItem>
+                <rareTableItem>14.46%</rareTableItem>
+                </rareTableRow>
+                <rareTableRow>
+                <rareTableItem> Monke Hacker</rareTableItem>
+                <rareTableItem>723</rareTableItem>
+                <rareTableItem>14.46%</rareTableItem>
+                </rareTableRow>
+                <rareTableRow>
+                <rareTableItem> Squid Game Hacker</rareTableItem>
+                <rareTableItem>731</rareTableItem>
+                <rareTableItem>14.62%</rareTableItem>
+                </rareTableRow>
+                <rareTableRow>
+                <rareTableItem> Dragon Hacker</rareTableItem>
+                <rareTableItem>733</rareTableItem>
+                <rareTableItem>14.66%</rareTableItem>
+                </rareTableRow>
+                <rareTableRow>
+                <rareTableItem> Sci-fi Hacker</rareTableItem>
+                <rareTableItem>744</rareTableItem>
+                <rareTableItem>14.88%</rareTableItem>
+                </rareTableRow>
+                <rareTableRow>
+                <rareTableItem> Tron Hacker</rareTableItem>
+                <rareTableItem>757</rareTableItem>
+                <rareTableItem>15.14%</rareTableItem>
+                </rareTableRow>
+                <rareTableRow>
+                <rareTableItem> Captain America Hacker</rareTableItem>
+                <rareTableItem>767</rareTableItem>
+                <rareTableItem>15.34%</rareTableItem>
+                </rareTableRow>
+                <rareTableRow>
+                <rareTableItem> Cat-ear Hacker</rareTableItem>
+                <rareTableItem>778</rareTableItem>
+                <rareTableItem>15.56%</rareTableItem>
+                </rareTableRow>
+                <rareTableRow>
+                <rareTableItem> Shark Hacker</rareTableItem>
+                <rareTableItem>802</rareTableItem>
+                <rareTableItem>16.04%</rareTableItem>
+                </rareTableRow>
+                <rareTableRow>
+                <rareTableItem> Tech Hacker</rareTableItem>
+                <rareTableItem>825</rareTableItem>
+                <rareTableItem>16.50%</rareTableItem>
+                </rareTableRow>
+                <rareTableRow>
+                <rareTableItem> Shadowy Hacker</rareTableItem>
+                <rareTableItem>830</rareTableItem>
+                <rareTableItem>16.60%</rareTableItem>
+                </rareTableRow>
+                <rareTableRow>
+                <rareTableItem> Punk Hacker</rareTableItem>
+                <rareTableItem>867</rareTableItem>
+                <rareTableItem>17.34%</rareTableItem>
+                </rareTableRow>
+              </div>
+            </div>
+            <!------------------------------------------------------------------ piercings  -->
+            <div class="itemRareContainer">
+              <div class="itemRareTitle" onclick="open9()">
+                Favorite Programming Language
+              </div>
+              <script>
+                function open9() {
+                  if (
+                    document
+                      .getElementById("9Attribute")
+                      .classList.contains("on9")
+                  ) {
+                    document
+                      .getElementById("9Attribute")
+                      .classList.remove("on9");
+                  } else {
+                    document
+                      .getElementById("9Attribute")
+                      .classList.add("on9");
+                  }
+                }
+              </script>
+              <div class="att9" id="9Attribute">
+                <rareTableRow>
+                  <rareTableTitle>Item</rareTableTitle>
+                  <rareTableTitle>#/10,000</rareTableTitle>
+                  <rareTableTitle>Rarity</rareTableTitle>
+                </rareTableRow>
+                <rareTableRow>
+                <rareTableItem> Java</rareTableItem>
+                <rareTableItem>724</rareTableItem>
+                <rareTableItem>14.48%</rareTableItem>
+                </rareTableRow>
+                <rareTableRow>
+                <rareTableItem> Objective-c</rareTableItem>
+                <rareTableItem>725</rareTableItem>
+                <rareTableItem>14.50%</rareTableItem>
+                </rareTableRow>
+                <rareTableRow>
+                <rareTableItem> C++</rareTableItem>
+                <rareTableItem>755</rareTableItem>
+                <rareTableItem>15.10%</rareTableItem>
+                </rareTableRow>
+                <rareTableRow>
+                <rareTableItem> Rust</rareTableItem>
+                <rareTableItem>763</rareTableItem>
+                <rareTableItem>15.26%</rareTableItem>
+                </rareTableRow>
+                <rareTableRow>
+                <rareTableItem> Swift</rareTableItem>
+                <rareTableItem>766</rareTableItem>
+                <rareTableItem>15.32%</rareTableItem>
+                </rareTableRow>
+                <rareTableRow>
+                <rareTableItem> C</rareTableItem>
+                <rareTableItem>767</rareTableItem>
+                <rareTableItem>15.34%</rareTableItem>
+                </rareTableRow>
+                <rareTableRow>
+                <rareTableItem> C#</rareTableItem>
+                <rareTableItem>767</rareTableItem>
+                <rareTableItem>15.34%</rareTableItem>
+                </rareTableRow>
+                <rareTableRow>
+                <rareTableItem> R</rareTableItem>
+                <rareTableItem>774</rareTableItem>
+                <rareTableItem>15.48%</rareTableItem>
+                </rareTableRow>
+                <rareTableRow>
+                <rareTableItem> Python</rareTableItem>
+                <rareTableItem>778</rareTableItem>
+                <rareTableItem>15.56%</rareTableItem>
+                </rareTableRow>
+                <rareTableRow>
+                <rareTableItem> Fortran</rareTableItem>
+                <rareTableItem>784</rareTableItem>
+                <rareTableItem>15.68%</rareTableItem>
+                </rareTableRow>
+                <rareTableRow>
+                <rareTableItem> Javascript</rareTableItem>
+                <rareTableItem>785</rareTableItem>
+                <rareTableItem>15.70%</rareTableItem>
+                </rareTableRow>
+                <rareTableRow>
+                <rareTableItem> Go</rareTableItem>
+                <rareTableItem>799</rareTableItem>
+                <rareTableItem>15.98%</rareTableItem>
+                </rareTableRow>
+                <rareTableRow>
+                <rareTableItem> Solidity</rareTableItem>
+                <rareTableItem>813</rareTableItem>
+                <rareTableItem>16.26%</rareTableItem>
+                </rareTableRow>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="headerBuffer"></div>
+      <!------------------------------------------------------------------------------------------- rarity ranking search -->
+      <div class="rarebody">
+        <div class="rareContainer">
+          <p class="bodyTitle">Shadowy Super Coder Rarity Ranking</h1>
+          <p style="text-align: center; width: 100%; margin: auto;">Export Data:</p>
+          <table id="table" class="display" style="width:100%; overflow: auto;">
+            <thead>
+                <tr>
+                    <th>Rank</th>
+                    <th>Name</th>
+                    <th>Background</th>
+                    <th>Base Model</th>
+                    <th>Desk</th>
+                    <th>Monitor 1</th>
+                    <th>Monitor 2</th>
+                    <th>Monitor 3</th>
+                    <th>Mouth</th>
+                    <th>Hoodie</th>
+                    <th>Favorite Programming Language</th>
+                    <th>View on ME</th>
+                </tr>
+            </thead>
+            <tbody></tbody>
+            <tfoot>
+                <tr>
+                    <th>Rank</th>
+                    <th>Name</th>
+                    <th>Background</th>
+                    <th>Base Model</th>
+                    <th>Desk</th>
+                    <th>Monitor 1</th>
+                    <th>Monitor 2</th>
+                    <th>Monitor 3</th>
+                    <th>Mouth</th>
+                    <th>Hoodie</th>
+                    <th>Favorite Programming Language</th>
+                    <th>View on ME</th>
+                </tr>
+            </tfoot>
+            
+          </table>
+          <script src="js/rarity-shadowy_super_coder/table.js"></script>
+          <script src="js/rarity-shadowy_super_coder/data.js"></script>
+        </div>
+      </div>
+      <div class="headerBuffer"></div>
+    </div>
+    
+  
+    <!-------------------------------------------------------------------------------------------------------------------------------->
+    <!--------------------------------------------- FOOTER      ---------------------------------------------------------------------->
+    <!-------------------------------------------------------------------------------------------------------------------------------->
+    <script src="js/footer/footer.js"></script>
+    <!-------------------------------------------------------------------------------------------------------------------------------->
+    <!--------------------------------------------- FOOTER END  ---------------------------------------------------------------------->
+    <!-------------------------------------------------------------------------------------------------------------------------------->
+  </body>
+</html>
