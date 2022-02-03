@@ -822,6 +822,25 @@ body {
 }
 
 /* ################################# list of all items and rarity ################################################ */
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #000000;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #888;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
 .itemRarity {
   display: flex;
   text-align: center;
@@ -839,6 +858,10 @@ body {
     rgba(91, 90, 92, 0.75) 0%,
     rgba(19, 18, 18, 0.75) 100%
   );
+  overflow: auto;
+}
+.itemRareContainerAddHeight {
+  height: 30vh;
 }
 .itemRareTitle {
   font-weight: 800;
