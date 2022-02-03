@@ -1207,7 +1207,7 @@ input {
   text-align: center;
 }
 .galleryPic {
-  width: 20%;
+  width: 50%;
   border-radius: 5px;
   border: 10px solid rgb(43, 42, 42);
 }
