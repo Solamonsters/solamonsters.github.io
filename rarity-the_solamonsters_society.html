@@ -23,7 +23,7 @@
       <!-- -------------rarity item charts------------- -->
       <div class="rarebody">
         <div class="rareContainer">
-          <p class="bodyTitle">Attribute Rarities</p>
+          <p class="bodyTitle">Solamonsters Attribute Rarities</p>
           <!------------------------------------------------------------------ buttons  -->
             <div class="openCloseContainer">
               <div style="display: flex; text-align: center;">
@@ -34,71 +34,93 @@
                   document
                       .getElementById("1Attribute")
                       .classList.add("on1");
+                      document.getElementById("item1").classList.add("itemRareContainerAddHeight");
                   document
                       .getElementById("2Attribute")
                       .classList.add("on2");
+                      document.getElementById("item2").classList.add("itemRareContainerAddHeight");
                   document
                       .getElementById("3Attribute")
                       .classList.add("on3");
+                      document.getElementById("item3").classList.add("itemRareContainerAddHeight");
                   document
                       .getElementById("4Attribute")
                       .classList.add("on4");
+                      document.getElementById("item4").classList.add("itemRareContainerAddHeight");
                   document
                       .getElementById("5Attribute")
                       .classList.add("on5");
+                      document.getElementById("item5").classList.add("itemRareContainerAddHeight");
                   document
                       .getElementById("6Attribute")
                       .classList.add("on6");
+                      document.getElementById("item6").classList.add("itemRareContainerAddHeight");
                   document
                       .getElementById("7Attribute")
                       .classList.add("on7");
+                      document.getElementById("item7").classList.add("itemRareContainerAddHeight");
                   document
                       .getElementById("8Attribute")
                       .classList.add("on8");
+                      document.getElementById("item8").classList.add("itemRareContainerAddHeight");
                   document
                       .getElementById("9Attribute")
-                      .classList.add("on9");
+                      .classList.add("on9");    
+                      document.getElementById("item9").classList.add("itemRareContainerAddHeight");
                   document
                       .getElementById("10Attribute")
                       .classList.add("on10");
+                      document.getElementById("item10").classList.add("itemRareContainerAddHeight");
                   document
                       .getElementById("11Attribute")
-                      .classList.add("on11");         
+                      .classList.add("on11");        
+                      document.getElementById("item11").classList.add("itemRareContainerAddHeight"); 
                   }
                 function closeAll() {
                   document
                       .getElementById("1Attribute")
                       .classList.remove("on1");
+                      document.getElementById("item1").classList.remove("itemRareContainerAddHeight");
                   document
                       .getElementById("2Attribute")
                       .classList.remove("on2");
+                      document.getElementById("item2").classList.remove("itemRareContainerAddHeight");
                   document
                       .getElementById("3Attribute")
                       .classList.remove("on3");
+                      document.getElementById("item3").classList.remove("itemRareContainerAddHeight");
                   document
                       .getElementById("4Attribute")
                       .classList.remove("on4");
+                      document.getElementById("item4").classList.remove("itemRareContainerAddHeight");
                   document
                       .getElementById("5Attribute")
                       .classList.remove("on5");
+                      document.getElementById("item5").classList.remove("itemRareContainerAddHeight");
                   document
                       .getElementById("6Attribute")
                       .classList.remove("on6");
+                      document.getElementById("item6").classList.remove("itemRareContainerAddHeight");
                   document
                       .getElementById("7Attribute")
                       .classList.remove("on7");
+                      document.getElementById("item7").classList.remove("itemRareContainerAddHeight");
                   document
                       .getElementById("8Attribute")
                       .classList.remove("on8");
+                      document.getElementById("item8").classList.remove("itemRareContainerAddHeight");
                   document
                       .getElementById("9Attribute")
                       .classList.remove("on9");
+                      document.getElementById("item9").classList.remove("itemRareContainerAddHeight");
                   document
                       .getElementById("10Attribute")
                       .classList.remove("on10");
+                      document.getElementById("item10").classList.remove("itemRareContainerAddHeight");
                   document
                       .getElementById("11Attribute")
                       .classList.remove("on11"); 
+                      document.getElementById("item11").classList.remove("itemRareContainerAddHeight");
                   }
               </script>
               </div>
@@ -107,11 +129,11 @@
           <!--xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx first row of tables -->
           <div class="itemRarity">
             <!------------------------------------------------------------------ species  -->
-            <div class="itemRareContainer">
+            <div class="itemRareContainer" id="item1">
               <div class="itemRareTitle" onclick="open1()">Species</div>
               <script>
                 function open1() {
-                  if (
+                   if (
                     document
                       .getElementById("1Attribute")
                       .classList.contains("on1")
@@ -119,10 +141,12 @@
                     document
                       .getElementById("1Attribute")
                       .classList.remove("on1");
+                      document.getElementById("item1").classList.remove("itemRareContainerAddHeight");
                   } else {
                     document
                       .getElementById("1Attribute")
                       .classList.add("on1");
+                      document.getElementById("item1").classList.add("itemRareContainerAddHeight");
                   }
                 }
               </script>
@@ -158,7 +182,7 @@
               </div>
             </div> 
             <!------------------------------------------------------------------ background  -->
-            <div class="itemRareContainer">
+            <div class="itemRareContainer" id="item2">
               <!-- title -->
               <div class="itemRareTitle" onclick="open2()">
                 Background
@@ -173,10 +197,12 @@
                     document
                       .getElementById("2Attribute")
                       .classList.remove("on2");
+                      document.getElementById("item2").classList.remove("itemRareContainerAddHeight");
                   } else {
                     document
                       .getElementById("2Attribute")
                       .classList.add("on2");
+                      document.getElementById("item2").classList.add("itemRareContainerAddHeight");
                   }
                 }
               </script>
@@ -249,7 +275,7 @@
               </div>
             </div>
             <!------------------------------------------------------------------ body  -->
-            <div class="itemRareContainer">
+            <div class="itemRareContainer" id="item3">
               <div class="itemRareTitle" onclick="open3()">Body</div>
               <script>
                 function open3() {
@@ -261,10 +287,12 @@
                     document
                       .getElementById("3Attribute")
                       .classList.remove("on3");
+                      document.getElementById("item3").classList.remove("itemRareContainerAddHeight");
                   } else {
                     document
                       .getElementById("3Attribute")
                       .classList.add("on3");
+                      document.getElementById("item3").classList.add("itemRareContainerAddHeight");
                   }
                 }
               </script>
@@ -309,7 +337,7 @@
           <!--xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx second row of tables -->
           <div class="itemRarity">
             <!------------------------------------------------------------------ headwear  -->
-            <div class="itemRareContainer">
+            <div class="itemRareContainer" id="item4">
               <div class="itemRareTitle" onclick="open4()">Headwear</div>
               <script>
                 function open4() {
@@ -321,10 +349,12 @@
                     document
                       .getElementById("4Attribute")
                       .classList.remove("on4");
+                      document.getElementById("item4").classList.remove("itemRareContainerAddHeight");
                   } else {
                     document
                       .getElementById("4Attribute")
                       .classList.add("on4");
+                      document.getElementById("item4").classList.add("itemRareContainerAddHeight");
                   }
                 }
               </script>
@@ -402,7 +432,7 @@
               </div>
             </div>
             <!------------------------------------------------------------------ eyes  -->
-            <div class="itemRareContainer">
+            <div class="itemRareContainer" id="item5">
               <div class="itemRareTitle" onclick="open5()">Eyes</div>
               <script>
                 function open5() {
@@ -414,10 +444,12 @@
                     document
                       .getElementById("5Attribute")
                       .classList.remove("on5");
+                      document.getElementById("item5").classList.remove("itemRareContainerAddHeight");
                   } else {
                     document
                       .getElementById("5Attribute")
                       .classList.add("on5");
+                      document.getElementById("item5").classList.add("itemRareContainerAddHeight");
                   }
                 }
               </script>
@@ -471,7 +503,7 @@
               </div>
             </div>
             <!------------------------------------------------------------------ mouth  -->
-            <div class="itemRareContainer">
+            <div class="itemRareContainer" id="item6">
               <div class="itemRareTitle" onclick="open6()">Mouth</div>
               <script>
                 function open6() {
@@ -483,10 +515,12 @@
                     document
                       .getElementById("6Attribute")
                       .classList.remove("on6");
+                      document.getElementById("item6").classList.remove("itemRareContainerAddHeight");
                   } else {
                     document
                       .getElementById("6Attribute")
                       .classList.add("on6");
+                      document.getElementById("item6").classList.add("itemRareContainerAddHeight");
                   }
                 }
               </script>
@@ -555,22 +589,24 @@
           <!--xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx third row of tables -->
           <div class="itemRarity">
             <!------------------------------------------------------------------ clothes  -->
-            <div class="itemRareContainer">
+            <div class="itemRareContainer" id="item7"> 
               <div class="itemRareTitle" onclick="open7()">Clothes</div>
               <script>
                 function open7() {
                   if (
                     document
-                      .getElementById("7Attribute")
-                      .classList.contains("on7")
+                      .getElementById("5Attribute")
+                      .classList.contains("on5")
                   ) {
                     document
-                      .getElementById("7Attribute")
-                      .classList.remove("on7");
+                      .getElementById("5Attribute")
+                      .classList.remove("on5");
+                      document.getElementById("item7").classList.remove("itemRareContainerAddHeight");
                   } else {
                     document
-                      .getElementById("7Attribute")
-                      .classList.add("on7");
+                      .getElementById("5Attribute")
+                      .classList.add("on5");
+                      document.getElementById("item7").classList.add("itemRareContainerAddHeight");
                   }
                 }
               </script>
@@ -636,7 +672,7 @@
               </div>
             </div>
             <!------------------------------------------------------------------ Chain  -->
-            <div class="itemRareContainer">
+            <div class="itemRareContainer" id="item8">
               <div class="itemRareTitle" onclick="open8()">Chain</div>
               <script>
                 function open8() {
@@ -648,10 +684,12 @@
                     document
                       .getElementById("8Attribute")
                       .classList.remove("on8");
+                      document.getElementById("item8").classList.remove("itemRareContainerAddHeight");
                   } else {
                     document
                       .getElementById("8Attribute")
                       .classList.add("on8");
+                      document.getElementById("item8").classList.add("itemRareContainerAddHeight");
                   }
                 }
               </script>
@@ -711,7 +749,7 @@
               </div>
             </div>
             <!------------------------------------------------------------------ piercings  -->
-            <div class="itemRareContainer">
+            <div class="itemRareContainer" id="item9">
               <div class="itemRareTitle" onclick="open9()">
                 Piercings
               </div>
@@ -725,10 +763,12 @@
                     document
                       .getElementById("9Attribute")
                       .classList.remove("on9");
+                      document.getElementById("item9").classList.remove("itemRareContainerAddHeight");
                   } else {
                     document
                       .getElementById("9Attribute")
                       .classList.add("on9");
+                      document.getElementById("item9").classList.add("itemRareContainerAddHeight");
                   }
                 }
               </script>
@@ -791,7 +831,7 @@
           <!--xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx fourth row of tables -->
           <div class="itemRarity">
             <!------------------------------------------------------------------ threat level  -->
-            <div class="itemRareContainer">
+            <div class="itemRareContainer" id="item10">
               <div class="itemRareTitle" onclick="open10()">
                 Threat Level
               </div>
@@ -805,10 +845,12 @@
                     document
                       .getElementById("10Attribute")
                       .classList.remove("on10");
+                      document.getElementById("item10").classList.remove("itemRareContainerAddHeight");
                   } else {
                     document
                       .getElementById("10Attribute")
                       .classList.add("on10");
+                      document.getElementById("item10").classList.add("itemRareContainerAddHeight");
                   }
                 }
               </script>
@@ -844,7 +886,7 @@
               </div>
             </div>            
             <!------------------------------------------------------------------ dividend shares  -->
-            <div class="itemRareContainer">
+            <div class="itemRareContainer" id="item11">
               <div class="itemRareTitle" onclick="open11()">
                 Dividends
               </div>
@@ -858,10 +900,12 @@
                     document
                       .getElementById("11Attribute")
                       .classList.remove("on11");
+                      document.getElementById("item11").classList.remove("itemRareContainerAddHeight");
                   } else {
                     document
                       .getElementById("11Attribute")
                       .classList.add("on11");
+                      document.getElementById("item11").classList.add("itemRareContainerAddHeight");
                   }
                 }
               </script>
