@@ -974,12 +974,17 @@ rareTableItem {
   right: 30%;
   text-align: center;
 }
+.rarityOptions {
+  display: flex;
+}
 .rarityThumbnailLink {
   margin: auto;
+  width: 20%;
 }
 .rarityThumbnailLink img {
   border-radius: 10px;
   width: 60%;
+  text-decoration: none;
 }
 .rarityThumbnailLink:hover img {
   border-radius: 10px;
@@ -1532,6 +1537,12 @@ input {
   .whitepaperHeader,
   .whitepaperWords .bodyText {
     text-align: center;
+  }
+  .rarityOptions {
+    display: block;
+  }
+  .rarityThumbnailLink {
+    width: 60%;
   }
 
   .itemRarity {
