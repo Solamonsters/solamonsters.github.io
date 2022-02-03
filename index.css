@@ -990,6 +990,9 @@ rareTableItem {
   border-radius: 10px;
   width: 80%;
 }
+.rarityThumbnailLink .formatLink {
+  text-decoration: none;
+}
 .linkME {
   text-decoration: underline;
   font-size: calc(10px + 0.25vw);
