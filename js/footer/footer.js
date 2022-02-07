@@ -33,8 +33,9 @@ var variable = '' +
   '  <div class="footerSection">' +
   '    <a href="/" class="footerText">Home</a>' +
   '    <a href="rarity" class="footerText">Rarity</a>' +
-  '    <a href="#/roadmap" class="footerText">Roadmap</a>' +
-  '    <a href="#/faq" class="footerText">FAQ</a>' +
+  '    <a href="gallery" class="footerText">NFT Gallery</a>' +
+  '    <a href="/#/roadmap" class="footerText">Roadmap</a>' +
+  '    <a href="/#/faq" class="footerText">FAQ</a>' +
   '    <a href="whitepaper" class="footerText">Whitepaper</a>' +
   '' +
   '    <a href="mint" class="footerText">Mint</a>' +

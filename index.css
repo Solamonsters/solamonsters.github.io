@@ -1255,6 +1255,13 @@ input {
   border-radius: 15px;
   text-align: center;
 }
+.limitedEditionContainer {
+  display: flex;
+}
+.galleryPicContainer {
+  width: 40%;
+  margin: auto;
+}
 .galleryPic {
   width: 50%;
   border-radius: 5px;
@@ -1619,5 +1626,11 @@ input {
   }
   .genContainer {
     width: 50%;
+  }
+  .limitedEditionContainer {
+    display: block;
+  }
+  .galleryPicContainer {
+    width: 80%;
   }
 }
