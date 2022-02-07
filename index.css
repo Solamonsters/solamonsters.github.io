@@ -1011,7 +1011,7 @@ rareTableItem {
 }
 .rarityThumbnailLink:hover img {
   border-radius: 10px;
-  width: 80%;
+  border: 2px solid white;
 }
 .rarityThumbnailLink .formatLink {
   text-decoration: none;
