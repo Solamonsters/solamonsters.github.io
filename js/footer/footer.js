@@ -23,7 +23,7 @@ var variable = '' +
   '      class="footerSocial"' +
   '      ><img src="assets/twitter-logo.png" width="30px" height="22px"' +
   '    /></a>' +
-  '    <a href="https://discord.gg" target="_blank" class="footerSocial"' +
+  '    <a href="https://discord.gg/6ADhm438NM" target="_blank" class="footerSocial"' +
   '      ><img src="assets/discord-logo.png" width="30px" height="22px"' +
   '    /></a>' +
   '  </div>' +
@@ -87,7 +87,7 @@ document.write(variable);
 //       class="footerSocial"
 //       ><img src="assets/twitter-logo.png" width="30px" height="22px"
 //     /></a>
-//     <a href="https://discord.gg" target="_blank" class="footerSocial"
+//     <a href="https://discord.gg/6ADhm438NM" target="_blank" class="footerSocial"
 //       ><img src="assets/discord-logo.png" width="30px" height="22px"
 //     /></a>
 //   </div>
