@@ -551,7 +551,6 @@ body {
 .right {
   left: 50%;
   text-align: left;
-  z-index: 5;
 }
 /* Add arrows to the left container (pointing right) */
 .left::before {
@@ -572,7 +571,6 @@ body {
   height: 0;
   position: absolute;
   width: 0;
-  z-index: 1;
   left: 0%;
   border: medium solid white;
   border-width: 2px 10px 0px 20px;
