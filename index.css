@@ -1016,7 +1016,7 @@ rareTableItem {
   text-decoration: none;
 }
 .linkME {
-  text-decoration: underline;
+  text-decoration: none;
   font-size: calc(10px + 0.25vw);
   color: white;
   display: inline;
