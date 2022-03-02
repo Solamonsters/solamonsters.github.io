@@ -1037,9 +1037,88 @@
       <div class="rarebody">
         <div class="rareContainer">
           <p class="bodyTitle">Degen Apes Rarity Ranking</p>
-          <p style="text-align: center; width: 100%; margin: auto">
-            Export Data:
-          </p>
+
+          <div style="display: flex; justify-content: space-between">
+            <button
+              id="invisibleButton"
+              class="dt-button-listing"
+              style="visibility: hidden"
+            >
+              SHOW LISTED
+            </button>
+            <p
+              style="
+                text-align: left;
+                width: fit-content;
+                padding: 0 1%;
+                margin: 0;
+              "
+            >
+              Export Data:
+            </p>
+            <div style="width: fit-content; padding-right: 1%; right: 0">
+              <button
+                id="toggleDisplayListings"
+                onclick="toggleListed()"
+                class="dt-button-listing"
+              >
+                SHOW LISTED
+              </button>
+              <script>
+                function checkSearchChange() {
+                  if (
+                    document.getElementById("searchInput").value.includes("◎")
+                  ) {
+                    document.getElementById("searchInput").value = "";
+                  }
+                }
+                var listed = false;
+                function toggleListed() {
+                  if (listed) {
+                    listed = false;
+                    document.getElementById("toggleDisplayListings").innerHTML =
+                      "SHOW LISTED";
+                    document.getElementById(
+                      "toggleDisplayListings"
+                    ).style.background = "#20eaac";
+                    document.getElementById("invisibleButton").innerHTML =
+                      "SHOW LISTED";
+                    getAll();
+                  } else {
+                    listed = true;
+                    document.getElementById("toggleDisplayListings").innerHTML =
+                      "SHOW ALL";
+                    document.getElementById(
+                      "toggleDisplayListings"
+                    ).style.background = "#21dbfb";
+                    document.getElementById("invisibleButton").innerHTML =
+                      "SHOW ALL";
+                    getListed();
+                  }
+                }
+                function getListed() {
+                  var dataTable = $("#table").DataTable();
+                  if (
+                    !document.getElementById("searchInput").value.includes("◎")
+                  ) {
+                    dataTable
+                      .search(
+                        "◎ " + document.getElementById("searchInput").value
+                      )
+                      .draw();
+                  }
+                }
+                function getAll() {
+                  var dataTable = $("#table").DataTable();
+
+                  dataTable
+                    .search(document.getElementById("searchInput").value)
+                    .draw();
+                }
+              </script>
+            </div>
+          </div>
+
           <table id="table" class="display" style="width: 100%; overflow: auto">
             <thead>
               <tr>
@@ -1086,7 +1165,7 @@
                 let todos = [];
 
                 await fetch(
-                  "https://api-mainnet.magiceden.dev/v2/collections/degenerate_ape_academy/listings?offset=" +
+                  "https://evening-anchorage-09555.herokuapp.com/api-mainnet.magiceden.dev/v2/collections/degenerate_ape_academy/listings?offset=" +
                     offset +
                     "&limit=20"
                 )
@@ -1102,7 +1181,6 @@
                     } else {
                       offset += 20;
                     }
-                    console.log("offset " + offset);
                   });
               }
 
@@ -1113,15 +1191,13 @@
                 var currID = data[9].substring(7).split("'")[0];
 
                 if (listingsMap.has(currID)) {
-                  console.log(currID);
                   data[9] =
                     "<a href='https://magiceden.io/item-details/" +
                     currID +
-                    "' target='_blank' class='linkME'>" +
+                    "' target='_blank' class='linkME'>◎" +
                     listingsMap.get(currID) +
-                    " ◎</a>";
+                    "</a>";
                 }
-                // data[9] += " >> updated in loop";
                 this.data(data);
               });
             }
