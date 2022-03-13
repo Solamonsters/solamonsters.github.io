@@ -1,0 +1,1118 @@
+<!DOCTYPE html>
+<html>
+  <!-- ######################################################################### HTML HEAD ###################################################################-->
+  <head>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="index.css" />
+    <title>The Solamonsters Society</title>
+    <link rel="icon" href="assets/solamonsters-logo.png" />
+  </head>
+
+  <!-- ########################################################################### HTML BODY ################################################################ -->
+  <body>
+    <!-------------------------------------------------------------------------------------------------------------------------------->
+    <!--------------------------------------------- HEADER --------------------------------------------------------------------------->
+    <!-------------------------------------------------------------------------------------------------------------------------------->
+    <script src="js/header/header.js"></script>
+    <!-------------------------------------------------------------------------------------------------------------------------------->
+    <!--------------------------------------------- HEADER END  ---------------------------------------------------------------------->
+    <!-------------------------------------------------------------------------------------------------------------------------------->
+    <div class="rarityBackground">
+      <div class="bufferSmall"></div>
+      <div class="headerBuffer"></div>
+      <!-- -------------rarity item charts------------- -->
+      <div class="rarebody">
+        <div class="rareContainer">
+          <p class="bodyTitle">Taiyo Robotics Attribute Rarities</p>
+
+          <!------------------------------------------------------------------ buttons  -->
+          <div class="openCloseContainer">
+            <div style="display: flex; text-align: center">
+              <div class="openButton" onclick="openAll()">Show All</div>
+              <div class="closeButton" onclick="closeAll()">Close All</div>
+              <script>
+                function openAll() {
+                  document.getElementById("1Attribute").classList.add("on1");
+                  document
+                    .getElementById("item1")
+                    .classList.add("itemRareContainerAddHeight");
+                  document.getElementById("2Attribute").classList.add("on2");
+                  document
+                    .getElementById("item2")
+                    .classList.add("itemRareContainerAddHeight");
+                  document.getElementById("3Attribute").classList.add("on3");
+                  document
+                    .getElementById("item3")
+                    .classList.add("itemRareContainerAddHeight");
+                  document.getElementById("4Attribute").classList.add("on4");
+                  document
+                    .getElementById("item4")
+                    .classList.add("itemRareContainerAddHeight");
+                  document.getElementById("5Attribute").classList.add("on5");
+                  document
+                    .getElementById("item5")
+                    .classList.add("itemRareContainerAddHeight");
+                  document.getElementById("6Attribute").classList.add("on6");
+                  document
+                    .getElementById("item6")
+                    .classList.add("itemRareContainerAddHeight");
+                  document.getElementById("7Attribute").classList.add("on7");
+                  document
+                    .getElementById("item7")
+                    .classList.add("itemRareContainerAddHeight");
+                }
+                function closeAll() {
+                  document.getElementById("1Attribute").classList.remove("on1");
+                  document
+                    .getElementById("item1")
+                    .classList.remove("itemRareContainerAddHeight");
+                  document.getElementById("2Attribute").classList.remove("on2");
+                  document
+                    .getElementById("item2")
+                    .classList.remove("itemRareContainerAddHeight");
+                  document.getElementById("3Attribute").classList.remove("on3");
+                  document
+                    .getElementById("item3")
+                    .classList.remove("itemRareContainerAddHeight");
+                  document.getElementById("4Attribute").classList.remove("on4");
+                  document
+                    .getElementById("item4")
+                    .classList.remove("itemRareContainerAddHeight");
+                  document.getElementById("5Attribute").classList.remove("on5");
+                  document
+                    .getElementById("item5")
+                    .classList.remove("itemRareContainerAddHeight");
+                  document.getElementById("6Attribute").classList.remove("on6");
+                  document
+                    .getElementById("item6")
+                    .classList.remove("itemRareContainerAddHeight");
+                  document.getElementById("7Attribute").classList.remove("on7");
+                  document
+                    .getElementById("item7")
+                    .classList.remove("itemRareContainerAddHeight");
+                }
+              </script>
+            </div>
+          </div>
+          <br />
+          <!--xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx first row of tables -->
+          <div class="itemRarity">
+            <!------------------------------------------------------------------ background  -->
+            <div class="itemRareContainer" id="item1">
+              <div class="itemRareTitle" onclick="open1()">Background</div>
+              <script>
+                function open1() {
+                  if (
+                    document
+                      .getElementById("1Attribute")
+                      .classList.contains("on1")
+                  ) {
+                    document
+                      .getElementById("1Attribute")
+                      .classList.remove("on1");
+                    document
+                      .getElementById("item1")
+                      .classList.remove("itemRareContainerAddHeight");
+                  } else {
+                    document.getElementById("1Attribute").classList.add("on1");
+                    document
+                      .getElementById("item1")
+                      .classList.add("itemRareContainerAddHeight");
+                  }
+                }
+              </script>
+              <div class="att1" id="1Attribute">
+                <rareTableRow>
+                  <rareTableTitle>Item</rareTableTitle>
+                  <rareTableTitle>#/2,121</rareTableTitle>
+                  <rareTableTitle>Rarity</rareTableTitle>
+                </rareTableRow>
+                <rareTableRow>
+                  <rareTableItem>None</rareTableItem>
+                  <rareTableItem>2 </rareTableItem>
+                  <rareTableItem>0.09%</rareTableItem>
+                </rareTableRow>
+                <rareTableRow>
+                  <rareTableItem>Gojira</rareTableItem>
+                  <rareTableItem>45</rareTableItem>
+                  <rareTableItem>2.12%</rareTableItem>
+                </rareTableRow>
+                <rareTableRow>
+                  <rareTableItem>Sensu</rareTableItem>
+                  <rareTableItem>47</rareTableItem>
+                  <rareTableItem>2.22%</rareTableItem>
+                </rareTableRow>
+                <rareTableRow>
+                  <rareTableItem>Kochi District</rareTableItem>
+                  <rareTableItem>61</rareTableItem>
+                  <rareTableItem>2.88%</rareTableItem>
+                </rareTableRow>
+                <rareTableRow>
+                  <rareTableItem>Kurasshu</rareTableItem>
+                  <rareTableItem>66</rareTableItem>
+                  <rareTableItem>3.11%</rareTableItem>
+                </rareTableRow>
+                <rareTableRow>
+                  <rareTableItem>Toron</rareTableItem>
+                  <rareTableItem>67</rareTableItem>
+                  <rareTableItem>3.16%</rareTableItem>
+                </rareTableRow>
+                <rareTableRow>
+                  <rareTableItem>Ango Tsuka</rareTableItem>
+                  <rareTableItem>107</rareTableItem>
+                  <rareTableItem>5.04%</rareTableItem>
+                </rareTableRow>
+                <rareTableRow>
+                  <rareTableItem>Dimensomu</rareTableItem>
+                  <rareTableItem>187</rareTableItem>
+                  <rareTableItem>8.82%</rareTableItem>
+                </rareTableRow>
+                <rareTableRow>
+                  <rareTableItem>Kotramu</rareTableItem>
+                  <rareTableItem>196</rareTableItem>
+                  <rareTableItem>9.24%</rareTableItem>
+                </rareTableRow>
+                <rareTableRow>
+                  <rareTableItem>Heizu</rareTableItem>
+                  <rareTableItem>196</rareTableItem>
+                  <rareTableItem>9.24%</rareTableItem>
+                </rareTableRow>
+                <rareTableRow>
+                  <rareTableItem>Sorinosu</rareTableItem>
+                  <rareTableItem>197</rareTableItem>
+                  <rareTableItem>9.29%</rareTableItem>
+                </rareTableRow>
+                <rareTableRow>
+                  <rareTableItem>Pelegrinaru</rareTableItem>
+                  <rareTableItem>215</rareTableItem>
+                  <rareTableItem>10.14%</rareTableItem>
+                </rareTableRow>
+                <rareTableRow>
+                  <rareTableItem>Pinko</rareTableItem>
+                  <rareTableItem>220</rareTableItem>
+                  <rareTableItem>10.37%</rareTableItem>
+                </rareTableRow>
+                <rareTableRow>
+                  <rareTableItem>Unismo</rareTableItem>
+                  <rareTableItem>247</rareTableItem>
+                  <rareTableItem>11.65%</rareTableItem>
+                </rareTableRow>
+                <rareTableRow>
+                  <rareTableItem>Suraimu</rareTableItem>
+                  <rareTableItem>268</rareTableItem>
+                  <rareTableItem>12.64%</rareTableItem>
+                </rareTableRow>
+              </div>
+            </div>
+            <!------------------------------------------------------------------ fur/skin  -->
+            <div class="itemRareContainer" id="item2">
+              <!-- title -->
+              <div class="itemRareTitle" onclick="open2()">Breastplate</div>
+              <script>
+                function open2() {
+                  if (
+                    document
+                      .getElementById("2Attribute")
+                      .classList.contains("on2")
+                  ) {
+                    document
+                      .getElementById("2Attribute")
+                      .classList.remove("on2");
+                    document
+                      .getElementById("item2")
+                      .classList.remove("itemRareContainerAddHeight");
+                  } else {
+                    document.getElementById("2Attribute").classList.add("on2");
+                    document
+                      .getElementById("item2")
+                      .classList.add("itemRareContainerAddHeight");
+                  }
+                }
+              </script>
+              <!-- table -->
+              <div class="att2" id="2Attribute">
+                <rareTableRow>
+                  <rareTableTitle>Item</rareTableTitle>
+                  <rareTableTitle>#/2,121</rareTableTitle>
+                  <rareTableTitle>Rarity</rareTableTitle>
+                </rareTableRow>
+                <rareTableRow>
+                  <rareTableItem>None</rareTableItem>
+                  <rareTableItem>2 </rareTableItem>
+                  <rareTableItem>0.09%</rareTableItem>
+                </rareTableRow>
+                <rareTableRow>
+                  <rareTableItem>Wotank 37</rareTableItem>
+                  <rareTableItem>4</rareTableItem>
+                  <rareTableItem>0.19%</rareTableItem>
+                </rareTableRow>
+                <rareTableRow>
+                  <rareTableItem>Wotank Rk 0043</rareTableItem>
+                  <rareTableItem>29</rareTableItem>
+                  <rareTableItem>1.37%</rareTableItem>
+                </rareTableRow>
+                <rareTableRow>
+                  <rareTableItem>Raiko 04 Kl</rareTableItem>
+                  <rareTableItem>31</rareTableItem>
+                  <rareTableItem>1.46%</rareTableItem>
+                </rareTableRow>
+                <rareTableRow>
+                  <rareTableItem>Geisoro 8x</rareTableItem>
+                  <rareTableItem>43</rareTableItem>
+                  <rareTableItem>2.03%</rareTableItem>
+                </rareTableRow>
+                <rareTableRow>
+                  <rareTableItem>Keroq Angl 12</rareTableItem>
+                  <rareTableItem>47</rareTableItem>
+                  <rareTableItem>2.22%</rareTableItem>
+                </rareTableRow>
+                <rareTableRow>
+                  <rareTableItem>Kmurei P</rareTableItem>
+                  <rareTableItem>56</rareTableItem>
+                  <rareTableItem>2.64%</rareTableItem>
+                </rareTableRow>
+                <rareTableRow>
+                  <rareTableItem>Selix 17</rareTableItem>
+                  <rareTableItem>61</rareTableItem>
+                  <rareTableItem>2.88%</rareTableItem>
+                </rareTableRow>
+                <rareTableRow>
+                  <rareTableItem>Kmurei L</rareTableItem>
+                  <rareTableItem>62</rareTableItem>
+                  <rareTableItem>2.92%</rareTableItem>
+                </rareTableRow>
+                <rareTableRow>
+                  <rareTableItem>Wotank Glx</rareTableItem>
+                  <rareTableItem>79</rareTableItem>
+                  <rareTableItem>3.72%</rareTableItem>
+                </rareTableRow>
+                <rareTableRow>
+                  <rareTableItem>Kmurei D</rareTableItem>
+                  <rareTableItem>107</rareTableItem>
+                  <rareTableItem>5.04%</rareTableItem>
+                </rareTableRow>
+                <rareTableRow>
+                  <rareTableItem>Keroq Ju 831</rareTableItem>
+                  <rareTableItem>129</rareTableItem>
+                  <rareTableItem>6.08%</rareTableItem>
+                </rareTableRow>
+                <rareTableRow>
+                  <rareTableItem>Raiko 02 Km 1</rareTableItem>
+                  <rareTableItem>131</rareTableItem>
+                  <rareTableItem>6.18%</rareTableItem>
+                </rareTableRow>
+                <rareTableRow>
+                  <rareTableItem>Raiko 03 Kx</rareTableItem>
+                  <rareTableItem>132</rareTableItem>
+                  <rareTableItem>6.22%</rareTableItem>
+                </rareTableRow>
+                <rareTableRow>
+                  <rareTableItem>Geisoro Gp Kj</rareTableItem>
+                  <rareTableItem>142</rareTableItem>
+                  <rareTableItem>6.69%</rareTableItem>
+                </rareTableRow>
+                <rareTableRow>
+                  <rareTableItem>Geisoro Rm 2</rareTableItem>
+                  <rareTableItem>156</rareTableItem>
+                  <rareTableItem>7.36%</rareTableItem>
+                </rareTableRow>
+                <rareTableRow>
+                  <rareTableItem>Keroq Gl 600</rareTableItem>
+                  <rareTableItem>164</rareTableItem>
+                  <rareTableItem>7.73%</rareTableItem>
+                </rareTableRow>
+                <rareTableRow>
+                  <rareTableItem>Selix 70</rareTableItem>
+                  <rareTableItem>216</rareTableItem>
+                  <rareTableItem>10.18%</rareTableItem>
+                </rareTableRow>
+                <rareTableRow>
+                  <rareTableItem>Raiko 01 Zx Kp</rareTableItem>
+                  <rareTableItem>260</rareTableItem>
+                  <rareTableItem>12.26%</rareTableItem>
+                </rareTableRow>
+                <rareTableRow>
+                  <rareTableItem>Raiko 01 Zx Rs</rareTableItem>
+                  <rareTableItem>270</rareTableItem>
+                  <rareTableItem>12.73%</rareTableItem>
+                </rareTableRow>
+              </div>
+            </div>
+            <!------------------------------------------------------------------ head  -->
+            <div class="itemRareContainer" id="item3">
+              <div class="itemRareTitle" onclick="open3()">Energy-Source</div>
+              <script>
+                function open3() {
+                  if (
+                    document
+                      .getElementById("3Attribute")
+                      .classList.contains("on3")
+                  ) {
+                    document
+                      .getElementById("3Attribute")
+                      .classList.remove("on3");
+                    document
+                      .getElementById("item3")
+                      .classList.remove("itemRareContainerAddHeight");
+                  } else {
+                    document.getElementById("3Attribute").classList.add("on3");
+                    document
+                      .getElementById("item3")
+                      .classList.add("itemRareContainerAddHeight");
+                  }
+                }
+              </script>
+              <div class="att3" id="3Attribute">
+                <rareTableRow>
+                  <rareTableTitle>Item</rareTableTitle>
+                  <rareTableTitle>#/2,121</rareTableTitle>
+                  <rareTableTitle>Rarity</rareTableTitle>
+                </rareTableRow>
+                <rareTableRow>
+                  <rareTableItem>None</rareTableItem>
+                  <rareTableItem>2 </rareTableItem>
+                  <rareTableItem>0.09%</rareTableItem>
+                </rareTableRow>
+                <rareTableRow>
+                  <rareTableItem>Sorana</rareTableItem>
+                  <rareTableItem>23</rareTableItem>
+                  <rareTableItem>1.08%</rareTableItem>
+                </rareTableRow>
+                <rareTableRow>
+                  <rareTableItem>Sharai</rareTableItem>
+                  <rareTableItem>34</rareTableItem>
+                  <rareTableItem>1.60%</rareTableItem>
+                </rareTableRow>
+                <rareTableRow>
+                  <rareTableItem>Kiken</rareTableItem>
+                  <rareTableItem>43</rareTableItem>
+                  <rareTableItem>2.03%</rareTableItem>
+                </rareTableRow>
+                <rareTableRow>
+                  <rareTableItem>Doragon</rareTableItem>
+                  <rareTableItem>74</rareTableItem>
+                  <rareTableItem>3.49%</rareTableItem>
+                </rareTableRow>
+                <rareTableRow>
+                  <rareTableItem>Topazu</rareTableItem>
+                  <rareTableItem>87</rareTableItem>
+                  <rareTableItem>4.10%</rareTableItem>
+                </rareTableRow>
+                <rareTableRow>
+                  <rareTableItem>Jemusuton</rareTableItem>
+                  <rareTableItem>94</rareTableItem>
+                  <rareTableItem>4.43%</rareTableItem>
+                </rareTableRow>
+                <rareTableRow>
+                  <rareTableItem>RubÃ„Â«</rareTableItem>
+                  <rareTableItem>94</rareTableItem>
+                  <rareTableItem>4.43%</rareTableItem>
+                </rareTableRow>
+                <rareTableRow>
+                  <rareTableItem>Ganetto</rareTableItem>
+                  <rareTableItem>104</rareTableItem>
+                  <rareTableItem>4.90%</rareTableItem>
+                </rareTableRow>
+                <rareTableRow>
+                  <rareTableItem>Anba</rareTableItem>
+                  <rareTableItem>127</rareTableItem>
+                  <rareTableItem>5.99%</rareTableItem>
+                </rareTableRow>
+                <rareTableRow>
+                  <rareTableItem>Rodonaito</rareTableItem>
+                  <rareTableItem>199</rareTableItem>
+                  <rareTableItem>9.38%</rareTableItem>
+                </rareTableRow>
+                <rareTableRow>
+                  <rareTableItem>Amejisuto</rareTableItem>
+                  <rareTableItem>205</rareTableItem>
+                  <rareTableItem>9.67%</rareTableItem>
+                </rareTableRow>
+                <rareTableRow>
+                  <rareTableItem>Daiyamondo</rareTableItem>
+                  <rareTableItem>221</rareTableItem>
+                  <rareTableItem>10.42%</rareTableItem>
+                </rareTableRow>
+                <rareTableRow>
+                  <rareTableItem>Akuamarin</rareTableItem>
+                  <rareTableItem>221</rareTableItem>
+                  <rareTableItem>10.42%</rareTableItem>
+                </rareTableRow>
+                <rareTableRow>
+                  <rareTableItem>Menou</rareTableItem>
+                  <rareTableItem>227</rareTableItem>
+                  <rareTableItem>10.70%</rareTableItem>
+                </rareTableRow>
+                <rareTableRow>
+                  <rareTableItem>Emerarudo</rareTableItem>
+                  <rareTableItem>366</rareTableItem>
+                  <rareTableItem>17.26%</rareTableItem>
+                </rareTableRow>
+              </div>
+            </div>
+          </div>
+          <!--xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx second row of tables -->
+          <div class="itemRarity">
+            <!------------------------------------------------------------------ mouth  -->
+            <div class="itemRareContainer" id="item4">
+              <div class="itemRareTitle" onclick="open4()">Shoulder</div>
+              <script>
+                function open4() {
+                  if (
+                    document
+                      .getElementById("4Attribute")
+                      .classList.contains("on4")
+                  ) {
+                    document
+                      .getElementById("4Attribute")
+                      .classList.remove("on4");
+                    document
+                      .getElementById("item4")
+                      .classList.remove("itemRareContainerAddHeight");
+                  } else {
+                    document.getElementById("4Attribute").classList.add("on4");
+                    document
+                      .getElementById("item4")
+                      .classList.add("itemRareContainerAddHeight");
+                  }
+                }
+              </script>
+              <div class="att4" id="4Attribute">
+                <rareTableRow>
+                  <rareTableTitle>Item</rareTableTitle>
+                  <rareTableTitle>#/2,121</rareTableTitle>
+                  <rareTableTitle>Rarity</rareTableTitle>
+                </rareTableRow>
+                <rareTableRow>
+                  <rareTableItem>None</rareTableItem>
+                  <rareTableItem>2 </rareTableItem>
+                  <rareTableItem>0.09%</rareTableItem>
+                </rareTableRow>
+                <rareTableRow>
+                  <rareTableItem>Region 231</rareTableItem>
+                  <rareTableItem>12 </rareTableItem>
+                  <rareTableItem>0.57%</rareTableItem>
+                </rareTableRow>
+                <rareTableRow>
+                  <rareTableItem>Ude 0</rareTableItem>
+                  <rareTableItem>15 </rareTableItem>
+                  <rareTableItem>0.71%</rareTableItem>
+                </rareTableRow>
+                <rareTableRow>
+                  <rareTableItem>Region X032</rareTableItem>
+                  <rareTableItem>24</rareTableItem>
+                  <rareTableItem>1.13%</rareTableItem>
+                </rareTableRow>
+                <rareTableRow>
+                  <rareTableItem>Tako K</rareTableItem>
+                  <rareTableItem>28</rareTableItem>
+                  <rareTableItem>1.32%</rareTableItem>
+                </rareTableRow>
+                <rareTableRow>
+                  <rareTableItem>Tako N0r</rareTableItem>
+                  <rareTableItem>37</rareTableItem>
+                  <rareTableItem>1.74%</rareTableItem>
+                </rareTableRow>
+                <rareTableRow>
+                  <rareTableItem>Arami M</rareTableItem>
+                  <rareTableItem>40</rareTableItem>
+                  <rareTableItem>1.89%</rareTableItem>
+                </rareTableRow>
+                <rareTableRow>
+                  <rareTableItem>Supaiku Dmd</rareTableItem>
+                  <rareTableItem>51</rareTableItem>
+                  <rareTableItem>2.40%</rareTableItem>
+                </rareTableRow>
+                <rareTableRow>
+                  <rareTableItem>Supaiku Angl</rareTableItem>
+                  <rareTableItem>58</rareTableItem>
+                  <rareTableItem>2.73%</rareTableItem>
+                </rareTableRow>
+                <rareTableRow>
+                  <rareTableItem>Difenda M045</rareTableItem>
+                  <rareTableItem>58</rareTableItem>
+                  <rareTableItem>2.73%</rareTableItem>
+                </rareTableRow>
+                <rareTableRow>
+                  <rareTableItem>Kabutomushi Nn</rareTableItem>
+                  <rareTableItem>99</rareTableItem>
+                  <rareTableItem>4.67%</rareTableItem>
+                </rareTableRow>
+                <rareTableRow>
+                  <rareTableItem>Arami Xx2</rareTableItem>
+                  <rareTableItem>99</rareTableItem>
+                  <rareTableItem>4.67%</rareTableItem>
+                </rareTableRow>
+                <rareTableRow>
+                  <rareTableItem>Arami Gkz</rareTableItem>
+                  <rareTableItem>108</rareTableItem>
+                  <rareTableItem>5.09%</rareTableItem>
+                </rareTableRow>
+                <rareTableRow>
+                  <rareTableItem>Difenda M02</rareTableItem>
+                  <rareTableItem>110</rareTableItem>
+                  <rareTableItem>5.19%</rareTableItem>
+                </rareTableRow>
+                <rareTableRow>
+                  <rareTableItem>Ude Kpl</rareTableItem>
+                  <rareTableItem>114</rareTableItem>
+                  <rareTableItem>5.37%</rareTableItem>
+                </rareTableRow>
+                <rareTableRow>
+                  <rareTableItem>Ude 22j</rareTableItem>
+                  <rareTableItem>119</rareTableItem>
+                  <rareTableItem>5.61%</rareTableItem>
+                </rareTableRow>
+                <rareTableRow>
+                  <rareTableItem>Supaiku K9x</rareTableItem>
+                  <rareTableItem>134</rareTableItem>
+                  <rareTableItem>6.32%</rareTableItem>
+                </rareTableRow>
+                <rareTableRow>
+                  <rareTableItem>Ude Gf3</rareTableItem>
+                  <rareTableItem>165</rareTableItem>
+                  <rareTableItem>7.78%</rareTableItem>
+                </rareTableRow>
+                <rareTableRow>
+                  <rareTableItem>Arami Dmg</rareTableItem>
+                  <rareTableItem>198</rareTableItem>
+                  <rareTableItem>9.34%</rareTableItem>
+                </rareTableRow>
+                <rareTableRow>
+                  <rareTableItem>Arami Su</rareTableItem>
+                  <rareTableItem>207</rareTableItem>
+                  <rareTableItem>9.76%</rareTableItem>
+                </rareTableRow>
+                <rareTableRow>
+                  <rareTableItem>Difenda 00z</rareTableItem>
+                  <rareTableItem>208</rareTableItem>
+                  <rareTableItem>9.81%</rareTableItem>
+                </rareTableRow>
+                <rareTableRow>
+                  <rareTableItem>Kabutomushi V1</rareTableItem>
+                  <rareTableItem>235</rareTableItem>
+                  <rareTableItem>11.08%</rareTableItem>
+                </rareTableRow>
+              </div>
+            </div>
+            <!------------------------------------------------------------------ teeth  -->
+            <div class="itemRareContainer" id="item5">
+              <div class="itemRareTitle" onclick="open5()">Visor</div>
+              <script>
+                function open5() {
+                  if (
+                    document
+                      .getElementById("5Attribute")
+                      .classList.contains("on5")
+                  ) {
+                    document
+                      .getElementById("5Attribute")
+                      .classList.remove("on5");
+                    document
+                      .getElementById("item5")
+                      .classList.remove("itemRareContainerAddHeight");
+                  } else {
+                    document.getElementById("5Attribute").classList.add("on5");
+                    document
+                      .getElementById("item5")
+                      .classList.add("itemRareContainerAddHeight");
+                  }
+                }
+              </script>
+              <div class="att5" id="5Attribute">
+                <rareTableRow>
+                  <rareTableTitle>Item</rareTableTitle>
+                  <rareTableTitle>#/2,121</rareTableTitle>
+                  <rareTableTitle>Rarity</rareTableTitle>
+                </rareTableRow>
+                <rareTableRow>
+                  <rareTableItem>None</rareTableItem>
+                  <rareTableItem>2</rareTableItem>
+                  <rareTableItem>0.09%</rareTableItem>
+                </rareTableRow>
+                <rareTableRow>
+                  <rareTableItem>Ryori Gtz</rareTableItem>
+                  <rareTableItem>20</rareTableItem>
+                  <rareTableItem>0.94%</rareTableItem>
+                </rareTableRow>
+                <rareTableRow>
+                  <rareTableItem>Ryori Prs</rareTableItem>
+                  <rareTableItem>34</rareTableItem>
+                  <rareTableItem>1.60%</rareTableItem>
+                </rareTableRow>
+                <rareTableRow>
+                  <rareTableItem>Zugaikotsu Zd</rareTableItem>
+                  <rareTableItem>35</rareTableItem>
+                  <rareTableItem>1.65%</rareTableItem>
+                </rareTableRow>
+                <rareTableRow>
+                  <rareTableItem>Ryori Rizi</rareTableItem>
+                  <rareTableItem>38</rareTableItem>
+                  <rareTableItem>1.79%</rareTableItem>
+                </rareTableRow>
+                <rareTableRow>
+                  <rareTableItem>Satesi Zz</rareTableItem>
+                  <rareTableItem>50</rareTableItem>
+                  <rareTableItem>2.36%</rareTableItem>
+                </rareTableRow>
+                <rareTableRow>
+                  <rareTableItem>Tsuki Lox</rareTableItem>
+                  <rareTableItem>51</rareTableItem>
+                  <rareTableItem>2.40%</rareTableItem>
+                </rareTableRow>
+                <rareTableRow>
+                  <rareTableItem>Onikisu X2</rareTableItem>
+                  <rareTableItem>53</rareTableItem>
+                  <rareTableItem>2.50%</rareTableItem>
+                </rareTableRow>
+                <rareTableRow>
+                  <rareTableItem>Onikisu Xx</rareTableItem>
+                  <rareTableItem>60</rareTableItem>
+                  <rareTableItem>2.83%</rareTableItem>
+                </rareTableRow>
+                <rareTableRow>
+                  <rareTableItem>Zugaikotsu Zp</rareTableItem>
+                  <rareTableItem>61</rareTableItem>
+                  <rareTableItem>2.88%</rareTableItem>
+                </rareTableRow>
+                <rareTableRow>
+                  <rareTableItem>Sato F</rareTableItem>
+                  <rareTableItem>75</rareTableItem>
+                  <rareTableItem>3.54%</rareTableItem>
+                </rareTableRow>
+                <rareTableRow>
+                  <rareTableItem>Satesi 32</rareTableItem>
+                  <rareTableItem>131</rareTableItem>
+                  <rareTableItem>6.18%</rareTableItem>
+                </rareTableRow>
+                <rareTableRow>
+                  <rareTableItem>Zugaikotsu 2lmno31</rareTableItem>
+                  <rareTableItem>140</rareTableItem>
+                  <rareTableItem>6.60%</rareTableItem>
+                </rareTableRow>
+                <rareTableRow>
+                  <rareTableItem>Ryori Kos</rareTableItem>
+                  <rareTableItem>153</rareTableItem>
+                  <rareTableItem>7.21%</rareTableItem>
+                </rareTableRow>
+                <rareTableRow>
+                  <rareTableItem>Sato Non3</rareTableItem>
+                  <rareTableItem>157</rareTableItem>
+                  <rareTableItem>7.40%</rareTableItem>
+                </rareTableRow>
+                <rareTableRow>
+                  <rareTableItem>Sato X</rareTableItem>
+                  <rareTableItem>256</rareTableItem>
+                  <rareTableItem>12.07%</rareTableItem>
+                </rareTableRow>
+                <rareTableRow>
+                  <rareTableItem>Saito Dmg</rareTableItem>
+                  <rareTableItem>257</rareTableItem>
+                  <rareTableItem>12.12%</rareTableItem>
+                </rareTableRow>
+                <rareTableRow>
+                  <rareTableItem>Satesi 02d</rareTableItem>
+                  <rareTableItem>267</rareTableItem>
+                  <rareTableItem>12.59%</rareTableItem>
+                </rareTableRow>
+                <rareTableRow>
+                  <rareTableItem>Onikisu Xq</rareTableItem>
+                  <rareTableItem>281</rareTableItem>
+                  <rareTableItem>13.25%</rareTableItem>
+                </rareTableRow>
+              </div>
+            </div>
+            <!------------------------------------------------------------------ clothing  -->
+            <div class="itemRareContainer" id="item6">
+              <div class="itemRareTitle" onclick="open6()">Head</div>
+              <script>
+                function open6() {
+                  if (
+                    document
+                      .getElementById("6Attribute")
+                      .classList.contains("on6")
+                  ) {
+                    document
+                      .getElementById("6Attribute")
+                      .classList.remove("on6");
+                    document
+                      .getElementById("item6")
+                      .classList.remove("itemRareContainerAddHeight");
+                  } else {
+                    document.getElementById("6Attribute").classList.add("on6");
+                    document
+                      .getElementById("item6")
+                      .classList.add("itemRareContainerAddHeight");
+                  }
+                }
+              </script>
+              <div class="att6" id="6Attribute">
+                <rareTableRow>
+                  <rareTableTitle>Item</rareTableTitle>
+                  <rareTableTitle>#/2,121</rareTableTitle>
+                  <rareTableTitle>Rarity</rareTableTitle>
+                </rareTableRow>
+                <rareTableRow>
+                  <rareTableItem>None</rareTableItem>
+                  <rareTableItem>2</rareTableItem>
+                  <rareTableItem>0.09%</rareTableItem>
+                </rareTableRow>
+                <rareTableRow>
+                  <rareTableItem>Kuraun I</rareTableItem>
+                  <rareTableItem>8 </rareTableItem>
+                  <rareTableItem>0.38%</rareTableItem>
+                </rareTableRow>
+                <rareTableRow>
+                  <rareTableItem>Ha Mura X</rareTableItem>
+                  <rareTableItem>13 </rareTableItem>
+                  <rareTableItem>0.61%</rareTableItem>
+                </rareTableRow>
+                <rareTableRow>
+                  <rareTableItem>Kicho 1</rareTableItem>
+                  <rareTableItem>13 </rareTableItem>
+                  <rareTableItem>0.61%</rareTableItem>
+                </rareTableRow>
+                <rareTableRow>
+                  <rareTableItem>Nakinjo 43</rareTableItem>
+                  <rareTableItem>18</rareTableItem>
+                  <rareTableItem>0.85%</rareTableItem>
+                </rareTableRow>
+                <rareTableRow>
+                  <rareTableItem>Ha 18</rareTableItem>
+                  <rareTableItem>20</rareTableItem>
+                  <rareTableItem>0.94%</rareTableItem>
+                </rareTableRow>
+                <rareTableRow>
+                  <rareTableItem>Ha 39lox</rareTableItem>
+                  <rareTableItem>26</rareTableItem>
+                  <rareTableItem>1.23%</rareTableItem>
+                </rareTableRow>
+                <rareTableRow>
+                  <rareTableItem>Buru Sn 0021</rareTableItem>
+                  <rareTableItem>28</rareTableItem>
+                  <rareTableItem>1.32%</rareTableItem>
+                </rareTableRow>
+                <rareTableRow>
+                  <rareTableItem>Zugaikotsu Gz</rareTableItem>
+                  <rareTableItem>43</rareTableItem>
+                  <rareTableItem>2.03%</rareTableItem>
+                </rareTableRow>
+                <rareTableRow>
+                  <rareTableItem>Zugaikotsu Z</rareTableItem>
+                  <rareTableItem>43</rareTableItem>
+                  <rareTableItem>2.03%</rareTableItem>
+                </rareTableRow>
+                <rareTableRow>
+                  <rareTableItem>Omu W0</rareTableItem>
+                  <rareTableItem>50</rareTableItem>
+                  <rareTableItem>2.36%</rareTableItem>
+                </rareTableRow>
+                <rareTableRow>
+                  <rareTableItem>Nakinjo Px</rareTableItem>
+                  <rareTableItem>56</rareTableItem>
+                  <rareTableItem>2.64%</rareTableItem>
+                </rareTableRow>
+                <rareTableRow>
+                  <rareTableItem>Najinjo Dmg</rareTableItem>
+                  <rareTableItem>57</rareTableItem>
+                  <rareTableItem>2.69%</rareTableItem>
+                </rareTableRow>
+                <rareTableRow>
+                  <rareTableItem>Tanku B</rareTableItem>
+                  <rareTableItem>60</rareTableItem>
+                  <rareTableItem>2.83%</rareTableItem>
+                </rareTableRow>
+                <rareTableRow>
+                  <rareTableItem>Zugaikotsu 6</rareTableItem>
+                  <rareTableItem>70</rareTableItem>
+                  <rareTableItem>3.30%</rareTableItem>
+                </rareTableRow>
+                <rareTableRow>
+                  <rareTableItem>Buru K</rareTableItem>
+                  <rareTableItem>108</rareTableItem>
+                  <rareTableItem>5.09%</rareTableItem>
+                </rareTableRow>
+                <rareTableRow>
+                  <rareTableItem>Kuraun W</rareTableItem>
+                  <rareTableItem>111</rareTableItem>
+                  <rareTableItem>5.23%</rareTableItem>
+                </rareTableRow>
+                <rareTableRow>
+                  <rareTableItem>Kogeki Kz3</rareTableItem>
+                  <rareTableItem>118</rareTableItem>
+                  <rareTableItem>5.56%</rareTableItem>
+                </rareTableRow>
+                <rareTableRow>
+                  <rareTableItem>Omu Kos</rareTableItem>
+                  <rareTableItem>129</rareTableItem>
+                  <rareTableItem>6.08%</rareTableItem>
+                </rareTableRow>
+                <rareTableRow>
+                  <rareTableItem>Nakinjo K12</rareTableItem>
+                  <rareTableItem>130</rareTableItem>
+                  <rareTableItem>6.13%</rareTableItem>
+                </rareTableRow>
+                <rareTableRow>
+                  <rareTableItem>Kogeki Wq</rareTableItem>
+                  <rareTableItem>184</rareTableItem>
+                  <rareTableItem>8.68%</rareTableItem>
+                </rareTableRow>
+                <rareTableRow>
+                  <rareTableItem>Kogeki Xls</rareTableItem>
+                  <rareTableItem>194</rareTableItem>
+                  <rareTableItem>9.15%</rareTableItem>
+                </rareTableRow>
+                <rareTableRow>
+                  <rareTableItem>Tanku K</rareTableItem>
+                  <rareTableItem>204</rareTableItem>
+                  <rareTableItem>9.62%</rareTableItem>
+                </rareTableRow>
+                <rareTableRow>
+                  <rareTableItem>Shobo O12x</rareTableItem>
+                  <rareTableItem>209</rareTableItem>
+                  <rareTableItem>9.85%</rareTableItem>
+                </rareTableRow>
+                <rareTableRow>
+                  <rareTableItem>Shobo O</rareTableItem>
+                  <rareTableItem>227</rareTableItem>
+                  <rareTableItem>10.70%</rareTableItem>
+                </rareTableRow>
+              </div>
+            </div>
+          </div>
+          <!--xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx third row of tables -->
+          <div class="itemRarity">
+            <!------------------------------------------------------------------ eyewear  -->
+            <div class="itemRareContainer" id="item7">
+              <div class="itemRareTitle" onclick="open7()">L3G3ND4RY</div>
+              <script>
+                function open7() {
+                  if (
+                    document
+                      .getElementById("7Attribute")
+                      .classList.contains("on7")
+                  ) {
+                    document
+                      .getElementById("7Attribute")
+                      .classList.remove("on7");
+                    document
+                      .getElementById("item7")
+                      .classList.remove("itemRareContainerAddHeight");
+                  } else {
+                    document.getElementById("7Attribute").classList.add("on7");
+                    document
+                      .getElementById("item7")
+                      .classList.add("itemRareContainerAddHeight");
+                  }
+                }
+              </script>
+              <div class="att7" id="7Attribute">
+                <rareTableRow>
+                  <rareTableTitle>Item</rareTableTitle>
+                  <rareTableTitle>#/2,121</rareTableTitle>
+                  <rareTableTitle>Rarity</rareTableTitle>
+                </rareTableRow>
+                <rareTableRow>
+                  <rareTableItem>1nf3c-73d</rareTableItem>
+                  <rareTableItem>1</rareTableItem>
+                  <rareTableItem>0.05%</rareTableItem>
+                </rareTableRow>
+                <rareTableRow>
+                  <rareTableItem>W4gm-1</rareTableItem>
+                  <rareTableItem>1 </rareTableItem>
+                  <rareTableItem>0.05%</rareTableItem>
+                </rareTableRow>
+                <rareTableRow>
+                  <rareTableItem>None</rareTableItem>
+                  <rareTableItem>2119</rareTableItem>
+                  <rareTableItem>99.91%</rareTableItem>
+                </rareTableRow>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="headerBuffer"></div>
+      <!------------------------------------------------------------------------------------------- rarity ranking search -->
+      <div class="rarebody">
+        <div class="rareContainer">
+          <p class="bodyTitle">Taiyo Robotics Rarity Ranking</p>
+
+          <div style="display: flex; justify-content: space-between">
+            <button
+              id="invisibleButton"
+              class="dt-button-listing"
+              style="visibility: hidden"
+            >
+              SHOW LISTED
+            </button>
+            <p
+              style="
+                text-align: left;
+                width: fit-content;
+                padding: 0 1%;
+                margin: 0;
+              "
+            >
+              Export Data:
+            </p>
+            <div style="width: fit-content; padding-right: 1%; right: 0">
+              <button
+                id="toggleDisplayListings"
+                onclick="toggleListed()"
+                class="dt-button-listing"
+              >
+                SHOW LISTED
+              </button>
+              <script>
+                function checkSearchChange() {
+                  if (
+                    document.getElementById("searchInput").value.includes("◎")
+                  ) {
+                    document.getElementById("searchInput").value = "";
+                  }
+                }
+                var listed = false;
+                function toggleListed() {
+                  if (listed) {
+                    listed = false;
+                    document.getElementById("toggleDisplayListings").innerHTML =
+                      "SHOW LISTED";
+                    document.getElementById(
+                      "toggleDisplayListings"
+                    ).style.background = "#20eaac";
+                    document.getElementById("invisibleButton").innerHTML =
+                      "SHOW LISTED";
+                    getAll();
+                  } else {
+                    listed = true;
+                    document.getElementById("toggleDisplayListings").innerHTML =
+                      "SHOW ALL";
+                    document.getElementById(
+                      "toggleDisplayListings"
+                    ).style.background = "#21dbfb";
+                    document.getElementById("invisibleButton").innerHTML =
+                      "SHOW ALL";
+                    getListed();
+                  }
+                }
+                function getListed() {
+                  var dataTable = $("#table").DataTable();
+                  if (
+                    !document.getElementById("searchInput").value.includes("◎")
+                  ) {
+                    dataTable
+                      .search(
+                        "◎ " + document.getElementById("searchInput").value
+                      )
+                      .draw();
+                  }
+                }
+                function getAll() {
+                  var dataTable = $("#table").DataTable();
+
+                  dataTable
+                    .search(document.getElementById("searchInput").value)
+                    .draw();
+                }
+              </script>
+            </div>
+          </div>
+
+          <table id="table" class="display" style="width: 100%; overflow: auto">
+            <thead>
+              <tr>
+                <th>Rank</th>
+                <th>Name</th>
+                <th>Background</th>
+                <th>Breastplate</th>
+                <th>Energy-Source</th>
+                <th>Shoulder</th>
+                <th>Visor</th>
+                <th>Head</th>
+                <th>L3G3ND4RY</th>
+                <th>View on ME</th>
+              </tr>
+            </thead>
+            <tbody></tbody>
+            <tfoot>
+              <tr>
+                <th>Rank</th>
+                <th>Name</th>
+                <th>Background</th>
+                <th>Breastplate</th>
+                <th>Energy-Source</th>
+                <th>Shoulder</th>
+                <th>Visor</th>
+                <th>Head</th>
+                <th>L3G3ND4RY</th>
+                <th>View on ME</th>
+              </tr>
+            </tfoot>
+          </table>
+          <script src="js/rarity-taiyo_robotics/table.js"></script>
+          <script src="js/rarity-taiyo_robotics/data.js"></script>
+
+          <script defer>
+            fetchData();
+            async function fetchData() {
+              let offset = 0;
+              const listingsMap = new Map();
+
+              let loop = true;
+
+              while (loop) {
+                let todos = [];
+
+                await fetch(
+                  "https://evening-anchorage-09555.herokuapp.com/api-mainnet.magiceden.dev/v2/collections/taiyo_robotics/listings?offset=" +
+                    offset +
+                    "&limit=20"
+                )
+                  .then((response) => response.json())
+                  .then((json) => (todos = json))
+                  .then(() => {
+                    for (let item of todos) {
+                      listingsMap.set(item.tokenMint, item.price);
+                    }
+
+                    if (todos.length != 20) {
+                      loop = false;
+                    } else {
+                      offset += 20;
+                    }
+                  });
+              }
+
+              var table = $("#table").DataTable({ retrieve: true });
+
+              table.rows().every(function (rowIdx, tableLoop, rowLoop) {
+                var data = this.data();
+                var currID = data[9].substring(7).split("'")[0];
+
+                if (listingsMap.has(currID)) {
+                  data[9] =
+                    "<a href='https://magiceden.io/item-details/" +
+                    currID +
+                    "' target='_blank' class='linkME'>◎" +
+                    listingsMap.get(currID) +
+                    "</a>";
+                }
+                this.data(data);
+              });
+            }
+          </script>
+        </div>
+      </div>
+      <div class="headerBuffer"></div>
+    </div>
+
+    <!-------------------------------------------------------------------------------------------------------------------------------->
+    <!--------------------------------------------- FOOTER      ---------------------------------------------------------------------->
+    <!-------------------------------------------------------------------------------------------------------------------------------->
+    <script src="js/footer/footer.js"></script>
+    <!-------------------------------------------------------------------------------------------------------------------------------->
+    <!--------------------------------------------- FOOTER END  ---------------------------------------------------------------------->
+    <!-------------------------------------------------------------------------------------------------------------------------------->
+  </body>
+</html>

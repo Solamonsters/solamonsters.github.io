@@ -1,0 +1,1350 @@
+<!DOCTYPE html>
+<html>
+  <!-- ######################################################################### HTML HEAD ###################################################################-->
+  <head>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="index.css" />
+    <title>The Solamonsters Society</title>
+    <link rel="icon" href="assets/solamonsters-logo.png" />
+  </head>
+
+  <!-- ########################################################################### HTML BODY ################################################################ -->
+  <body>
+    <!-------------------------------------------------------------------------------------------------------------------------------->
+    <!--------------------------------------------- HEADER --------------------------------------------------------------------------->
+    <!-------------------------------------------------------------------------------------------------------------------------------->
+    <script src="js/header/header.js"></script>
+    <!-------------------------------------------------------------------------------------------------------------------------------->
+    <!--------------------------------------------- HEADER END  ---------------------------------------------------------------------->
+    <!-------------------------------------------------------------------------------------------------------------------------------->
+    <div class="rarityBackground">
+      <div class="bufferSmall"></div>
+      <div class="headerBuffer"></div>
+      <!-- -------------rarity item charts------------- -->
+      <div class="rarebody">
+        <div class="rareContainer">
+          <p class="bodyTitle">DeGods Attribute Rarities</p>
+
+          <!------------------------------------------------------------------ buttons  -->
+          <div class="openCloseContainer">
+            <div style="display: flex; text-align: center">
+              <div class="openButton" onclick="openAll()">Show All</div>
+              <div class="closeButton" onclick="closeAll()">Close All</div>
+              <script>
+                function openAll() {
+                  document.getElementById("1Attribute").classList.add("on1");
+                  document
+                    .getElementById("item1")
+                    .classList.add("itemRareContainerAddHeight");
+                  document.getElementById("2Attribute").classList.add("on2");
+                  document
+                    .getElementById("item2")
+                    .classList.add("itemRareContainerAddHeight");
+                  document.getElementById("3Attribute").classList.add("on3");
+                  document
+                    .getElementById("item3")
+                    .classList.add("itemRareContainerAddHeight");
+                  document.getElementById("4Attribute").classList.add("on4");
+                  document
+                    .getElementById("item4")
+                    .classList.add("itemRareContainerAddHeight");
+                  document.getElementById("5Attribute").classList.add("on5");
+                  document
+                    .getElementById("item5")
+                    .classList.add("itemRareContainerAddHeight");
+                  document.getElementById("6Attribute").classList.add("on6");
+                  document
+                    .getElementById("item6")
+                    .classList.add("itemRareContainerAddHeight");
+                  document.getElementById("7Attribute").classList.add("on7");
+                  document
+                    .getElementById("item7")
+                    .classList.add("itemRareContainerAddHeight");
+                  document.getElementById("8Attribute").classList.add("on8");
+                  document
+                    .getElementById("item8")
+                    .classList.add("itemRareContainerAddHeight");
+                }
+                function closeAll() {
+                  document.getElementById("1Attribute").classList.remove("on1");
+                  document
+                    .getElementById("item1")
+                    .classList.remove("itemRareContainerAddHeight");
+                  document.getElementById("2Attribute").classList.remove("on2");
+                  document
+                    .getElementById("item2")
+                    .classList.remove("itemRareContainerAddHeight");
+                  document.getElementById("3Attribute").classList.remove("on3");
+                  document
+                    .getElementById("item3")
+                    .classList.remove("itemRareContainerAddHeight");
+                  document.getElementById("4Attribute").classList.remove("on4");
+                  document
+                    .getElementById("item4")
+                    .classList.remove("itemRareContainerAddHeight");
+                  document.getElementById("5Attribute").classList.remove("on5");
+                  document
+                    .getElementById("item5")
+                    .classList.remove("itemRareContainerAddHeight");
+                  document.getElementById("6Attribute").classList.remove("on6");
+                  document
+                    .getElementById("item6")
+                    .classList.remove("itemRareContainerAddHeight");
+                  document.getElementById("7Attribute").classList.remove("on7");
+                  document
+                    .getElementById("item7")
+                    .classList.remove("itemRareContainerAddHeight");
+                  document.getElementById("8Attribute").classList.remove("on8");
+                  document
+                    .getElementById("item8")
+                    .classList.remove("itemRareContainerAddHeight");
+                }
+              </script>
+            </div>
+          </div>
+          <br />
+          <!--xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx first row of tables -->
+          <div class="itemRarity">
+            <!------------------------------------------------------------------ background  -->
+            <div class="itemRareContainer" id="item1">
+              <div class="itemRareTitle" onclick="open1()">Background</div>
+              <script>
+                function open1() {
+                  if (
+                    document
+                      .getElementById("1Attribute")
+                      .classList.contains("on1")
+                  ) {
+                    document
+                      .getElementById("1Attribute")
+                      .classList.remove("on1");
+                    document
+                      .getElementById("item1")
+                      .classList.remove("itemRareContainerAddHeight");
+                  } else {
+                    document.getElementById("1Attribute").classList.add("on1");
+                    document
+                      .getElementById("item1")
+                      .classList.add("itemRareContainerAddHeight");
+                  }
+                }
+              </script>
+              <div class="att1" id="1Attribute">
+                <rareTableRow>
+                  <rareTableTitle>Item</rareTableTitle>
+                  <rareTableTitle>#/10,000</rareTableTitle>
+                  <rareTableTitle>Rarity</rareTableTitle>
+                </rareTableRow>
+                <rareTableRow>
+                  <rareTableItem>Heaven</rareTableItem>
+                  <rareTableItem>124</rareTableItem>
+                  <rareTableItem>1.24%</rareTableItem>
+                </rareTableRow>
+                <rareTableRow>
+                  <rareTableItem>Alaska</rareTableItem>
+                  <rareTableItem>204</rareTableItem>
+                  <rareTableItem>2.04%</rareTableItem>
+                </rareTableRow>
+                <rareTableRow>
+                  <rareTableItem>Hell</rareTableItem>
+                  <rareTableItem>258</rareTableItem>
+                  <rareTableItem>2.58%</rareTableItem>
+                </rareTableRow>
+                <rareTableRow>
+                  <rareTableItem>Supernova</rareTableItem>
+                  <rareTableItem>264</rareTableItem>
+                  <rareTableItem>2.64%</rareTableItem>
+                </rareTableRow>
+                <rareTableRow>
+                  <rareTableItem>Deep Ocean Blue</rareTableItem>
+                  <rareTableItem>1246</rareTableItem>
+                  <rareTableItem>12.46%</rareTableItem>
+                </rareTableRow>
+                <rareTableRow>
+                  <rareTableItem>Purple</rareTableItem>
+                  <rareTableItem>1260</rareTableItem>
+                  <rareTableItem>12.60%</rareTableItem>
+                </rareTableRow>
+                <rareTableRow>
+                  <rareTableItem>Red</rareTableItem>
+                  <rareTableItem>1269</rareTableItem>
+                  <rareTableItem>12.69%</rareTableItem>
+                </rareTableRow>
+                <rareTableRow>
+                  <rareTableItem>Brown</rareTableItem>
+                  <rareTableItem>1312</rareTableItem>
+                  <rareTableItem>13.12%</rareTableItem>
+                </rareTableRow>
+                <rareTableRow>
+                  <rareTableItem>Olive Green</rareTableItem>
+                  <rareTableItem>1323</rareTableItem>
+                  <rareTableItem>13.23%</rareTableItem>
+                </rareTableRow>
+                <rareTableRow>
+                  <rareTableItem>Teal</rareTableItem>
+                  <rareTableItem>1333</rareTableItem>
+                  <rareTableItem>13.33%</rareTableItem>
+                </rareTableRow>
+                <rareTableRow>
+                  <rareTableItem>Blue</rareTableItem>
+                  <rareTableItem>1407</rareTableItem>
+                  <rareTableItem>14.07%</rareTableItem>
+                </rareTableRow>
+              </div>
+            </div>
+            <!------------------------------------------------------------------ fur/skin  -->
+            <div class="itemRareContainer" id="item2">
+              <!-- title -->
+              <div class="itemRareTitle" onclick="open2()">Skin</div>
+              <script>
+                function open2() {
+                  if (
+                    document
+                      .getElementById("2Attribute")
+                      .classList.contains("on2")
+                  ) {
+                    document
+                      .getElementById("2Attribute")
+                      .classList.remove("on2");
+                    document
+                      .getElementById("item2")
+                      .classList.remove("itemRareContainerAddHeight");
+                  } else {
+                    document.getElementById("2Attribute").classList.add("on2");
+                    document
+                      .getElementById("item2")
+                      .classList.add("itemRareContainerAddHeight");
+                  }
+                }
+              </script>
+              <!-- table -->
+              <div class="att2" id="2Attribute">
+                <rareTableRow>
+                  <rareTableTitle>Item</rareTableTitle>
+                  <rareTableTitle>#/10,000</rareTableTitle>
+                  <rareTableTitle>Rarity</rareTableTitle>
+                </rareTableRow>
+                <rareTableRow>
+                  <rareTableItem>Acid</rareTableItem>
+                  <rareTableItem>52</rareTableItem>
+                  <rareTableItem>0.52%</rareTableItem>
+                </rareTableRow>
+                <rareTableRow>
+                  <rareTableItem>Nebula</rareTableItem>
+                  <rareTableItem>54</rareTableItem>
+                  <rareTableItem>0.54%</rareTableItem>
+                </rareTableRow>
+                <rareTableRow>
+                  <rareTableItem>Ice</rareTableItem>
+                  <rareTableItem>74</rareTableItem>
+                  <rareTableItem>0.74%</rareTableItem>
+                </rareTableRow>
+                <rareTableRow>
+                  <rareTableItem>Transcendent</rareTableItem>
+                  <rareTableItem>79</rareTableItem>
+                  <rareTableItem>0.79%</rareTableItem>
+                </rareTableRow>
+                <rareTableRow>
+                  <rareTableItem>Radioactive</rareTableItem>
+                  <rareTableItem>96</rareTableItem>
+                  <rareTableItem>0.96%</rareTableItem>
+                </rareTableRow>
+                <rareTableRow>
+                  <rareTableItem>Zombie</rareTableItem>
+                  <rareTableItem>169</rareTableItem>
+                  <rareTableItem>1.69%</rareTableItem>
+                </rareTableRow>
+                <rareTableRow>
+                  <rareTableItem>Gold</rareTableItem>
+                  <rareTableItem>172</rareTableItem>
+                  <rareTableItem>1.72%</rareTableItem>
+                </rareTableRow>
+                <rareTableRow>
+                  <rareTableItem>Joker</rareTableItem>
+                  <rareTableItem>247</rareTableItem>
+                  <rareTableItem>2.47%</rareTableItem>
+                </rareTableRow>
+                <rareTableRow>
+                  <rareTableItem>Pastel</rareTableItem>
+                  <rareTableItem>285</rareTableItem>
+                  <rareTableItem>2.85%</rareTableItem>
+                </rareTableRow>
+                <rareTableRow>
+                  <rareTableItem>Poker</rareTableItem>
+                  <rareTableItem>362</rareTableItem>
+                  <rareTableItem>3.62%</rareTableItem>
+                </rareTableRow>
+                <rareTableRow>
+                  <rareTableItem>Ape</rareTableItem>
+                  <rareTableItem>397</rareTableItem>
+                  <rareTableItem>3.97%</rareTableItem>
+                </rareTableRow>
+                <rareTableRow>
+                  <rareTableItem>X-ray</rareTableItem>
+                  <rareTableItem>405</rareTableItem>
+                  <rareTableItem>4.05%</rareTableItem>
+                </rareTableRow>
+                <rareTableRow>
+                  <rareTableItem>Blue Sky</rareTableItem>
+                  <rareTableItem>497</rareTableItem>
+                  <rareTableItem>4.97%</rareTableItem>
+                </rareTableRow>
+                <rareTableRow>
+                  <rareTableItem>Navi</rareTableItem>
+                  <rareTableItem>522</rareTableItem>
+                  <rareTableItem>5.22%</rareTableItem>
+                </rareTableRow>
+                <rareTableRow>
+                  <rareTableItem>Zebra</rareTableItem>
+                  <rareTableItem>718</rareTableItem>
+                  <rareTableItem>7.18%</rareTableItem>
+                </rareTableRow>
+                <rareTableRow>
+                  <rareTableItem>Leopard</rareTableItem>
+                  <rareTableItem>730</rareTableItem>
+                  <rareTableItem>7.30%</rareTableItem>
+                </rareTableRow>
+                <rareTableRow>
+                  <rareTableItem>Lavender Stripe</rareTableItem>
+                  <rareTableItem>867</rareTableItem>
+                  <rareTableItem>8.67%</rareTableItem>
+                </rareTableRow>
+                <rareTableRow>
+                  <rareTableItem>Solar Spiral</rareTableItem>
+                  <rareTableItem>892</rareTableItem>
+                  <rareTableItem>8.92%</rareTableItem>
+                </rareTableRow>
+                <rareTableRow>
+                  <rareTableItem>Turquoise</rareTableItem>
+                  <rareTableItem>1103</rareTableItem>
+                  <rareTableItem>11.03%</rareTableItem>
+                </rareTableRow>
+                <rareTableRow>
+                  <rareTableItem>Marble</rareTableItem>
+                  <rareTableItem>1124</rareTableItem>
+                  <rareTableItem>11.24%</rareTableItem>
+                </rareTableRow>
+                <rareTableRow>
+                  <rareTableItem>Pink Granite</rareTableItem>
+                  <rareTableItem>1155</rareTableItem>
+                  <rareTableItem>11.55%</rareTableItem>
+                </rareTableRow>
+              </div>
+            </div>
+            <!------------------------------------------------------------------ head  -->
+            <div class="itemRareContainer" id="item3">
+              <div class="itemRareTitle" onclick="open3()">Specialty</div>
+              <script>
+                function open3() {
+                  if (
+                    document
+                      .getElementById("3Attribute")
+                      .classList.contains("on3")
+                  ) {
+                    document
+                      .getElementById("3Attribute")
+                      .classList.remove("on3");
+                    document
+                      .getElementById("item3")
+                      .classList.remove("itemRareContainerAddHeight");
+                  } else {
+                    document.getElementById("3Attribute").classList.add("on3");
+                    document
+                      .getElementById("item3")
+                      .classList.add("itemRareContainerAddHeight");
+                  }
+                }
+              </script>
+              <div class="att3" id="3Attribute">
+                <rareTableRow>
+                  <rareTableTitle>Item</rareTableTitle>
+                  <rareTableTitle>#/10,000</rareTableTitle>
+                  <rareTableTitle>Rarity</rareTableTitle>
+                </rareTableRow>
+                <rareTableRow>
+                  <rareTableItem>Mythic Wings</rareTableItem>
+                  <rareTableItem>43 </rareTableItem>
+                  <rareTableItem>0.43%</rareTableItem>
+                </rareTableRow>
+                <rareTableRow>
+                  <rareTableItem>Third Eye</rareTableItem>
+                  <rareTableItem>52</rareTableItem>
+                  <rareTableItem>0.52%</rareTableItem>
+                </rareTableRow>
+                <rareTableRow>
+                  <rareTableItem>Rockstar Tats</rareTableItem>
+                  <rareTableItem>256</rareTableItem>
+                  <rareTableItem>2.56%</rareTableItem>
+                </rareTableRow>
+                <rareTableRow>
+                  <rareTableItem>Angel Wings</rareTableItem>
+                  <rareTableItem>263</rareTableItem>
+                  <rareTableItem>2.63%</rareTableItem>
+                </rareTableRow>
+                <rareTableRow>
+                  <rareTableItem>Forehead Diamond</rareTableItem>
+                  <rareTableItem>299</rareTableItem>
+                  <rareTableItem>2.99%</rareTableItem>
+                </rareTableRow>
+                <rareTableRow>
+                  <rareTableItem>Devil Wings</rareTableItem>
+                  <rareTableItem>464</rareTableItem>
+                  <rareTableItem>4.64%</rareTableItem>
+                </rareTableRow>
+                <rareTableRow>
+                  <rareTableItem>Black Eye</rareTableItem>
+                  <rareTableItem>471</rareTableItem>
+                  <rareTableItem>4.71%</rareTableItem>
+                </rareTableRow>
+                <rareTableRow>
+                  <rareTableItem>God Of War</rareTableItem>
+                  <rareTableItem>489</rareTableItem>
+                  <rareTableItem>4.89%</rareTableItem>
+                </rareTableRow>
+                <rareTableRow>
+                  <rareTableItem>Quarterback</rareTableItem>
+                  <rareTableItem>737</rareTableItem>
+                  <rareTableItem>7.37%</rareTableItem>
+                </rareTableRow>
+                <rareTableRow>
+                  <rareTableItem>Archer</rareTableItem>
+                  <rareTableItem>738</rareTableItem>
+                  <rareTableItem>7.38%</rareTableItem>
+                </rareTableRow>
+                <rareTableRow>
+                  <rareTableItem>Earring</rareTableItem>
+                  <rareTableItem>763</rareTableItem>
+                  <rareTableItem>7.63%</rareTableItem>
+                </rareTableRow>
+                <rareTableRow>
+                  <rareTableItem>None</rareTableItem>
+                  <rareTableItem>5425</rareTableItem>
+                  <rareTableItem>54.25%</rareTableItem>
+                </rareTableRow>
+              </div>
+            </div>
+          </div>
+          <!--xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx second row of tables -->
+          <div class="itemRarity">
+            <!------------------------------------------------------------------ mouth  -->
+            <div class="itemRareContainer" id="item4">
+              <div class="itemRareTitle" onclick="open4()">Clothes</div>
+              <script>
+                function open4() {
+                  if (
+                    document
+                      .getElementById("4Attribute")
+                      .classList.contains("on4")
+                  ) {
+                    document
+                      .getElementById("4Attribute")
+                      .classList.remove("on4");
+                    document
+                      .getElementById("item4")
+                      .classList.remove("itemRareContainerAddHeight");
+                  } else {
+                    document.getElementById("4Attribute").classList.add("on4");
+                    document
+                      .getElementById("item4")
+                      .classList.add("itemRareContainerAddHeight");
+                  }
+                }
+              </script>
+              <div class="att4" id="4Attribute">
+                <rareTableRow>
+                  <rareTableTitle>Item</rareTableTitle>
+                  <rareTableTitle>#/10,000</rareTableTitle>
+                  <rareTableTitle>Rarity</rareTableTitle>
+                </rareTableRow>
+                <rareTableRow>
+                  <rareTableItem>Divine Robe</rareTableItem>
+                  <rareTableItem>36 </rareTableItem>
+                  <rareTableItem>0.36%</rareTableItem>
+                </rareTableRow>
+                <rareTableRow>
+                  <rareTableItem>Mythic War Armor</rareTableItem>
+                  <rareTableItem>48</rareTableItem>
+                  <rareTableItem>0.48%</rareTableItem>
+                </rareTableRow>
+                <rareTableRow>
+                  <rareTableItem>Silk Robe</rareTableItem>
+                  <rareTableItem>117</rareTableItem>
+                  <rareTableItem>1.17%</rareTableItem>
+                </rareTableRow>
+                <rareTableRow>
+                  <rareTableItem>Radioactive Tee</rareTableItem>
+                  <rareTableItem>118</rareTableItem>
+                  <rareTableItem>1.18%</rareTableItem>
+                </rareTableRow>
+                <rareTableRow>
+                  <rareTableItem>Mickey Degods Uniform</rareTableItem>
+                  <rareTableItem>140</rareTableItem>
+                  <rareTableItem>1.40%</rareTableItem>
+                </rareTableRow>
+                <rareTableRow>
+                  <rareTableItem>Hazmat Suit</rareTableItem>
+                  <rareTableItem>141</rareTableItem>
+                  <rareTableItem>1.41%</rareTableItem>
+                </rareTableRow>
+                <rareTableRow>
+                  <rareTableItem>Ftx Jersey</rareTableItem>
+                  <rareTableItem>151</rareTableItem>
+                  <rareTableItem>1.51%</rareTableItem>
+                </rareTableRow>
+                <rareTableRow>
+                  <rareTableItem>World Champion Robe</rareTableItem>
+                  <rareTableItem>182</rareTableItem>
+                  <rareTableItem>1.82%</rareTableItem>
+                </rareTableRow>
+                <rareTableRow>
+                  <rareTableItem>Hawaiian Shirt</rareTableItem>
+                  <rareTableItem>215</rareTableItem>
+                  <rareTableItem>2.15%</rareTableItem>
+                </rareTableRow>
+                <rareTableRow>
+                  <rareTableItem>God Jersey</rareTableItem>
+                  <rareTableItem>229</rareTableItem>
+                  <rareTableItem>2.29%</rareTableItem>
+                </rareTableRow>
+                <rareTableRow>
+                  <rareTableItem>Godly Tunic</rareTableItem>
+                  <rareTableItem>230</rareTableItem>
+                  <rareTableItem>2.30%</rareTableItem>
+                </rareTableRow>
+                <rareTableRow>
+                  <rareTableItem>Top God Jumper</rareTableItem>
+                  <rareTableItem>239</rareTableItem>
+                  <rareTableItem>2.39%</rareTableItem>
+                </rareTableRow>
+                <rareTableRow>
+                  <rareTableItem>Tracksuit</rareTableItem>
+                  <rareTableItem>243</rareTableItem>
+                  <rareTableItem>2.43%</rareTableItem>
+                </rareTableRow>
+                <rareTableRow>
+                  <rareTableItem>Bloody Beater</rareTableItem>
+                  <rareTableItem>251</rareTableItem>
+                  <rareTableItem>2.51%</rareTableItem>
+                </rareTableRow>
+                <rareTableRow>
+                  <rareTableItem>Tech God Vest</rareTableItem>
+                  <rareTableItem>292</rareTableItem>
+                  <rareTableItem>2.92%</rareTableItem>
+                </rareTableRow>
+                <rareTableRow>
+                  <rareTableItem>War Armor</rareTableItem>
+                  <rareTableItem>301</rareTableItem>
+                  <rareTableItem>3.01%</rareTableItem>
+                </rareTableRow>
+                <rareTableRow>
+                  <rareTableItem>Druglord Suit</rareTableItem>
+                  <rareTableItem>316</rareTableItem>
+                  <rareTableItem>3.16%</rareTableItem>
+                </rareTableRow>
+                <rareTableRow>
+                  <rareTableItem>Dedoctor Coat</rareTableItem>
+                  <rareTableItem>320</rareTableItem>
+                  <rareTableItem>3.20%</rareTableItem>
+                </rareTableRow>
+                <rareTableRow>
+                  <rareTableItem>God Scout Uniform</rareTableItem>
+                  <rareTableItem>327</rareTableItem>
+                  <rareTableItem>3.27%</rareTableItem>
+                </rareTableRow>
+                <rareTableRow>
+                  <rareTableItem>Googod Tee</rareTableItem>
+                  <rareTableItem>340</rareTableItem>
+                  <rareTableItem>3.40%</rareTableItem>
+                </rareTableRow>
+                <rareTableRow>
+                  <rareTableItem>Bleached Tee</rareTableItem>
+                  <rareTableItem>354</rareTableItem>
+                  <rareTableItem>3.54%</rareTableItem>
+                </rareTableRow>
+                <rareTableRow>
+                  <rareTableItem>Steve Jobs Turtleneck</rareTableItem>
+                  <rareTableItem>361</rareTableItem>
+                  <rareTableItem>3.61%</rareTableItem>
+                </rareTableRow>
+                <rareTableRow>
+                  <rareTableItem>Overalls</rareTableItem>
+                  <rareTableItem>379</rareTableItem>
+                  <rareTableItem>3.79%</rareTableItem>
+                </rareTableRow>
+                <rareTableRow>
+                  <rareTableItem>Caesar Tunic</rareTableItem>
+                  <rareTableItem>427</rareTableItem>
+                  <rareTableItem>4.27%</rareTableItem>
+                </rareTableRow>
+                <rareTableRow>
+                  <rareTableItem>Degod Cutoff</rareTableItem>
+                  <rareTableItem>446</rareTableItem>
+                  <rareTableItem>4.46%</rareTableItem>
+                </rareTableRow>
+                <rareTableRow>
+                  <rareTableItem>Jean Jacket</rareTableItem>
+                  <rareTableItem>456</rareTableItem>
+                  <rareTableItem>4.56%</rareTableItem>
+                </rareTableRow>
+                <rareTableRow>
+                  <rareTableItem>Peasant Blouse</rareTableItem>
+                  <rareTableItem>459</rareTableItem>
+                  <rareTableItem>4.59%</rareTableItem>
+                </rareTableRow>
+                <rareTableRow>
+                  <rareTableItem>Tattered Tee</rareTableItem>
+                  <rareTableItem>462</rareTableItem>
+                  <rareTableItem>4.62%</rareTableItem>
+                </rareTableRow>
+                <rareTableRow>
+                  <rareTableItem>None</rareTableItem>
+                  <rareTableItem>467</rareTableItem>
+                  <rareTableItem>4.67%</rareTableItem>
+                </rareTableRow>
+                <rareTableRow>
+                  <rareTableItem>Gym Tee</rareTableItem>
+                  <rareTableItem>481</rareTableItem>
+                  <rareTableItem>4.81%</rareTableItem>
+                </rareTableRow>
+                <rareTableRow>
+                  <rareTableItem>Tourist Tee</rareTableItem>
+                  <rareTableItem>484</rareTableItem>
+                  <rareTableItem>4.84%</rareTableItem>
+                </rareTableRow>
+                <rareTableRow>
+                  <rareTableItem>God Beater</rareTableItem>
+                  <rareTableItem>494</rareTableItem>
+                  <rareTableItem>4.94%</rareTableItem>
+                </rareTableRow>
+                <rareTableRow>
+                  <rareTableItem>Godchella Hoodie</rareTableItem>
+                  <rareTableItem>494</rareTableItem>
+                  <rareTableItem>4.94%</rareTableItem>
+                </rareTableRow>
+              </div>
+            </div>
+            <!------------------------------------------------------------------ teeth  -->
+            <div class="itemRareContainer" id="item5">
+              <div class="itemRareTitle" onclick="open5()">Neck</div>
+              <script>
+                function open5() {
+                  if (
+                    document
+                      .getElementById("5Attribute")
+                      .classList.contains("on5")
+                  ) {
+                    document
+                      .getElementById("5Attribute")
+                      .classList.remove("on5");
+                    document
+                      .getElementById("item5")
+                      .classList.remove("itemRareContainerAddHeight");
+                  } else {
+                    document.getElementById("5Attribute").classList.add("on5");
+                    document
+                      .getElementById("item5")
+                      .classList.add("itemRareContainerAddHeight");
+                  }
+                }
+              </script>
+              <div class="att5" id="5Attribute">
+                <rareTableRow>
+                  <rareTableTitle>Item</rareTableTitle>
+                  <rareTableTitle>#/10,000</rareTableTitle>
+                  <rareTableTitle>Rarity</rareTableTitle>
+                </rareTableRow>
+                <rareTableRow>
+                  <rareTableItem>Mythic Mamba</rareTableItem>
+                  <rareTableItem>51</rareTableItem>
+                  <rareTableItem>0.51%</rareTableItem>
+                </rareTableRow>
+                <rareTableRow>
+                  <rareTableItem>Solana Chain</rareTableItem>
+                  <rareTableItem>60</rareTableItem>
+                  <rareTableItem>0.60%</rareTableItem>
+                </rareTableRow>
+                <rareTableRow>
+                  <rareTableItem>Pimp Chain</rareTableItem>
+                  <rareTableItem>209</rareTableItem>
+                  <rareTableItem>2.09%</rareTableItem>
+                </rareTableRow>
+                <rareTableRow>
+                  <rareTableItem>Double Diamond Necklace</rareTableItem>
+                  <rareTableItem>212</rareTableItem>
+                  <rareTableItem>2.12%</rareTableItem>
+                </rareTableRow>
+                <rareTableRow>
+                  <rareTableItem>Cannibal Necklace</rareTableItem>
+                  <rareTableItem>371</rareTableItem>
+                  <rareTableItem>3.71%</rareTableItem>
+                </rareTableRow>
+                <rareTableRow>
+                  <rareTableItem>Louis Scarf</rareTableItem>
+                  <rareTableItem>387</rareTableItem>
+                  <rareTableItem>3.87%</rareTableItem>
+                </rareTableRow>
+                <rareTableRow>
+                  <rareTableItem>Gold Chain</rareTableItem>
+                  <rareTableItem>411</rareTableItem>
+                  <rareTableItem>4.11%</rareTableItem>
+                </rareTableRow>
+                <rareTableRow>
+                  <rareTableItem>Diamond Necklace</rareTableItem>
+                  <rareTableItem>426</rareTableItem>
+                  <rareTableItem>4.26%</rareTableItem>
+                </rareTableRow>
+                <rareTableRow>
+                  <rareTableItem>Friendship Necklace</rareTableItem>
+                  <rareTableItem>571</rareTableItem>
+                  <rareTableItem>5.71%</rareTableItem>
+                </rareTableRow>
+                <rareTableRow>
+                  <rareTableItem>Silver Chain</rareTableItem>
+                  <rareTableItem>574</rareTableItem>
+                  <rareTableItem>5.74%</rareTableItem>
+                </rareTableRow>
+                <rareTableRow>
+                  <rareTableItem>Christmas Lights Chain</rareTableItem>
+                  <rareTableItem>591</rareTableItem>
+                  <rareTableItem>5.91%</rareTableItem>
+                </rareTableRow>
+                <rareTableRow>
+                  <rareTableItem>Paperclip Necklace</rareTableItem>
+                  <rareTableItem>617</rareTableItem>
+                  <rareTableItem>6.17%</rareTableItem>
+                </rareTableRow>
+                <rareTableRow>
+                  <rareTableItem>None</rareTableItem>
+                  <rareTableItem>5520</rareTableItem>
+                  <rareTableItem>55.20%</rareTableItem>
+                </rareTableRow>
+              </div>
+            </div>
+            <!------------------------------------------------------------------ clothing  -->
+            <div class="itemRareContainer" id="item6">
+              <div class="itemRareTitle" onclick="open6()">Head</div>
+              <script>
+                function open6() {
+                  if (
+                    document
+                      .getElementById("6Attribute")
+                      .classList.contains("on6")
+                  ) {
+                    document
+                      .getElementById("6Attribute")
+                      .classList.remove("on6");
+                    document
+                      .getElementById("item6")
+                      .classList.remove("itemRareContainerAddHeight");
+                  } else {
+                    document.getElementById("6Attribute").classList.add("on6");
+                    document
+                      .getElementById("item6")
+                      .classList.add("itemRareContainerAddHeight");
+                  }
+                }
+              </script>
+              <div class="att6" id="6Attribute">
+                <rareTableRow>
+                  <rareTableTitle>Item</rareTableTitle>
+                  <rareTableTitle>#/10,000</rareTableTitle>
+                  <rareTableTitle>Rarity</rareTableTitle>
+                </rareTableRow>
+                <rareTableRow>
+                  <rareTableItem>Medusa</rareTableItem>
+                  <rareTableItem>25</rareTableItem>
+                  <rareTableItem>0.25%</rareTableItem>
+                </rareTableRow>
+                <rareTableRow>
+                  <rareTableItem>Mythic Helmet</rareTableItem>
+                  <rareTableItem>32 </rareTableItem>
+                  <rareTableItem>0.32%</rareTableItem>
+                </rareTableRow>
+                <rareTableRow>
+                  <rareTableItem>Mythic Halo</rareTableItem>
+                  <rareTableItem>49 </rareTableItem>
+                  <rareTableItem>0.49%</rareTableItem>
+                </rareTableRow>
+                <rareTableRow>
+                  <rareTableItem>Heavenly Crown</rareTableItem>
+                  <rareTableItem>66</rareTableItem>
+                  <rareTableItem>0.66%</rareTableItem>
+                </rareTableRow>
+                <rareTableRow>
+                  <rareTableItem>Exposed Brain</rareTableItem>
+                  <rareTableItem>76</rareTableItem>
+                  <rareTableItem>0.76%</rareTableItem>
+                </rareTableRow>
+                <rareTableRow>
+                  <rareTableItem>Rainbow Definitely Not A Dildo</rareTableItem>
+                  <rareTableItem>110</rareTableItem>
+                  <rareTableItem>1.10%</rareTableItem>
+                </rareTableRow>
+                <rareTableRow>
+                  <rareTableItem>Pharaohs Headdress</rareTableItem>
+                  <rareTableItem>117</rareTableItem>
+                  <rareTableItem>1.17%</rareTableItem>
+                </rareTableRow>
+                <rareTableRow>
+                  <rareTableItem>Winged Helmet</rareTableItem>
+                  <rareTableItem>120</rareTableItem>
+                  <rareTableItem>1.20%</rareTableItem>
+                </rareTableRow>
+                <rareTableRow>
+                  <rareTableItem>Dimmadome Top Hat</rareTableItem>
+                  <rareTableItem>124</rareTableItem>
+                  <rareTableItem>1.24%</rareTableItem>
+                </rareTableRow>
+                <rareTableRow>
+                  <rareTableItem>Mickey Degods Visor</rareTableItem>
+                  <rareTableItem>128</rareTableItem>
+                  <rareTableItem>1.28%</rareTableItem>
+                </rareTableRow>
+                <rareTableRow>
+                  <rareTableItem>Bloody Horns</rareTableItem>
+                  <rareTableItem>209</rareTableItem>
+                  <rareTableItem>2.09%</rareTableItem>
+                </rareTableRow>
+                <rareTableRow>
+                  <rareTableItem>Babushka</rareTableItem>
+                  <rareTableItem>212</rareTableItem>
+                  <rareTableItem>2.12%</rareTableItem>
+                </rareTableRow>
+                <rareTableRow>
+                  <rareTableItem>Degucci Bucket Hat</rareTableItem>
+                  <rareTableItem>222</rareTableItem>
+                  <rareTableItem>2.22%</rareTableItem>
+                </rareTableRow>
+                <rareTableRow>
+                  <rareTableItem>Mushroom Head</rareTableItem>
+                  <rareTableItem>224</rareTableItem>
+                  <rareTableItem>2.24%</rareTableItem>
+                </rareTableRow>
+                <rareTableRow>
+                  <rareTableItem>Godlielocks</rareTableItem>
+                  <rareTableItem>226</rareTableItem>
+                  <rareTableItem>2.26%</rareTableItem>
+                </rareTableRow>
+                <rareTableRow>
+                  <rareTableItem>Skull Mask</rareTableItem>
+                  <rareTableItem>234</rareTableItem>
+                  <rareTableItem>2.34%</rareTableItem>
+                </rareTableRow>
+                <rareTableRow>
+                  <rareTableItem>Ushanka</rareTableItem>
+                  <rareTableItem>249</rareTableItem>
+                  <rareTableItem>2.49%</rareTableItem>
+                </rareTableRow>
+                <rareTableRow>
+                  <rareTableItem>Propeller Hat</rareTableItem>
+                  <rareTableItem>297</rareTableItem>
+                  <rareTableItem>2.97%</rareTableItem>
+                </rareTableRow>
+                <rareTableRow>
+                  <rareTableItem>Bleached Curls</rareTableItem>
+                  <rareTableItem>311</rareTableItem>
+                  <rareTableItem>3.11%</rareTableItem>
+                </rareTableRow>
+                <rareTableRow>
+                  <rareTableItem>Gold Leaf Laurel</rareTableItem>
+                  <rareTableItem>313</rareTableItem>
+                  <rareTableItem>3.13%</rareTableItem>
+                </rareTableRow>
+                <rareTableRow>
+                  <rareTableItem>Godhawk</rareTableItem>
+                  <rareTableItem>320</rareTableItem>
+                  <rareTableItem>3.20%</rareTableItem>
+                </rareTableRow>
+                <rareTableRow>
+                  <rareTableItem>Mullet</rareTableItem>
+                  <rareTableItem>323</rareTableItem>
+                  <rareTableItem>3.23%</rareTableItem>
+                </rareTableRow>
+                <rareTableRow>
+                  <rareTableItem>Godfro</rareTableItem>
+                  <rareTableItem>337</rareTableItem>
+                  <rareTableItem>3.37%</rareTableItem>
+                </rareTableRow>
+                <rareTableRow>
+                  <rareTableItem>Plank</rareTableItem>
+                  <rareTableItem>342</rareTableItem>
+                  <rareTableItem>3.42%</rareTableItem>
+                </rareTableRow>
+                <rareTableRow>
+                  <rareTableItem>God Dome</rareTableItem>
+                  <rareTableItem>351</rareTableItem>
+                  <rareTableItem>3.51%</rareTableItem>
+                </rareTableRow>
+                <rareTableRow>
+                  <rareTableItem>Bleached</rareTableItem>
+                  <rareTableItem>488</rareTableItem>
+                  <rareTableItem>4.88%</rareTableItem>
+                </rareTableRow>
+                <rareTableRow>
+                  <rareTableItem>Headband</rareTableItem>
+                  <rareTableItem>489</rareTableItem>
+                  <rareTableItem>4.89%</rareTableItem>
+                </rareTableRow>
+                <rareTableRow>
+                  <rareTableItem>Hippie Hair</rareTableItem>
+                  <rareTableItem>492</rareTableItem>
+                  <rareTableItem>4.92%</rareTableItem>
+                </rareTableRow>
+                <rareTableRow>
+                  <rareTableItem>Degod Pro Trucker</rareTableItem>
+                  <rareTableItem>493</rareTableItem>
+                  <rareTableItem>4.93%</rareTableItem>
+                </rareTableRow>
+                <rareTableRow>
+                  <rareTableItem>Prince Hair</rareTableItem>
+                  <rareTableItem>496</rareTableItem>
+                  <rareTableItem>4.96%</rareTableItem>
+                </rareTableRow>
+                <rareTableRow>
+                  <rareTableItem>Leaf Laurel</rareTableItem>
+                  <rareTableItem>500</rareTableItem>
+                  <rareTableItem>5.00%</rareTableItem>
+                </rareTableRow>
+                <rareTableRow>
+                  <rareTableItem>Fade</rareTableItem>
+                  <rareTableItem>503</rareTableItem>
+                  <rareTableItem>5.03%</rareTableItem>
+                </rareTableRow>
+                <rareTableRow>
+                  <rareTableItem>Bed Head</rareTableItem>
+                  <rareTableItem>504</rareTableItem>
+                  <rareTableItem>5.04%</rareTableItem>
+                </rareTableRow>
+                <rareTableRow>
+                  <rareTableItem>Curly</rareTableItem>
+                  <rareTableItem>507</rareTableItem>
+                  <rareTableItem>5.07%</rareTableItem>
+                </rareTableRow>
+                <rareTableRow>
+                  <rareTableItem>Mad Scientist</rareTableItem>
+                  <rareTableItem>511</rareTableItem>
+                  <rareTableItem>5.11%</rareTableItem>
+                </rareTableRow>
+              </div>
+            </div>
+          </div>
+          <!--xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx third row of tables -->
+          <div class="itemRarity">
+            <!------------------------------------------------------------------ eyewear  -->
+            <div class="itemRareContainer" id="item7">
+              <div class="itemRareTitle" onclick="open7()">Eyes</div>
+              <script>
+                function open7() {
+                  if (
+                    document
+                      .getElementById("7Attribute")
+                      .classList.contains("on7")
+                  ) {
+                    document
+                      .getElementById("7Attribute")
+                      .classList.remove("on7");
+                    document
+                      .getElementById("item7")
+                      .classList.remove("itemRareContainerAddHeight");
+                  } else {
+                    document.getElementById("7Attribute").classList.add("on7");
+                    document
+                      .getElementById("item7")
+                      .classList.add("itemRareContainerAddHeight");
+                  }
+                }
+              </script>
+              <div class="att7" id="7Attribute">
+                <rareTableRow>
+                  <rareTableTitle>Item</rareTableTitle>
+                  <rareTableTitle>#/10,000</rareTableTitle>
+                  <rareTableTitle>Rarity</rareTableTitle>
+                </rareTableRow>
+                <rareTableRow>
+                  <rareTableItem>Rainbow Laser Eyes</rareTableItem>
+                  <rareTableItem>71</rareTableItem>
+                  <rareTableItem>0.71%</rareTableItem>
+                </rareTableRow>
+                <rareTableRow>
+                  <rareTableItem>Night Vision Goggles</rareTableItem>
+                  <rareTableItem>146</rareTableItem>
+                  <rareTableItem>1.46%</rareTableItem>
+                </rareTableRow>
+                <rareTableRow>
+                  <rareTableItem>Laser Eyes</rareTableItem>
+                  <rareTableItem>153</rareTableItem>
+                  <rareTableItem>1.53%</rareTableItem>
+                </rareTableRow>
+                <rareTableRow>
+                  <rareTableItem>Degucci Goggles</rareTableItem>
+                  <rareTableItem>160</rareTableItem>
+                  <rareTableItem>1.60%</rareTableItem>
+                </rareTableRow>
+                <rareTableRow>
+                  <rareTableItem>Money Sign Shades</rareTableItem>
+                  <rareTableItem>168</rareTableItem>
+                  <rareTableItem>1.68%</rareTableItem>
+                </rareTableRow>
+                <rareTableRow>
+                  <rareTableItem>Glowing Eyes</rareTableItem>
+                  <rareTableItem>178</rareTableItem>
+                  <rareTableItem>1.78%</rareTableItem>
+                </rareTableRow>
+                <rareTableRow>
+                  <rareTableItem>Steampunk Goggles</rareTableItem>
+                  <rareTableItem>197</rareTableItem>
+                  <rareTableItem>1.97%</rareTableItem>
+                </rareTableRow>
+                <rareTableRow>
+                  <rareTableItem>Alien Spectacles</rareTableItem>
+                  <rareTableItem>197</rareTableItem>
+                  <rareTableItem>1.97%</rareTableItem>
+                </rareTableRow>
+                <rareTableRow>
+                  <rareTableItem>Playboy Bunny Glasses</rareTableItem>
+                  <rareTableItem>210</rareTableItem>
+                  <rareTableItem>2.10%</rareTableItem>
+                </rareTableRow>
+                <rareTableRow>
+                  <rareTableItem>Rugrat Frames</rareTableItem>
+                  <rareTableItem>214</rareTableItem>
+                  <rareTableItem>2.14%</rareTableItem>
+                </rareTableRow>
+                <rareTableRow>
+                  <rareTableItem>Demonacle</rareTableItem>
+                  <rareTableItem>217</rareTableItem>
+                  <rareTableItem>2.17%</rareTableItem>
+                </rareTableRow>
+                <rareTableRow>
+                  <rareTableItem>Red Wine Glasses</rareTableItem>
+                  <rareTableItem>225</rareTableItem>
+                  <rareTableItem>2.25%</rareTableItem>
+                </rareTableRow>
+                <rareTableRow>
+                  <rareTableItem>Rose Tinted Shades</rareTableItem>
+                  <rareTableItem>229</rareTableItem>
+                  <rareTableItem>2.29%</rareTableItem>
+                </rareTableRow>
+                <rareTableRow>
+                  <rareTableItem>Eye Patch</rareTableItem>
+                  <rareTableItem>300</rareTableItem>
+                  <rareTableItem>3.00%</rareTableItem>
+                </rareTableRow>
+                <rareTableRow>
+                  <rareTableItem>Round Glasses</rareTableItem>
+                  <rareTableItem>303</rareTableItem>
+                  <rareTableItem>3.03%</rareTableItem>
+                </rareTableRow>
+                <rareTableRow>
+                  <rareTableItem>All Seeing Eyes</rareTableItem>
+                  <rareTableItem>303</rareTableItem>
+                  <rareTableItem>3.03%</rareTableItem>
+                </rareTableRow>
+                <rareTableRow>
+                  <rareTableItem>Snake Eyes</rareTableItem>
+                  <rareTableItem>313</rareTableItem>
+                  <rareTableItem>3.13%</rareTableItem>
+                </rareTableRow>
+                <rareTableRow>
+                  <rareTableItem>Neon Shades</rareTableItem>
+                  <rareTableItem>332</rareTableItem>
+                  <rareTableItem>3.32%</rareTableItem>
+                </rareTableRow>
+                <rareTableRow>
+                  <rareTableItem>Swirly Glasses</rareTableItem>
+                  <rareTableItem>344</rareTableItem>
+                  <rareTableItem>3.44%</rareTableItem>
+                </rareTableRow>
+                <rareTableRow>
+                  <rareTableItem>Clout Goggles</rareTableItem>
+                  <rareTableItem>358</rareTableItem>
+                  <rareTableItem>3.58%</rareTableItem>
+                </rareTableRow>
+                <rareTableRow>
+                  <rareTableItem>None</rareTableItem>
+                  <rareTableItem>5382</rareTableItem>
+                  <rareTableItem>53.82%</rareTableItem>
+                </rareTableRow>
+              </div>
+            </div>
+            <!------------------------------------------------------------------ mouth  -->
+            <div class="itemRareContainer" id="item8">
+              <div class="itemRareTitle" onclick="open8()">Mouth</div>
+              <script>
+                function open8() {
+                  if (
+                    document
+                      .getElementById("8Attribute")
+                      .classList.contains("on8")
+                  ) {
+                    document
+                      .getElementById("8Attribute")
+                      .classList.remove("on8");
+                    document
+                      .getElementById("item8")
+                      .classList.remove("itemRareContainerAddHeight");
+                  } else {
+                    document.getElementById("8Attribute").classList.add("on8");
+                    document
+                      .getElementById("item8")
+                      .classList.add("itemRareContainerAddHeight");
+                  }
+                }
+              </script>
+              <div class="att8" id="8Attribute">
+                <rareTableRow>
+                  <rareTableTitle>Item</rareTableTitle>
+                  <rareTableTitle>#/10,000</rareTableTitle>
+                  <rareTableTitle>Rarity</rareTableTitle>
+                </rareTableRow>
+                <rareTableRow>
+                  <rareTableItem>Smoke Ring</rareTableItem>
+                  <rareTableItem>89</rareTableItem>
+                  <rareTableItem>0.89%</rareTableItem>
+                </rareTableRow>
+                <rareTableRow>
+                  <rareTableItem>Goatee</rareTableItem>
+                  <rareTableItem>107</rareTableItem>
+                  <rareTableItem>1.07%</rareTableItem>
+                </rareTableRow>
+                <rareTableRow>
+                  <rareTableItem>Heavenly Wood</rareTableItem>
+                  <rareTableItem>185</rareTableItem>
+                  <rareTableItem>1.85%</rareTableItem>
+                </rareTableRow>
+                <rareTableRow>
+                  <rareTableItem>Fruit Roll Up</rareTableItem>
+                  <rareTableItem>195</rareTableItem>
+                  <rareTableItem>1.95%</rareTableItem>
+                </rareTableRow>
+                <rareTableRow>
+                  <rareTableItem>Clown Nose</rareTableItem>
+                  <rareTableItem>228</rareTableItem>
+                  <rareTableItem>2.28%</rareTableItem>
+                </rareTableRow>
+                <rareTableRow>
+                  <rareTableItem>Cigarette</rareTableItem>
+                  <rareTableItem>414</rareTableItem>
+                  <rareTableItem>4.14%</rareTableItem>
+                </rareTableRow>
+                <rareTableRow>
+                  <rareTableItem>Santa Beard</rareTableItem>
+                  <rareTableItem>418</rareTableItem>
+                  <rareTableItem>4.18%</rareTableItem>
+                </rareTableRow>
+                <rareTableRow>
+                  <rareTableItem>Vape God</rareTableItem>
+                  <rareTableItem>444</rareTableItem>
+                  <rareTableItem>4.44%</rareTableItem>
+                </rareTableRow>
+                <rareTableRow>
+                  <rareTableItem>Hipster Beard</rareTableItem>
+                  <rareTableItem>713</rareTableItem>
+                  <rareTableItem>7.13%</rareTableItem>
+                </rareTableRow>
+                <rareTableRow>
+                  <rareTableItem>Porn Stashe</rareTableItem>
+                  <rareTableItem>730</rareTableItem>
+                  <rareTableItem>7.30%</rareTableItem>
+                </rareTableRow>
+                <rareTableRow>
+                  <rareTableItem>Party Blower</rareTableItem>
+                  <rareTableItem>746</rareTableItem>
+                  <rareTableItem>7.46%</rareTableItem>
+                </rareTableRow>
+                <rareTableRow>
+                  <rareTableItem>None</rareTableItem>
+                  <rareTableItem>5731</rareTableItem>
+                  <rareTableItem>57.31%</rareTableItem>
+                </rareTableRow>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="headerBuffer"></div>
+      <!------------------------------------------------------------------------------------------- rarity ranking search -->
+      <div class="rarebody">
+        <div class="rareContainer">
+          <p class="bodyTitle">DeGods Rarity Ranking</p>
+
+          <div style="display: flex; justify-content: space-between">
+            <button
+              id="invisibleButton"
+              class="dt-button-listing"
+              style="visibility: hidden"
+            >
+              SHOW LISTED
+            </button>
+            <p
+              style="
+                text-align: left;
+                width: fit-content;
+                padding: 0 1%;
+                margin: 0;
+              "
+            >
+              Export Data:
+            </p>
+            <div style="width: fit-content; padding-right: 1%; right: 0">
+              <button
+                id="toggleDisplayListings"
+                onclick="toggleListed()"
+                class="dt-button-listing"
+              >
+                SHOW LISTED
+              </button>
+              <script>
+                function checkSearchChange() {
+                  if (
+                    document.getElementById("searchInput").value.includes("◎")
+                  ) {
+                    document.getElementById("searchInput").value = "";
+                  }
+                }
+                var listed = false;
+                function toggleListed() {
+                  if (listed) {
+                    listed = false;
+                    document.getElementById("toggleDisplayListings").innerHTML =
+                      "SHOW LISTED";
+                    document.getElementById(
+                      "toggleDisplayListings"
+                    ).style.background = "#20eaac";
+                    document.getElementById("invisibleButton").innerHTML =
+                      "SHOW LISTED";
+                    getAll();
+                  } else {
+                    listed = true;
+                    document.getElementById("toggleDisplayListings").innerHTML =
+                      "SHOW ALL";
+                    document.getElementById(
+                      "toggleDisplayListings"
+                    ).style.background = "#21dbfb";
+                    document.getElementById("invisibleButton").innerHTML =
+                      "SHOW ALL";
+                    getListed();
+                  }
+                }
+                function getListed() {
+                  var dataTable = $("#table").DataTable();
+                  if (
+                    !document.getElementById("searchInput").value.includes("◎")
+                  ) {
+                    dataTable
+                      .search(
+                        "◎ " + document.getElementById("searchInput").value
+                      )
+                      .draw();
+                  }
+                }
+                function getAll() {
+                  var dataTable = $("#table").DataTable();
+
+                  dataTable
+                    .search(document.getElementById("searchInput").value)
+                    .draw();
+                }
+              </script>
+            </div>
+          </div>
+
+          <table id="table" class="display" style="width: 100%; overflow: auto">
+            <thead>
+              <tr>
+                <th>Rank</th>
+                <th>Name</th>
+                <th>Background</th>
+                <th>Skin</th>
+                <th>Specialty</th>
+                <th>Clothes</th>
+                <th>Neck</th>
+                <th>Head</th>
+                <th>Eyes</th>
+                <th>Mouth</th>
+                <th>View on ME</th>
+              </tr>
+            </thead>
+            <tbody></tbody>
+            <tfoot>
+              <tr>
+                <th>Rank</th>
+                <th>Name</th>
+                <th>Background</th>
+                <th>Skin</th>
+                <th>Specialty</th>
+                <th>Clothes</th>
+                <th>Neck</th>
+                <th>Head</th>
+                <th>Eyes</th>
+                <th>Mouth</th>
+                <th>View on ME</th>
+              </tr>
+            </tfoot>
+          </table>
+          <script src="js/rarity-degods/table.js"></script>
+          <script src="js/rarity-degods/data.js"></script>
+
+          <script defer>
+            fetchData();
+            async function fetchData() {
+              let offset = 0;
+              const listingsMap = new Map();
+
+              let loop = true;
+
+              while (loop) {
+                let todos = [];
+
+                await fetch(
+                  "https://evening-anchorage-09555.herokuapp.com/api-mainnet.magiceden.dev/v2/collections/degods/listings?offset=" +
+                    offset +
+                    "&limit=20"
+                )
+                  .then((response) => response.json())
+                  .then((json) => (todos = json))
+                  .then(() => {
+                    for (let item of todos) {
+                      listingsMap.set(item.tokenMint, item.price);
+                    }
+
+                    if (todos.length != 20) {
+                      loop = false;
+                    } else {
+                      offset += 20;
+                    }
+                  });
+              }
+
+              var table = $("#table").DataTable({ retrieve: true });
+
+              table.rows().every(function (rowIdx, tableLoop, rowLoop) {
+                var data = this.data();
+                var currID = data[10].substring(7).split("'")[0];
+
+                if (listingsMap.has(currID)) {
+                  data[10] =
+                    "<a href='https://magiceden.io/item-details/" +
+                    currID +
+                    "' target='_blank' class='linkME'>◎" +
+                    listingsMap.get(currID) +
+                    "</a>";
+                }
+                this.data(data);
+              });
+            }
+          </script>
+        </div>
+      </div>
+      <div class="headerBuffer"></div>
+    </div>
+
+    <!-------------------------------------------------------------------------------------------------------------------------------->
+    <!--------------------------------------------- FOOTER      ---------------------------------------------------------------------->
+    <!-------------------------------------------------------------------------------------------------------------------------------->
+    <script src="js/footer/footer.js"></script>
+    <!-------------------------------------------------------------------------------------------------------------------------------->
+    <!--------------------------------------------- FOOTER END  ---------------------------------------------------------------------->
+    <!-------------------------------------------------------------------------------------------------------------------------------->
+  </body>
+</html>
