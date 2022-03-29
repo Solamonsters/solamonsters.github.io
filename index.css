@@ -791,6 +791,19 @@ body {
   text-align: center;
 }
 
+.rarityCollectionStats {
+  width: 80%;
+  margin: 2% auto auto auto;
+  border-radius: 10px;
+  padding: 1%;
+}
+.rarityCollectionStats p {
+  margin: 0;
+  font-size: calc(10px + 0.2vw);
+}
+.rarityCollectionStats p:hover {
+  background-color: rgb(119, 117, 117);
+}
 /* open close rarity attribute buttons */
 .openCloseContainer {
   width: 40%;
@@ -1000,13 +1013,18 @@ rareTableItem {
   display: flex;
 }
 .rarityThumbnailLink {
-  margin: auto;
-  width: 25%;
+  margin: 0 auto;
+  padding: 1% 0;
+  width: 22%;
+  vertical-align: top;
+  border: 2px solid rgb(255, 255, 255);
+  border-radius: 10px;
 }
 .rarityThumbnailLink img {
   border-radius: 10px;
   width: 60%;
   text-decoration: none;
+  border: 2px solid black;
 }
 .rarityThumbnailLink:hover img {
   border-radius: 10px;

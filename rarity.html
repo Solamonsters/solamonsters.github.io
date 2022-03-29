@@ -27,10 +27,10 @@
           <br />
           <div class="rarityOptions">
             <div class="rarityThumbnailLink">
+              The Solamonsters Society: Coming Soon
+              <br />
               <a href="rarity-the_solamonsters_society" class="formatLink">
                 <img src="assets/tss-logo-300.png" />
-                <br />
-                The Solamonsters Society: Coming Soon
               </a>
             </div>
           </div>
@@ -39,45 +39,168 @@
           <div class="rarityOptions">
             <div class="rarityThumbnailLink">
               <a href="rarity-boryoku_dragonz" class="formatLink">
+                Boryoku Dragonz
                 <img
                   src="https://ik.imagekit.io/v4hcyfqmeil/rarity/tr:w-300/Gq3vcAGsyj6vZI-pBcyeLvBT1xuXq6R8TKIk8Mv64tU?ext=png"
                 />
-                <br />
-                Boryoku Dragonz
               </a>
+              <br />
+              <div class="rarityCollectionStats">
+                <p id="floorBoryoku"></p>
+                <p id="listedBoryoku"></p>
+                <p id="avgPriceBoryoku"></p>
+                <p id="volumeBoryoku"></p>
+              </div>
+              <script defer>
+                fetchData();
+                async function fetchData() {
+                  res = [];
+                  await fetch(
+                    "https://evening-anchorage-09555.herokuapp.com/api-mainnet.magiceden.dev/v2/collections/boryoku_dragonz/stats"
+                  )
+                    .then((response) => response.json())
+                    .then((json) => (res = json))
+                    .then(() => {
+                      console.log(res);
+                    });
+                  document.getElementById("floorBoryoku").innerHTML =
+                    "Floor: ◎" + (res["floorPrice"] / 1000000000).toFixed(2);
+                  document.getElementById("listedBoryoku").innerHTML =
+                    "Listed: " + res["listedCount"];
+                  document.getElementById("avgPriceBoryoku").innerHTML =
+                    "Avg Sale (24H): ◎" +
+                    (res["avgPrice24hr"] / 1000000000).toFixed(2);
+                  document.getElementById("volumeBoryoku").innerHTML =
+                    "Total Volume: ◎" +
+                    (res["volumeAll"] / 1000000000).toFixed(0);
+                }
+              </script>
             </div>
             <br />
             <br />
             <div class="rarityThumbnailLink">
               <a href="rarity-dazed_ducks" class="formatLink">
+                DazedDucks Metagalactic Club
+                <br />
                 <img
                   src="https://ik.imagekit.io/v4hcyfqmeil/dazedducks/tr:w-300/QmSKhpwAfqmyeVxBSB362XAT1WA4mY55pwogzhFDwmeuR3"
                 />
-                <br />
-                DazedDucks Metagalactic Club
               </a>
+              <br />
+              <div class="rarityCollectionStats">
+                <p id="floorDDMC"></p>
+                <p id="listedDDMC"></p>
+                <p id="avgPriceDDMC"></p>
+                <p id="volumeDDMC"></p>
+              </div>
+              <script defer>
+                fetchData();
+                async function fetchData() {
+                  res = [];
+                  await fetch(
+                    "https://evening-anchorage-09555.herokuapp.com/api-mainnet.magiceden.dev/v2/collections/dazedducks_metagalactic_club/stats"
+                  )
+                    .then((response) => response.json())
+                    .then((json) => (res = json))
+                    .then(() => {
+                      console.log(res);
+                    });
+                  document.getElementById("floorDDMC").innerHTML =
+                    "Floor: ◎" + (res["floorPrice"] / 1000000000).toFixed(2);
+                  document.getElementById("listedDDMC").innerHTML =
+                    "Listed: " + res["listedCount"];
+                  document.getElementById("avgPriceDDMC").innerHTML =
+                    "Avg Sale (24H): ◎" +
+                    (res["avgPrice24hr"] / 1000000000).toFixed(2);
+                  document.getElementById("volumeDDMC").innerHTML =
+                    "Total Volume: ◎" +
+                    (res["volumeAll"] / 1000000000).toFixed(0);
+                }
+              </script>
             </div>
             <br />
             <br />
             <div class="rarityThumbnailLink">
               <a href="rarity-degenerate_ape_academy" class="formatLink">
+                Degenerate Ape Academy
+                <br />
                 <img
                   src="https://ik.imagekit.io/v4hcyfqmeil/rarity/tr:w-300/Vf6CdvglxDTm6CJZjnAwKtNR1aUNiXHHI9cK6saWd2o"
                 />
-                <br />
-                Degenerate Ape Academy
               </a>
+              <br />
+              <div class="rarityCollectionStats">
+                <p id="floorDAA"></p>
+                <p id="listedDAA"></p>
+                <p id="avgPriceDAA"></p>
+                <p id="volumeDAA"></p>
+              </div>
+              <script defer>
+                fetchData();
+                async function fetchData() {
+                  res = [];
+                  await fetch(
+                    "https://evening-anchorage-09555.herokuapp.com/api-mainnet.magiceden.dev/v2/collections/degenerate_ape_academy/stats"
+                  )
+                    .then((response) => response.json())
+                    .then((json) => (res = json))
+                    .then(() => {
+                      console.log(res);
+                    });
+                  document.getElementById("floorDAA").innerHTML =
+                    "Floor: ◎" + (res["floorPrice"] / 1000000000).toFixed(2);
+                  document.getElementById("listedDAA").innerHTML =
+                    "Listed: " + res["listedCount"];
+                  document.getElementById("avgPriceDAA").innerHTML =
+                    "Avg Sale (24H): ◎" +
+                    (res["avgPrice24hr"] / 1000000000).toFixed(2);
+                  document.getElementById("volumeDAA").innerHTML =
+                    "Total Volume: ◎" +
+                    (res["volumeAll"] / 1000000000).toFixed(0);
+                }
+              </script>
             </div>
             <br />
             <br />
             <div class="rarityThumbnailLink">
               <a href="rarity-degods" class="formatLink">
+                DeGods
+                <br />
                 <img
                   src="https://ik.imagekit.io/v4hcyfqmeil/degods/tr:w-300/3250.png"
                 />
-                <br />
-                DeGods
               </a>
+              <br />
+              <div class="rarityCollectionStats">
+                <p id="floorDegods"></p>
+                <p id="listedDegods"></p>
+                <p id="avgPriceDegods"></p>
+                <p id="volumeDegods"></p>
+              </div>
+              <script defer>
+                fetchData();
+                async function fetchData() {
+                  res = [];
+                  await fetch(
+                    "https://evening-anchorage-09555.herokuapp.com/api-mainnet.magiceden.dev/v2/collections/degods/stats"
+                  )
+                    .then((response) => response.json())
+                    .then((json) => (res = json))
+                    .then(() => {
+                      console.log(res);
+                    });
+                  document.getElementById("floorDegods").innerHTML =
+                    "Floor: ◎" + (res["floorPrice"] / 1000000000).toFixed(2);
+                  document.getElementById("listedDegods").innerHTML =
+                    "Listed: " + res["listedCount"];
+                  document.getElementById("avgPriceDegods").innerHTML =
+                    "Avg Sale (24H): ◎" +
+                    (res["avgPrice24hr"] / 1000000000).toFixed(2);
+                  document.getElementById("volumeDegods").innerHTML =
+                    "Total Volume: ◎" +
+                    (res["volumeAll"] / 1000000000).toFixed(0);
+                }
+              </script>
             </div>
           </div>
           <br />
@@ -85,45 +208,169 @@
           <div class="rarityOptions">
             <div class="rarityThumbnailLink">
               <a href="rarity-mindfolk" class="formatLink">
+                Mindfolk
+                <br />
                 <img
                   src="https://ik.imagekit.io/v4hcyfqmeil/rarity/tr:w-300/umtgplMsWxXBb0XtUpmmeS4VxnLiUCnmgZFmr52hz40?ext=png"
                 />
-                <br />
-                Mindfolk
               </a>
+              <br />
+              <div class="rarityCollectionStats">
+                <p id="floorMindfolk"></p>
+                <p id="listedMindfolk"></p>
+                <p id="avgPriceMindfolk"></p>
+                <p id="volumeMindfolk"></p>
+              </div>
+              <script defer>
+                fetchData();
+                async function fetchData() {
+                  res = [];
+                  await fetch(
+                    "https://evening-anchorage-09555.herokuapp.com/api-mainnet.magiceden.dev/v2/collections/mindfolk/stats"
+                  )
+                    .then((response) => response.json())
+                    .then((json) => (res = json))
+                    .then(() => {
+                      console.log(res);
+                    });
+                  document.getElementById("floorMindfolk").innerHTML =
+                    "Floor: ◎" + (res["floorPrice"] / 1000000000).toFixed(2);
+                  document.getElementById("listedMindfolk").innerHTML =
+                    "Listed: " + res["listedCount"];
+                  document.getElementById("avgPriceMindfolk").innerHTML =
+                    "Avg Sale (24H): ◎" +
+                    (res["avgPrice24hr"] / 1000000000).toFixed(2);
+                  document.getElementById("volumeMindfolk").innerHTML =
+                    "Total Volume: ◎" +
+                    (res["volumeAll"] / 1000000000).toFixed(0);
+                }
+              </script>
             </div>
             <br />
             <br />
             <div class="rarityThumbnailLink">
               <a href="rarity-shadowy_super_coder" class="formatLink">
+                Shadowy Super Coder
+                <br />
                 <img
                   src="https://ik.imagekit.io/v4hcyfqmeil/ssc/tr:w-300/1535.png"
                 />
-                <br />
-                Shadowy Super Coder
               </a>
+              <br />
+              <div class="rarityCollectionStats">
+                <p id="floorSSC"></p>
+                <p id="listedSSC"></p>
+                <p id="avgPriceSSC"></p>
+                <p id="volumeSSC"></p>
+              </div>
+              <script defer>
+                fetchData();
+                async function fetchData() {
+                  res = [];
+                  await fetch(
+                    "https://evening-anchorage-09555.herokuapp.com/api-mainnet.magiceden.dev/v2/collections/shadowy_super_coder_dao/stats"
+                  )
+                    .then((response) => response.json())
+                    .then((json) => (res = json))
+                    .then(() => {
+                      console.log(res);
+                    });
+                  document.getElementById("floorSSC").innerHTML =
+                    "Floor: ◎" + (res["floorPrice"] / 1000000000).toFixed(2);
+                  document.getElementById("listedSSC").innerHTML =
+                    "Listed: " + res["listedCount"];
+                  document.getElementById("avgPriceSSC").innerHTML =
+                    "Avg Sale (24H): ◎" +
+                    (res["avgPrice24hr"] / 1000000000).toFixed(2);
+                  document.getElementById("volumeSSC").innerHTML =
+                    "Total Volume: ◎" +
+                    (res["volumeAll"] / 1000000000).toFixed(0);
+                }
+              </script>
             </div>
             <br />
             <br />
             <div class="rarityThumbnailLink">
               <a href="rarity-solana_monkey_business" class="formatLink">
+                Solana Monkey Business
+                <br />
                 <img
                   src="https://ik.imagekit.io/v4hcyfqmeil/rarity/tr:w-300/wGChHSDTXTP9oAtTaYh9s8j1MRE0IPmYtH5greqWwZ4"
                 />
-                <br />
-                Solana Monkey Business
               </a>
+              <br />
+              <div class="rarityCollectionStats">
+                <p id="floorSMB"></p>
+                <p id="listedSMB"></p>
+                <p id="avgPriceSMB"></p>
+                <p id="volumeSMB"></p>
+              </div>
+              <script defer>
+                fetchData();
+                async function fetchData() {
+                  res = [];
+                  await fetch(
+                    "https://evening-anchorage-09555.herokuapp.com/api-mainnet.magiceden.dev/v2/collections/solana_monkey_business/stats"
+                  )
+                    .then((response) => response.json())
+                    .then((json) => (res = json))
+                    .then(() => {
+                      console.log(res);
+                    });
+                  document.getElementById("floorSMB").innerHTML =
+                    "Floor: ◎" + (res["floorPrice"] / 1000000000).toFixed(2);
+                  document.getElementById("listedSMB").innerHTML =
+                    "Listed: " + res["listedCount"];
+                  document.getElementById("avgPriceSMB").innerHTML =
+                    "Avg Sale (24H): ◎" +
+                    (res["avgPrice24hr"] / 1000000000).toFixed(2);
+                  document.getElementById("volumeSMB").innerHTML =
+                    "Total Volume: ◎" +
+                    (res["volumeAll"] / 1000000000).toFixed(0);
+                }
+              </script>
             </div>
             <br />
             <br />
             <div class="rarityThumbnailLink">
               <a href="rarity-taiyo_robotics" class="formatLink">
+                Taiyo Robotics
+                <br />
                 <img
                   src="https://ik.imagekit.io/v4hcyfqmeil/taiyo/tr:w-300/mutant.gif"
                 />
-                <br />
-                Taiyo Robotics
               </a>
+              <br />
+              <div class="rarityCollectionStats">
+                <p id="floorTaiyo"></p>
+                <p id="listedTaiyo"></p>
+                <p id="avgPriceTaiyo"></p>
+                <p id="volumeTaiyo"></p>
+              </div>
+              <script defer>
+                fetchData();
+                async function fetchData() {
+                  res = [];
+                  await fetch(
+                    "https://evening-anchorage-09555.herokuapp.com/api-mainnet.magiceden.dev/v2/collections/taiyo_robotics/stats"
+                  )
+                    .then((response) => response.json())
+                    .then((json) => (res = json))
+                    .then(() => {
+                      console.log(res);
+                    });
+                  document.getElementById("floorTaiyo").innerHTML =
+                    "Floor: ◎" + (res["floorPrice"] / 1000000000).toFixed(2);
+                  document.getElementById("listedTaiyo").innerHTML =
+                    "Listed: " + res["listedCount"];
+                  document.getElementById("avgPriceTaiyo").innerHTML =
+                    "Avg Sale (24H): ◎" +
+                    (res["avgPrice24hr"] / 1000000000).toFixed(2);
+                  document.getElementById("volumeTaiyo").innerHTML =
+                    "Total Volume: ◎" +
+                    (res["volumeAll"] / 1000000000).toFixed(0);
+                }
+              </script>
             </div>
           </div>
         </div>
