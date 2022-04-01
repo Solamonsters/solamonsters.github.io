@@ -38,8 +38,6 @@ var variable = '' +
   '    <a href="/#/faq" class="footerText">FAQ</a>' +
   '    <a href="whitepaper" class="footerText">Whitepaper</a>' +
   '' +
-  '    <a href="mint" class="footerText">Mint</a>' +
-  '' +
   '    <!-- <a href="generation" class="footerText">Generations</a>' +
   '          <a href="https://www.magiceden.io/" target="_blank" class="footerText"' +
   '            >Marketplace</a' +

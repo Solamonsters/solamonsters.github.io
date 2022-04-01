@@ -53,7 +53,6 @@ var variable = '' +
     '    <a href="/#/roadmap" class="headerWords">Roadmap</a>' +
     '    <a href="/#/faq" class="headerWords">FAQ</a>' +
     '    <a href="whitepaper" class="headerWords">Whitepaper</a>' +
-    '    <a href="mint" class="headerMintButton">Mint</a>' +
     '  </div>' +
     '</div>' +
     '' +
